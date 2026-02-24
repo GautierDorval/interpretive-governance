@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://interpretive-governance.org/sitemap.xml
