@@ -18,3 +18,8 @@ This repository intentionally excludes:
 ## Publishing
 
 Static site intended for Cloudflare Pages.
+
+Build settings:
+- Framework preset: None
+- Build command: (empty)
+- Output directory: .
