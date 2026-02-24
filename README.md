@@ -23,3 +23,7 @@ Build settings:
 - Framework preset: None
 - Build command: (empty)
 - Output directory: .
+
+
+## Cache bust
+Assets are versioned with ?v=20260224-1.
