@@ -8,9 +8,17 @@ A personal doctrinal showcase of **Interpretive Governance** (non-operational co
 - https://gautierdorval.com/.well-known/ai-governance.json
 - https://github.com/GautierDorval/gautierdorval-identity
 
+## Canonical machine surfaces (DualWeb)
+
+- Manifest: `https://interpretive-governance.org/ig-manifest.json` (also `https://interpretive-governance.org/.well-known/ig-manifest.json`)
+- Terms registry: `https://interpretive-governance.org/data/terms.json` (also `https://interpretive-governance.org/.well-known/ig-terms.json`)
+- Documents registry: `https://interpretive-governance.org/data/documents.json` (also `https://interpretive-governance.org/.well-known/ig-documents.json`)
+- Discovery file: `https://interpretive-governance.org/llms.txt`
+
 ## Scope
 
 This repository intentionally excludes:
+
 - scoring formulas, weights, thresholds, calibrations
 - reproducible audit protocols, test catalogs, datasets
 - implementation playbooks, deployment scripts, operational tooling
@@ -20,14 +28,14 @@ This repository intentionally excludes:
 Static site intended for Cloudflare Pages.
 
 Build settings:
+
 - Framework preset: None
 - Build command: (empty)
 - Output directory: .
 
-
 ## Cache bust
-Assets are versioned with ?v=20260226-1.
 
+Assets are versioned with `?v=20260226-2`.
 
 ## URL policy
 
