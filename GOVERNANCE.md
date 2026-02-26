@@ -4,6 +4,34 @@ This repository ships a static, machine-first doctrinal site.
 
 The objective is to keep the public surface **stable, auditable, and non-operational** while remaining maximally legible to search engines and machine readers.
 
+## DualWeb posture (doctrinal)
+
+This site maintains two synchronized canonical surfaces:
+
+- **Human surface**: HTML pages meant to be read, cited, and reviewed.
+- **Machine surface**: a canonical manifest + registries meant to be discovered and parsed deterministically.
+
+Public execution mechanics remain private by design.
+
+## Canonical machine surfaces
+
+- Canonical manifest: `/ig-manifest.json` (also mirrored at `/.well-known/ig-manifest.json`)
+- Terms registry: `/data/terms.json` (also mirrored at `/.well-known/ig-terms.json`)
+- Documents registry: `/data/documents.json` (also mirrored at `/.well-known/ig-documents.json`)
+- Discovery file: `/llms.txt`
+
+## Normative vs informative
+
+Every indexable page MUST declare a classification:
+
+- `normative`: defines meaning, boundaries, or requirements within the doctrine
+- `informative`: explains, motivates, or contextualizes without defining requirements
+
+This classification is expressed via:
+
+- `<meta name="ig:classification" content="…">`
+- JSON-LD `additionalProperty` values
+
 ## Canonical URL policy
 
 - Canonical URLs are **clean** (no `.html`) and **HTTPS**.
@@ -21,6 +49,12 @@ Every indexable page MUST include:
 - `<meta name="description">` (unique per page)
 - Open Graph + Twitter cards
 - JSON-LD structured data (`application/ld+json`)
+- IG meta:
+  - `ig:doc-id` (or `ig:entity-id` for terms)
+  - `ig:classification`
+  - `ig:status` = `doctrinal`
+  - `ig:operability` = `non-operational`
+  - `ig:doctrine-version` = `0.2.0`
 
 ## Sitemap policy
 
@@ -38,7 +72,7 @@ Public pages MUST NOT include:
 
 (See `CONTENT-POLICY.md`.)
 
-## Quality gates
+## Q-Layer (quality gates)
 
 Run locally:
 
@@ -52,4 +86,7 @@ The gate enforces:
 - canonical URLs present and clean
 - no internal `.html` links
 - JSON-LD present on all pages
+- IG classification and identifiers present on all pages
+- term pages are consistent with `/data/terms.json`
+- `ig-manifest.json` exists and references registries
 - sitemap contains no `.html` URLs and covers all indexable pages
