@@ -21,6 +21,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install beautifulsoup4
 
+      - name: Build deterministic artifacts
+        run: |
+          python scripts/build_artifacts.py
+
+      - name: Ensure artifacts are committed
+        run: |
+          git diff --exit-code
+
       - name: Run quality gate
         run: |
           python scripts/quality_gate.py
