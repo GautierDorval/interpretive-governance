@@ -1,0 +1,584 @@
+{
+  "schemaVersion": "1.0",
+  "doctrineVersion": "0.2.0",
+  "generatedAt": "2026-02-26",
+  "site": "https://interpretive-governance.org",
+  "terms": [
+    {
+      "id": "IG-TERM-INTERPRETIVE-GOVERNANCE",
+      "slug": "interpretive-governance",
+      "termCode": "IG-T-0001",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Interpretive governance",
+          "definition": "A doctrinal approach that constrains what machine systems may claim, given scope, evidence, and authority."
+        },
+        "fr": {
+          "label": "Gouvernance interprétative",
+          "definition": "Approche doctrinale qui contraint ce qu’un système machine est autorisé à affirmer, selon le périmètre, les preuves et l’autorité."
+        }
+      },
+      "related": [
+        "IG-TERM-BOUNDED-INTERPRETATION",
+        "IG-TERM-SCOPE-BOUNDARY",
+        "IG-TERM-A2"
+      ]
+    },
+    {
+      "id": "IG-TERM-BOUNDED-INTERPRETATION",
+      "slug": "bounded-interpretation",
+      "termCode": "IG-T-0002",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Bounded interpretation",
+          "definition": "Interpretation whose allowable conclusions are bounded by declared scope, evidence, and constraints."
+        },
+        "fr": {
+          "label": "Interprétation bornée",
+          "definition": "Interprétation dont les conclusions permises sont bornées par le périmètre, les preuves et les contraintes déclarées."
+        }
+      },
+      "related": [
+        "IG-TERM-CONSTRAINT-FIRST",
+        "IG-TERM-ABSTENTION",
+        "IG-TERM-PROVENANCE"
+      ]
+    },
+    {
+      "id": "IG-TERM-CONSTRAINT-FIRST",
+      "slug": "constraint-first",
+      "termCode": "IG-T-0003",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Constraint-first",
+          "definition": "Ordering rule: apply constraints before optimizing for completeness, fluency, or persuasion."
+        },
+        "fr": {
+          "label": "Contraintes d’abord",
+          "definition": "Règle d’ordre : appliquer les contraintes avant d’optimiser la complétude, la fluidité ou la persuasion."
+        }
+      },
+      "related": [
+        "IG-TERM-SCOPE-BOUNDARY",
+        "IG-TERM-NON-OPERATIONAL"
+      ]
+    },
+    {
+      "id": "IG-TERM-SCOPE-BOUNDARY",
+      "slug": "scope-boundary",
+      "termCode": "IG-T-0004",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Scope boundary",
+          "definition": "An explicit statement of what is in-scope and out-of-scope for a response or system."
+        },
+        "fr": {
+          "label": "Frontière de périmètre",
+          "definition": "Déclaration explicite de ce qui est dans le périmètre et hors périmètre d’une réponse ou d’un système."
+        }
+      },
+      "related": [
+        "IG-TERM-ABSTENTION",
+        "IG-TERM-PROVENANCE"
+      ]
+    },
+    {
+      "id": "IG-TERM-PROVENANCE",
+      "slug": "provenance",
+      "termCode": "IG-T-0005",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Provenance",
+          "definition": "Traceable origin of information, including source, time, and transformation steps."
+        },
+        "fr": {
+          "label": "Provenance",
+          "definition": "Origine traçable de l’information : source, date, et transformations."
+        }
+      },
+      "related": [
+        "IG-TERM-AUDITABILITY",
+        "IG-TERM-TRACEABILITY"
+      ]
+    },
+    {
+      "id": "IG-TERM-CLAIM",
+      "slug": "claim",
+      "termCode": "IG-T-0006",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Claim",
+          "definition": "A statement asserted as true."
+        },
+        "fr": {
+          "label": "Assertion",
+          "definition": "Énoncé présenté comme vrai."
+        }
+      },
+      "related": [
+        "IG-TERM-DERIVATION",
+        "IG-TERM-UNKNOWN"
+      ]
+    },
+    {
+      "id": "IG-TERM-DERIVATION",
+      "slug": "derivation",
+      "termCode": "IG-T-0007",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Derivation",
+          "definition": "A conclusion inferred from claims and rules; it must be labeled and auditable."
+        },
+        "fr": {
+          "label": "Dérivation",
+          "definition": "Conclusion inférée à partir d’assertions et de règles ; elle doit être étiquetée et auditable."
+        }
+      },
+      "related": [
+        "IG-TERM-CLAIM",
+        "IG-TERM-AUDITABILITY"
+      ]
+    },
+    {
+      "id": "IG-TERM-UNKNOWN",
+      "slug": "unknown",
+      "termCode": "IG-T-0008",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Unknown",
+          "definition": "A required placeholder when truth status cannot be established; it must not be replaced by invention."
+        },
+        "fr": {
+          "label": "Inconnu",
+          "definition": "Marqueur obligatoire lorsque la vérité ne peut pas être établie ; il ne doit pas être remplacé par une invention."
+        }
+      },
+      "related": [
+        "IG-TERM-ABSTENTION",
+        "IG-TERM-BOUNDED-INTERPRETATION"
+      ]
+    },
+    {
+      "id": "IG-TERM-ABSTENTION",
+      "slug": "abstention",
+      "termCode": "IG-T-0009",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Abstention",
+          "definition": "A deliberate refusal to answer beyond what constraints permit."
+        },
+        "fr": {
+          "label": "Abstention",
+          "definition": "Refus délibéré de répondre au-delà de ce que permettent les contraintes."
+        }
+      },
+      "related": [
+        "IG-TERM-SCOPE-BOUNDARY",
+        "IG-TERM-UNKNOWN"
+      ]
+    },
+    {
+      "id": "IG-TERM-INTERPRETIVE-DRIFT",
+      "slug": "interpretive-drift",
+      "termCode": "IG-T-0010",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Interpretive drift",
+          "definition": "Uncontrolled shift in meaning between intended doctrine and produced outputs across time or contexts."
+        },
+        "fr": {
+          "label": "Dérive interprétative",
+          "definition": "Glissement non contrôlé du sens entre la doctrine visée et les sorties produites, dans le temps ou selon le contexte."
+        }
+      },
+      "related": [
+        "IG-TERM-SSA-E",
+        "IG-TERM-Q-LAYER"
+      ]
+    },
+    {
+      "id": "IG-TERM-TRACEABILITY",
+      "slug": "traceability",
+      "termCode": "IG-T-0011",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Traceability",
+          "definition": "Ability to link an output or conclusion back to inputs, assumptions, and a chain of justification."
+        },
+        "fr": {
+          "label": "Traçabilité",
+          "definition": "Capacité à relier une conclusion à des entrées, à des hypothèses et à une chaîne de justification."
+        }
+      },
+      "related": [
+        "IG-TERM-AUDITABILITY",
+        "IG-TERM-PROVENANCE"
+      ]
+    },
+    {
+      "id": "IG-TERM-AUDITABILITY",
+      "slug": "auditability",
+      "termCode": "IG-T-0012",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Auditability",
+          "definition": "Capacity to inspect, reproduce, and justify outputs against declared constraints and sources."
+        },
+        "fr": {
+          "label": "Auditabilité",
+          "definition": "Capacité d’inspecter, de reproduire et de justifier des sorties selon les contraintes et les sources déclarées."
+        }
+      },
+      "related": [
+        "IG-TERM-TRACEABILITY",
+        "IG-TERM-Q-LAYER"
+      ]
+    },
+    {
+      "id": "IG-TERM-CANONICAL-SURFACE",
+      "slug": "canonical-surface",
+      "termCode": "IG-T-0013",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Canonical surface",
+          "definition": "A stable, versioned reference intended for discovery, citation, and review."
+        },
+        "fr": {
+          "label": "Surface canonique",
+          "definition": "Référence stable et versionnée destinée à la découverte, à la citation et à la revue."
+        }
+      },
+      "related": [
+        "IG-TERM-DUALWEB",
+        "IG-TERM-CANONICAL-MANIFEST"
+      ]
+    },
+    {
+      "id": "IG-TERM-HUMAN-SURFACE",
+      "slug": "human-surface",
+      "termCode": "IG-T-0014",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Human surface",
+          "definition": "The part of the doctrine optimized for reading, discussion, and citation by humans."
+        },
+        "fr": {
+          "label": "Surface humaine",
+          "definition": "Partie de la doctrine optimisée pour la lecture, la discussion et la citation par des humains."
+        }
+      },
+      "related": [
+        "IG-TERM-DUALWEB",
+        "IG-TERM-MACHINE-SURFACE"
+      ]
+    },
+    {
+      "id": "IG-TERM-MACHINE-SURFACE",
+      "slug": "machine-surface",
+      "termCode": "IG-T-0015",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Machine surface",
+          "definition": "The part of the doctrine optimized for deterministic discovery and parsing by machines (manifest, registries, structured data)."
+        },
+        "fr": {
+          "label": "Surface machine",
+          "definition": "Partie de la doctrine optimisée pour une découverte déterministe et un parsing machine (manifest, registres, données structurées)."
+        }
+      },
+      "related": [
+        "IG-TERM-DUALWEB",
+        "IG-TERM-ENTITY-REGISTRY"
+      ]
+    },
+    {
+      "id": "IG-TERM-DUALWEB",
+      "slug": "dualweb",
+      "termCode": "IG-T-0016",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "DualWeb",
+          "definition": "Doctrine that maintains synchronized canonical surfaces: human-readable and machine-readable."
+        },
+        "fr": {
+          "label": "DualWeb",
+          "definition": "Doctrine qui maintient des surfaces canoniques synchronisées : humaine et machine."
+        }
+      },
+      "related": [
+        "IG-TERM-HUMAN-SURFACE",
+        "IG-TERM-MACHINE-SURFACE",
+        "IG-TERM-CANONICAL-MANIFEST"
+      ]
+    },
+    {
+      "id": "IG-TERM-SSA-E",
+      "slug": "ssa-e",
+      "termCode": "IG-T-0017",
+      "classification": "normative",
+      "status": "draft",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "SSA‑E",
+          "definition": "Semantic Stabilization & Attribution (Evidence): practices that stabilize meaning and bind terms to sources or declared authority."
+        },
+        "fr": {
+          "label": "SSA‑E",
+          "definition": "Stabilisation sémantique & attribution (preuves) : pratiques qui stabilisent le sens et lient les termes à des sources ou à une autorité déclarée."
+        }
+      },
+      "related": [
+        "IG-TERM-INTERPRETIVE-DRIFT",
+        "IG-TERM-A2"
+      ]
+    },
+    {
+      "id": "IG-TERM-A2",
+      "slug": "a2",
+      "termCode": "IG-T-0018",
+      "classification": "normative",
+      "status": "draft",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "A2",
+          "definition": "Authority & Accountability: mechanisms that make who may assert what, and under which boundaries, explicit and verifiable."
+        },
+        "fr": {
+          "label": "A2",
+          "definition": "Autorité & redevabilité : mécanismes qui rendent explicites et vérifiables qui peut affirmer quoi, et selon quelles bornes."
+        }
+      },
+      "related": [
+        "IG-TERM-CLAIM",
+        "IG-TERM-PROVENANCE",
+        "IG-TERM-SSA-E"
+      ]
+    },
+    {
+      "id": "IG-TERM-Q-LAYER",
+      "slug": "q-layer",
+      "termCode": "IG-T-0019",
+      "classification": "normative",
+      "status": "draft",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Q‑Layer",
+          "definition": "Quality layer: automated gates that prevent drift, regression, or accidental operability in public surfaces."
+        },
+        "fr": {
+          "label": "Q‑Layer",
+          "definition": "Couche qualité : garde-fous automatisés qui empêchent la dérive, la régression ou la publication accidentelle de contenu opérable."
+        }
+      },
+      "related": [
+        "IG-TERM-INTERPRETIVE-DRIFT",
+        "IG-TERM-NON-OPERATIONAL",
+        "IG-TERM-CANONICAL-MANIFEST"
+      ]
+    },
+    {
+      "id": "IG-TERM-ENTITY-REGISTRY",
+      "slug": "entity-registry",
+      "termCode": "IG-T-0020",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Entity registry",
+          "definition": "A canonical index of entities (terms, documents) with stable identifiers, versions, and relationships."
+        },
+        "fr": {
+          "label": "Registre d’entités",
+          "definition": "Index canonique d’entités (termes, documents) avec identifiants stables, versions et relations."
+        }
+      },
+      "related": [
+        "IG-TERM-CANONICAL-MANIFEST",
+        "IG-TERM-VERSIONED-DOCTRINE"
+      ]
+    },
+    {
+      "id": "IG-TERM-CANONICAL-MANIFEST",
+      "slug": "canonical-manifest",
+      "termCode": "IG-T-0021",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Canonical manifest",
+          "definition": "A single machine-readable index that enumerates the public doctrine, its artifacts, and their status."
+        },
+        "fr": {
+          "label": "Manifest canonique",
+          "definition": "Index unique, lisible par machine, qui énumère la doctrine publique, ses artefacts et leur statut."
+        }
+      },
+      "related": [
+        "IG-TERM-DUALWEB",
+        "IG-TERM-ENTITY-REGISTRY",
+        "IG-TERM-Q-LAYER"
+      ]
+    },
+    {
+      "id": "IG-TERM-NORMATIVE",
+      "slug": "normative",
+      "termCode": "IG-T-0022",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Normative",
+          "definition": "Content that defines meaning, boundaries, or requirements within the doctrine."
+        },
+        "fr": {
+          "label": "Normatif",
+          "definition": "Contenu qui définit le sens, les bornes ou des exigences à l’intérieur de la doctrine."
+        }
+      },
+      "related": [
+        "IG-TERM-INFORMATIVE"
+      ]
+    },
+    {
+      "id": "IG-TERM-INFORMATIVE",
+      "slug": "informative",
+      "termCode": "IG-T-0023",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Informative",
+          "definition": "Content that explains, motivates, or contextualizes without defining requirements."
+        },
+        "fr": {
+          "label": "Informatif",
+          "definition": "Contenu qui explique, motive ou contextualise sans définir d’exigences."
+        }
+      },
+      "related": [
+        "IG-TERM-NORMATIVE"
+      ]
+    },
+    {
+      "id": "IG-TERM-NON-OPERATIONAL",
+      "slug": "non-operational",
+      "termCode": "IG-T-0024",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Non-operational",
+          "definition": "Deliberate absence of executable procedures, thresholds, weights, or playbooks."
+        },
+        "fr": {
+          "label": "Non opérable",
+          "definition": "Absence volontaire de procédures exécutables, de seuils, de poids ou de playbooks."
+        }
+      },
+      "related": [
+        "IG-TERM-Q-LAYER",
+        "IG-TERM-SCOPE-BOUNDARY"
+      ]
+    },
+    {
+      "id": "IG-TERM-VERSIONED-DOCTRINE",
+      "slug": "versioned-doctrine",
+      "termCode": "IG-T-0025",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Versioned doctrine",
+          "definition": "Doctrine whose changes are declared, dated, and traceable across versions."
+        },
+        "fr": {
+          "label": "Doctrine versionnée",
+          "definition": "Doctrine dont les changements sont déclarés, datés et traçables d’une version à l’autre."
+        }
+      },
+      "related": [
+        "IG-TERM-CANONICAL-SURFACE",
+        "IG-TERM-CANONICAL-MANIFEST"
+      ]
+    },
+    {
+      "id": "IG-TERM-DOCTRINE",
+      "slug": "doctrine",
+      "termCode": "IG-T-0026",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-02-26",
+      "variants": {
+        "en": {
+          "label": "Doctrine",
+          "definition": "A high-level conceptual and normative framework that declares intent and boundaries without prescribing execution."
+        },
+        "fr": {
+          "label": "Doctrine",
+          "definition": "Cadre conceptuel et normatif de haut niveau. La doctrine explique l’intention et les limites, sans prescrire une recette d’exécution."
+        }
+      },
+      "related": [
+        "IG-TERM-NON-OPERATIONAL",
+        "IG-TERM-VERSIONED-DOCTRINE"
+      ]
+    }
+  ]
+}
