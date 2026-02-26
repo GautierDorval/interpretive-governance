@@ -1,0 +1,3133 @@
+{
+  "@context": [
+    "https://schema.org",
+    {
+      "ig": "https://interpretive-governance.org/ns#"
+    }
+  ],
+  "@type": "Dataset",
+  "@id": "https://interpretive-governance.org/ig-manifest.json#dataset",
+  "name": "Interpretive Governance canonical manifest",
+  "description": "Machine-readable index of public doctrinal artifacts (non-operational) for Interpretive Governance.",
+  "url": "https://interpretive-governance.org/ig-manifest.json",
+  "identifier": "ig-manifest",
+  "version": "0.2.0",
+  "dateModified": "2026-02-26",
+  "inLanguage": [
+    "en",
+    "fr"
+  ],
+  "creator": {
+    "@id": "https://interpretive-governance.org/#person"
+  },
+  "isBasedOn": [
+    "https://gautierdorval.com/"
+  ],
+  "license": "https://interpretive-governance.org/COPYRIGHT.md",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Home",
+      "description": "Interpretive Governance: a doctrinal framework for bounded interpretation, constraint-first responses, and auditable machine outputs.",
+      "contentUrl": "https://interpretive-governance.org/",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-HOME"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "overview"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Well-known documents registry",
+      "contentUrl": "https://interpretive-governance.org/.well-known/ig-documents.json",
+      "encodingFormat": "application/json",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Well-known manifest",
+      "contentUrl": "https://interpretive-governance.org/.well-known/ig-manifest.json",
+      "encodingFormat": "application/ld+json",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Well-known terms registry",
+      "contentUrl": "https://interpretive-governance.org/.well-known/ig-terms.json",
+      "encodingFormat": "application/json",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Content policy (repo)",
+      "contentUrl": "https://interpretive-governance.org/CONTENT-POLICY.md",
+      "encodingFormat": "text/markdown",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Copyright (repo)",
+      "contentUrl": "https://interpretive-governance.org/COPYRIGHT.md",
+      "encodingFormat": "text/markdown",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Governance (repo)",
+      "contentUrl": "https://interpretive-governance.org/GOVERNANCE.md",
+      "encodingFormat": "text/markdown",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Architecture",
+      "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation.",
+      "contentUrl": "https://interpretive-governance.org/architecture",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-ARCHITECTURE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "architecture"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Author and governance",
+      "description": "About the author and governance posture: canonical references, discovery surfaces, and separation of public doctrine from operational execution.",
+      "contentUrl": "https://interpretive-governance.org/author",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-AUTHOR"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "governance"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Documents registry",
+      "contentUrl": "https://interpretive-governance.org/data/documents.json",
+      "encodingFormat": "application/json",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Terms registry",
+      "contentUrl": "https://interpretive-governance.org/data/terms.json",
+      "encodingFormat": "application/json",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Glossaire",
+      "description": "Glossaire doctrinal canonique : termes, définitions et identifiants stables pour une gouvernance AI-first.",
+      "contentUrl": "https://interpretive-governance.org/glossaire",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-GLOSSARY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "glossary"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Glossary",
+      "description": "Canonical doctrinal glossary: terms, definitions, and stable identifiers for machine-first governance.",
+      "contentUrl": "https://interpretive-governance.org/glossary",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-GLOSSARY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "glossary"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Humans",
+      "contentUrl": "https://interpretive-governance.org/humans.txt",
+      "encodingFormat": "text/plain",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Canonical manifest",
+      "contentUrl": "https://interpretive-governance.org/ig-manifest.json",
+      "encodingFormat": "application/ld+json",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "LLMs discovery",
+      "contentUrl": "https://interpretive-governance.org/llms.txt",
+      "encodingFormat": "text/plain",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Notes",
+      "description": "Short notes, updates, and non-operational clarifications for the Interpretive Governance doctrine.",
+      "contentUrl": "https://interpretive-governance.org/notes",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-NOTES"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "notes"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Portée",
+      "description": "Portée et limites de l’Interpretive Governance : ce qui est inclus, exclu, et volontairement non opérable.",
+      "contentUrl": "https://interpretive-governance.org/portee",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-SCOPE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "scope"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Principes",
+      "description": "Principes doctrinaux de l’Interpretive Governance : définitions, séparation doctrine/exécution, traçabilité, abstention et anti-drift sémantique.",
+      "contentUrl": "https://interpretive-governance.org/principes",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-PRINCIPLES"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "principles"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Principles",
+      "description": "Core principles of Interpretive Governance: separate claims from inferences, apply constraints before optimization, and require auditability.",
+      "contentUrl": "https://interpretive-governance.org/principles",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-PRINCIPLES"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "principles"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Robots",
+      "contentUrl": "https://interpretive-governance.org/robots.txt",
+      "encodingFormat": "text/plain",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Scope",
+      "description": "Scope boundaries of Interpretive Governance: what is included, excluded, and deliberately left non-operational.",
+      "contentUrl": "https://interpretive-governance.org/scope",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doc-id",
+          "value": "IG-DOC-SCOPE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:role",
+          "value": "scope"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Sitemap",
+      "contentUrl": "https://interpretive-governance.org/sitemap.xml",
+      "encodingFormat": "application/xml",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "informative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:operability",
+          "value": "non-operational"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "A2",
+      "description": "Autorité & redevabilité : mécanismes qui rendent explicites et vérifiables qui peut affirmer quoi, et selon quelles bornes.",
+      "contentUrl": "https://interpretive-governance.org/termes/a2",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-A2"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0018"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "draft"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Abstention",
+      "description": "Refus délibéré de répondre au-delà de ce que permettent les contraintes.",
+      "contentUrl": "https://interpretive-governance.org/termes/abstention",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-ABSTENTION"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0009"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Auditabilité",
+      "description": "Capacité d’inspecter, de reproduire et de justifier des sorties selon les contraintes et les sources déclarées.",
+      "contentUrl": "https://interpretive-governance.org/termes/auditability",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-AUDITABILITY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0012"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interprétation bornée",
+      "description": "Interprétation dont les conclusions permises sont bornées par le périmètre, les preuves et les contraintes déclarées.",
+      "contentUrl": "https://interpretive-governance.org/termes/bounded-interpretation",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-BOUNDED-INTERPRETATION"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0002"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Manifest canonique",
+      "description": "Index unique, lisible par machine, qui énumère la doctrine publique, ses artefacts et leur statut.",
+      "contentUrl": "https://interpretive-governance.org/termes/canonical-manifest",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CANONICAL-MANIFEST"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0021"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Surface canonique",
+      "description": "Référence stable et versionnée destinée à la découverte, à la citation et à la revue.",
+      "contentUrl": "https://interpretive-governance.org/termes/canonical-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CANONICAL-SURFACE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0013"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Assertion",
+      "description": "Énoncé présenté comme vrai.",
+      "contentUrl": "https://interpretive-governance.org/termes/claim",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CLAIM"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0006"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Contraintes d’abord",
+      "description": "Règle d’ordre : appliquer les contraintes avant d’optimiser la complétude, la fluidité ou la persuasion.",
+      "contentUrl": "https://interpretive-governance.org/termes/constraint-first",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CONSTRAINT-FIRST"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0003"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Dérivation",
+      "description": "Conclusion inférée à partir d’assertions et de règles ; elle doit être étiquetée et auditable.",
+      "contentUrl": "https://interpretive-governance.org/termes/derivation",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-DERIVATION"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0007"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Doctrine",
+      "description": "Cadre conceptuel et normatif de haut niveau. La doctrine explique l’intention et les limites, sans prescrire une recette d’exécution.",
+      "contentUrl": "https://interpretive-governance.org/termes/doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-DOCTRINE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0026"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "DualWeb",
+      "description": "Doctrine qui maintient des surfaces canoniques synchronisées : humaine et machine.",
+      "contentUrl": "https://interpretive-governance.org/termes/dualweb",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-DUALWEB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0016"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Registre d’entités",
+      "description": "Index canonique d’entités (termes, documents) avec identifiants stables, versions et relations.",
+      "contentUrl": "https://interpretive-governance.org/termes/entity-registry",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-ENTITY-REGISTRY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0020"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Surface humaine",
+      "description": "Partie de la doctrine optimisée pour la lecture, la discussion et la citation par des humains.",
+      "contentUrl": "https://interpretive-governance.org/termes/human-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-HUMAN-SURFACE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0014"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Informatif",
+      "description": "Contenu qui explique, motive ou contextualise sans définir d’exigences.",
+      "contentUrl": "https://interpretive-governance.org/termes/informative",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-INFORMATIVE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0023"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Dérive interprétative",
+      "description": "Glissement non contrôlé du sens entre la doctrine visée et les sorties produites, dans le temps ou selon le contexte.",
+      "contentUrl": "https://interpretive-governance.org/termes/interpretive-drift",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-INTERPRETIVE-DRIFT"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0010"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Gouvernance interprétative",
+      "description": "Approche doctrinale qui contraint ce qu’un système machine est autorisé à affirmer, selon le périmètre, les preuves et l’autorité.",
+      "contentUrl": "https://interpretive-governance.org/termes/interpretive-governance",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-INTERPRETIVE-GOVERNANCE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0001"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Surface machine",
+      "description": "Partie de la doctrine optimisée pour une découverte déterministe et un parsing machine (manifest, registres, données structurées).",
+      "contentUrl": "https://interpretive-governance.org/termes/machine-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-MACHINE-SURFACE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0015"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Non opérable",
+      "description": "Absence volontaire de procédures exécutables, de seuils, de poids ou de playbooks.",
+      "contentUrl": "https://interpretive-governance.org/termes/non-operational",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-NON-OPERATIONAL"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0024"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Normatif",
+      "description": "Contenu qui définit le sens, les bornes ou des exigences à l’intérieur de la doctrine.",
+      "contentUrl": "https://interpretive-governance.org/termes/normative",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-NORMATIVE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0022"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Provenance",
+      "description": "Origine traçable de l’information : source, date, et transformations.",
+      "contentUrl": "https://interpretive-governance.org/termes/provenance",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-PROVENANCE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0005"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Q‑Layer",
+      "description": "Couche qualité : garde-fous automatisés qui empêchent la dérive, la régression ou la publication accidentelle de contenu opérable.",
+      "contentUrl": "https://interpretive-governance.org/termes/q-layer",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-Q-LAYER"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0019"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "draft"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Frontière de périmètre",
+      "description": "Déclaration explicite de ce qui est dans le périmètre et hors périmètre d’une réponse ou d’un système.",
+      "contentUrl": "https://interpretive-governance.org/termes/scope-boundary",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-SCOPE-BOUNDARY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0004"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "SSA‑E",
+      "description": "Stabilisation sémantique & attribution (preuves) : pratiques qui stabilisent le sens et lient les termes à des sources ou à une autorité déclarée.",
+      "contentUrl": "https://interpretive-governance.org/termes/ssa-e",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-SSA-E"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0017"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "draft"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Traçabilité",
+      "description": "Capacité à relier une conclusion à des entrées, à des hypothèses et à une chaîne de justification.",
+      "contentUrl": "https://interpretive-governance.org/termes/traceability",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-TRACEABILITY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0011"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Inconnu",
+      "description": "Marqueur obligatoire lorsque la vérité ne peut pas être établie ; il ne doit pas être remplacé par une invention.",
+      "contentUrl": "https://interpretive-governance.org/termes/unknown",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-UNKNOWN"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0008"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Doctrine versionnée",
+      "description": "Doctrine dont les changements sont déclarés, datés et traçables d’une version à l’autre.",
+      "contentUrl": "https://interpretive-governance.org/termes/versioned-doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-VERSIONED-DOCTRINE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0025"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "A2",
+      "description": "Authority & Accountability: mechanisms that make who may assert what, and under which boundaries, explicit and verifiable.",
+      "contentUrl": "https://interpretive-governance.org/terms/a2",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-A2"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0018"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "draft"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Abstention",
+      "description": "A deliberate refusal to answer beyond what constraints permit.",
+      "contentUrl": "https://interpretive-governance.org/terms/abstention",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-ABSTENTION"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0009"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Auditability",
+      "description": "Capacity to inspect, reproduce, and justify outputs against declared constraints and sources.",
+      "contentUrl": "https://interpretive-governance.org/terms/auditability",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-AUDITABILITY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0012"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Bounded interpretation",
+      "description": "Interpretation whose allowable conclusions are bounded by declared scope, evidence, and constraints.",
+      "contentUrl": "https://interpretive-governance.org/terms/bounded-interpretation",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-BOUNDED-INTERPRETATION"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0002"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Canonical manifest",
+      "description": "A single machine-readable index that enumerates the public doctrine, its artifacts, and their status.",
+      "contentUrl": "https://interpretive-governance.org/terms/canonical-manifest",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CANONICAL-MANIFEST"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0021"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Canonical surface",
+      "description": "A stable, versioned reference intended for discovery, citation, and review.",
+      "contentUrl": "https://interpretive-governance.org/terms/canonical-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CANONICAL-SURFACE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0013"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Claim",
+      "description": "A statement asserted as true.",
+      "contentUrl": "https://interpretive-governance.org/terms/claim",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CLAIM"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0006"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Constraint-first",
+      "description": "Ordering rule: apply constraints before optimizing for completeness, fluency, or persuasion.",
+      "contentUrl": "https://interpretive-governance.org/terms/constraint-first",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-CONSTRAINT-FIRST"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0003"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Derivation",
+      "description": "A conclusion inferred from claims and rules; it must be labeled and auditable.",
+      "contentUrl": "https://interpretive-governance.org/terms/derivation",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-DERIVATION"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0007"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Doctrine",
+      "description": "A high-level conceptual and normative framework that declares intent and boundaries without prescribing execution.",
+      "contentUrl": "https://interpretive-governance.org/terms/doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-DOCTRINE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0026"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "DualWeb",
+      "description": "Doctrine that maintains synchronized canonical surfaces: human-readable and machine-readable.",
+      "contentUrl": "https://interpretive-governance.org/terms/dualweb",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-DUALWEB"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0016"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Entity registry",
+      "description": "A canonical index of entities (terms, documents) with stable identifiers, versions, and relationships.",
+      "contentUrl": "https://interpretive-governance.org/terms/entity-registry",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-ENTITY-REGISTRY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0020"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Human surface",
+      "description": "The part of the doctrine optimized for reading, discussion, and citation by humans.",
+      "contentUrl": "https://interpretive-governance.org/terms/human-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-HUMAN-SURFACE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0014"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Informative",
+      "description": "Content that explains, motivates, or contextualizes without defining requirements.",
+      "contentUrl": "https://interpretive-governance.org/terms/informative",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-INFORMATIVE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0023"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interpretive drift",
+      "description": "Uncontrolled shift in meaning between intended doctrine and produced outputs across time or contexts.",
+      "contentUrl": "https://interpretive-governance.org/terms/interpretive-drift",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-INTERPRETIVE-DRIFT"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0010"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interpretive governance",
+      "description": "A doctrinal approach that constrains what machine systems may claim, given scope, evidence, and authority.",
+      "contentUrl": "https://interpretive-governance.org/terms/interpretive-governance",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-INTERPRETIVE-GOVERNANCE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0001"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Machine surface",
+      "description": "The part of the doctrine optimized for deterministic discovery and parsing by machines (manifest, registries, structured data).",
+      "contentUrl": "https://interpretive-governance.org/terms/machine-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-MACHINE-SURFACE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0015"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Non-operational",
+      "description": "Deliberate absence of executable procedures, thresholds, weights, or playbooks.",
+      "contentUrl": "https://interpretive-governance.org/terms/non-operational",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-NON-OPERATIONAL"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0024"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Normative",
+      "description": "Content that defines meaning, boundaries, or requirements within the doctrine.",
+      "contentUrl": "https://interpretive-governance.org/terms/normative",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-NORMATIVE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0022"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Provenance",
+      "description": "Traceable origin of information, including source, time, and transformation steps.",
+      "contentUrl": "https://interpretive-governance.org/terms/provenance",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-PROVENANCE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0005"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Q‑Layer",
+      "description": "Quality layer: automated gates that prevent drift, regression, or accidental operability in public surfaces.",
+      "contentUrl": "https://interpretive-governance.org/terms/q-layer",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-Q-LAYER"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0019"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "draft"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Scope boundary",
+      "description": "An explicit statement of what is in-scope and out-of-scope for a response or system.",
+      "contentUrl": "https://interpretive-governance.org/terms/scope-boundary",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-SCOPE-BOUNDARY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0004"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "SSA‑E",
+      "description": "Semantic Stabilization & Attribution (Evidence): practices that stabilize meaning and bind terms to sources or declared authority.",
+      "contentUrl": "https://interpretive-governance.org/terms/ssa-e",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-SSA-E"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0017"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "draft"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Traceability",
+      "description": "Ability to link an output or conclusion back to inputs, assumptions, and a chain of justification.",
+      "contentUrl": "https://interpretive-governance.org/terms/traceability",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-TRACEABILITY"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0011"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Unknown",
+      "description": "A required placeholder when truth status cannot be established; it must not be replaced by invention.",
+      "contentUrl": "https://interpretive-governance.org/terms/unknown",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-UNKNOWN"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0008"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Versioned doctrine",
+      "description": "Doctrine whose changes are declared, dated, and traceable across versions.",
+      "contentUrl": "https://interpretive-governance.org/terms/versioned-doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-id",
+          "value": "IG-TERM-VERSIONED-DOCTRINE"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:termCode",
+          "value": "IG-T-0025"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-type",
+          "value": "DefinedTerm"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:classification",
+          "value": "normative"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:entity-status",
+          "value": "canonical"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:status",
+          "value": "doctrinal"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "ig:doctrine-version",
+          "value": "0.2.0"
+        }
+      ]
+    }
+  ]
+}
