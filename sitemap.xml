@@ -7,57 +7,17 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/"/>
   </url>
   <url>
-    <loc>https://interpretive-governance.org/architecture</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/architecture"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/author</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/author"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/glossaire</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/glossary"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/glossaire"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/glossary</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/glossary"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/glossaire"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/notes</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/notes"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/portee</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/scope"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/portee"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/principes</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/principles"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/principes"/>
-  </url>
-  <url>
     <loc>https://interpretive-governance.org/principles</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/principles"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/principes"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/architecture</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/architecture"/>
   </url>
   <url>
     <loc>https://interpretive-governance.org/scope</loc>
@@ -67,367 +27,43 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/portee"/>
   </url>
   <url>
-    <loc>https://interpretive-governance.org/termes/a2</loc>
+    <loc>https://interpretive-governance.org/glossary</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/a2"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/a2"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/glossary"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/glossaire"/>
   </url>
   <url>
-    <loc>https://interpretive-governance.org/termes/abstention</loc>
+    <loc>https://interpretive-governance.org/author</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/abstention"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/abstention"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/author"/>
   </url>
   <url>
-    <loc>https://interpretive-governance.org/termes/auditability</loc>
+    <loc>https://interpretive-governance.org/notes</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/auditability"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/auditability"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/notes"/>
   </url>
   <url>
-    <loc>https://interpretive-governance.org/termes/bounded-interpretation</loc>
+    <loc>https://interpretive-governance.org/principes</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/bounded-interpretation"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/bounded-interpretation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/principes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/principles"/>
   </url>
   <url>
-    <loc>https://interpretive-governance.org/termes/canonical-manifest</loc>
+    <loc>https://interpretive-governance.org/portee</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/canonical-manifest"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/canonical-manifest"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/portee"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/scope"/>
   </url>
   <url>
-    <loc>https://interpretive-governance.org/termes/canonical-surface</loc>
+    <loc>https://interpretive-governance.org/glossaire</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/canonical-surface"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/canonical-surface"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/claim</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/claim"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/claim"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/constraint-first</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/constraint-first"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/constraint-first"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/derivation</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/derivation"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/derivation"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/doctrine</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/doctrine"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/doctrine"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/dualweb</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/dualweb"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/dualweb"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/entity-registry</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/entity-registry"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/entity-registry"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/human-surface</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/human-surface"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/human-surface"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/informative</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/informative"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/informative"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/interpretive-drift</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/interpretive-drift"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/interpretive-drift"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/interpretive-governance</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/interpretive-governance"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/interpretive-governance"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/machine-surface</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/machine-surface"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/machine-surface"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/non-operational</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/non-operational"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/non-operational"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/normative</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/normative"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/normative"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/provenance</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/provenance"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/provenance"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/q-layer</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/q-layer"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/q-layer"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/scope-boundary</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/scope-boundary"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/scope-boundary"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/ssa-e</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/ssa-e"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/ssa-e"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/traceability</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/traceability"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/traceability"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/unknown</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/unknown"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/unknown"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/termes/versioned-doctrine</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/versioned-doctrine"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/versioned-doctrine"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/a2</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/a2"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/a2"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/abstention</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/abstention"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/abstention"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/auditability</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/auditability"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/auditability"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/bounded-interpretation</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/bounded-interpretation"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/bounded-interpretation"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/canonical-manifest</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/canonical-manifest"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/canonical-manifest"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/canonical-surface</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/canonical-surface"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/canonical-surface"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/claim</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/claim"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/claim"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/constraint-first</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/constraint-first"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/constraint-first"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/derivation</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/derivation"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/derivation"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/doctrine</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/doctrine"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/doctrine"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/dualweb</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/dualweb"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/dualweb"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/entity-registry</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/entity-registry"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/entity-registry"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/human-surface</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/human-surface"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/human-surface"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/informative</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/informative"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/informative"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/interpretive-drift</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/interpretive-drift"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/interpretive-drift"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/interpretive-governance</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/interpretive-governance"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/interpretive-governance"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/machine-surface</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/machine-surface"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/machine-surface"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/non-operational</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/non-operational"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/non-operational"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/normative</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/normative"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/normative"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/provenance</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/provenance"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/provenance"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/q-layer</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/q-layer"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/q-layer"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/scope-boundary</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/scope-boundary"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/scope-boundary"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/ssa-e</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/ssa-e"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/ssa-e"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/traceability</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/traceability"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/traceability"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/unknown</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/unknown"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/unknown"/>
-  </url>
-  <url>
-    <loc>https://interpretive-governance.org/terms/versioned-doctrine</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/terms/versioned-doctrine"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/termes/versioned-doctrine"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/glossaire"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/glossary"/>
   </url>
 </urlset>
