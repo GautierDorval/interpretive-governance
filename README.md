@@ -26,4 +26,12 @@ Build settings:
 
 
 ## Cache bust
-Assets are versioned with ?v=20260224-1.
+Assets are versioned with ?v=20260226-1.
+
+
+## URL policy
+
+Cloudflare Pages serves clean URLs (no `.html`) and redirects `.html` to the clean form.
+
+- Use clean internal links: `/principles` (not `/principles.html`)
+- Keep `sitemap.xml` on clean URLs only

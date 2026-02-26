@@ -34,3 +34,15 @@ code{background:#0f1420;border:1px solid var(--line);padding:1px 6px;border-radi
   h1{font-size:28px}
   .kv{grid-template-columns:1fr}
 }
+
+
+/* French legacy pages (classes) */
+.site-header{border-bottom:1px solid var(--line);background:rgba(18,23,36,.55);backdrop-filter: blur(6px);position:sticky;top:0;z-index:10}
+.content{max-width:980px;margin:0 auto;padding:28px 18px}
+.brand-mark img{display:block}
+.brand-text{display:flex;flex-direction:column}
+.brand-name{color:var(--fg);font-weight:700}
+.brand-sub{color:var(--muted);font-size:13px}
+.note{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:14px;margin:14px 0}
+.small{color:var(--muted);font-size:13px}
+.footer-line{color:var(--muted);font-size:13px}

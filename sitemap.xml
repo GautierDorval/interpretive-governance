@@ -1,10 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://interpretive-governance.org/</loc></url>
-  <url><loc>https://interpretive-governance.org/principles.html</loc></url>
-  <url><loc>https://interpretive-governance.org/architecture.html</loc></url>
-  <url><loc>https://interpretive-governance.org/scope.html</loc></url>
-  <url><loc>https://interpretive-governance.org/glossary.html</loc></url>
-  <url><loc>https://interpretive-governance.org/author.html</loc></url>
-  <url><loc>https://interpretive-governance.org/notes.html</loc></url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://interpretive-governance.org/</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/principles</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/principles"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/principes"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/architecture</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/architecture"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/scope</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/scope"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/portee"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/glossary</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/glossary"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/glossaire"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/author</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/author"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/notes</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/notes"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/principes</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/principes"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/principles"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/portee</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/portee"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/scope"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/glossaire</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://interpretive-governance.org/glossaire"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/glossary"/>
+  </url>
 </urlset>

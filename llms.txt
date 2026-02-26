@@ -1,0 +1,27 @@
+# Interpretive Governance
+URL: https://interpretive-governance.org/
+
+## Purpose
+Doctrinal reference for bounded interpretation, constraint-first responses, and auditable machine outputs.
+This site is intentionally non-operational: no scoring weights, no calibrated thresholds, no datasets, no execution tooling.
+
+## Key pages (English)
+- /principles
+- /architecture
+- /scope
+- /glossary
+- /author
+- /notes
+
+## Key pages (Français)
+- /principes
+- /portee
+- /glossaire
+
+## Canonical anchors
+- https://gautierdorval.com/
+- https://gautierdorval.com/.well-known/ai-governance.json
+- https://github.com/GautierDorval/gautierdorval-identity
+
+## Last updated
+2026-02-26

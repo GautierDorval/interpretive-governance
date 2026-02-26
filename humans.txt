@@ -1,0 +1,5 @@
+# Humans
+Author: Gautier Dorval
+Canonical identity: https://gautierdorval.com/
+Identity anchor: https://github.com/GautierDorval/gautierdorval-identity
+Project: Interpretive Governance (doctrinal, non-operational)
