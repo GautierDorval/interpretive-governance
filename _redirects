@@ -1,0 +1,46 @@
+# Interpretive Governance - redirects (Cloudflare Pages _redirects)
+
+# ---- Normalize directory roots ----
+/en /en/ 301
+/fr /fr/ 301
+
+# ---- Remove .html (explicit, 301) ----
+/index.html / 301
+/en/index.html /en/ 301
+/fr/index.html /fr/ 301
+
+/en/terms/:slug.html /en/terms/:slug 301
+/fr/termes/:slug.html /fr/termes/:slug 301
+/en/:page.html /en/:page 301
+/fr/:page.html /fr/:page 301
+
+# ---- Legacy (no language prefix) -> new canonical ----
+/home /en/ 301
+/principles /en/principles 301
+/principes /fr/principes 301
+/scope /en/scope 301
+/portee /fr/portee 301
+/architecture /en/architecture 301
+/glossary /en/glossary 301
+/glossaire /fr/glossaire 301
+/author /en/author 301
+/auteur /fr/auteur 301
+/notes /en/notes 301
+
+# Legacy .html -> new canonical
+/principles.html /en/principles 301
+/principes.html /fr/principes 301
+/scope.html /en/scope 301
+/portee.html /fr/portee 301
+/architecture.html /en/architecture 301
+/glossary.html /en/glossary 301
+/glossaire.html /fr/glossaire 301
+/author.html /en/author 301
+/auteur.html /fr/auteur 301
+/notes.html /en/notes 301
+
+# Legacy term paths
+/terms/:slug.html /en/terms/:slug 301
+/termes/:slug.html /fr/termes/:slug 301
+/terms/* /en/terms/:splat 301
+/termes/* /fr/termes/:splat 301

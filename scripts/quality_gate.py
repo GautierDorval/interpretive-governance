@@ -26,6 +26,9 @@ DOCS = ROOT / "data" / "documents.json"
 
 CLASSIFICATIONS = {"normative", "informative"}
 
+LANG_EN = "en"
+LANG_FR = "fr-CA"
+
 def fail(msg: str) -> None:
     print(f"[FAIL] {msg}")
     sys.exit(1)
@@ -38,8 +41,12 @@ def ok(msg: str) -> None:
 
 def canonical_from_rel(rel: Path) -> str:
     rel_s = rel.as_posix()
-    if rel_s == "index.html":
-        return SITE + "/"
+
+    # Any */index.html is a clean directory URL.
+    if rel_s.endswith("index.html"):
+        prefix = rel_s[: -len("index.html")]  # "" or "en/" or "fr/"
+        return SITE.rstrip("/") + "/" + prefix
+
     if rel_s.endswith(".html"):
         rel_s = rel_s[:-5]
     return SITE + "/" + rel_s
@@ -71,16 +78,23 @@ def read_json(path: Path) -> dict:
         fail(f"invalid JSON in {path.relative_to(ROOT)}: {e}")
 
 def file_for_url(url_path: str) -> Path:
-    if url_path == "/":
-        return ROOT / "index.html"
+    """Map a canonical URL path to a repository HTML file."""
     if not url_path.startswith("/"):
         url_path = "/" + url_path
+
+    if url_path == "/":
+        return ROOT / "index.html"
+
+    if url_path.endswith("/"):
+        rel = url_path.strip("/") + "/index.html"
+        return ROOT / rel
+
     rel = url_path.lstrip("/") + ".html"
     return ROOT / rel
 
 def is_term_page(rel: Path) -> bool:
     s = rel.as_posix()
-    return s.startswith("terms/") or s.startswith("termes/")
+    return "/terms/" in s or "/termes/" in s
 
 def main() -> None:
     # ---- Machine surface checks (registries + manifest) ----
@@ -114,19 +128,20 @@ def main() -> None:
 
     # ---- HTML checks (all indexable pages) ----
     html_files = sorted(
-        [p for p in ROOT.rglob("*.html")
-         if p.name != "404.html"
-         and not any(part.startswith(".") for part in p.relative_to(ROOT).parts)],
+        [
+            p for p in ROOT.rglob("*.html")
+            if p.name != "404.html"
+            and not any(part.startswith(".") for part in p.relative_to(ROOT).parts)
+        ],
         key=lambda p: p.as_posix()
     )
 
     if not html_files:
         fail("no HTML files found")
 
-    titles: list[tuple[str,str]] = []
-    descriptions: list[tuple[str,str]] = []
-    canonicals: list[tuple[str,str]] = []
-    internal_html_links: list[tuple[str,str]] = []
+    titles: list[tuple[str, str]] = []
+    descriptions: list[tuple[str, str]] = []
+    internal_html_links: list[tuple[str, str]] = []
 
     for p in html_files:
         rel = p.relative_to(ROOT)
@@ -158,7 +173,6 @@ def main() -> None:
             warn(f"{rel}: canonical mismatch (found {can}, expected {expected_can})")
         if not can.startswith(SITE):
             warn(f"{rel}: canonical not on {SITE} ({can})")
-        canonicals.append((rel.as_posix(), can))
 
         # JSON-LD
         if not soup.find("script", attrs={"type": "application/ld+json"}):
@@ -250,13 +264,13 @@ def main() -> None:
             if not target.exists():
                 fail(f"documents registry: missing HTML file for {url_path} -> {target.relative_to(ROOT)}")
 
-    # Terms registry: ensure pages exist for every term (en/fr)
+    # Terms registry: ensure pages exist for every term (en/fr-CA)
     for t in terms.get("terms", []):
         slug = t.get("slug")
         tid = t.get("id")
         if not slug or not tid:
             fail("terms registry: term missing id or slug")
-        for lang, prefix in [("en", "/terms/"), ("fr", "/termes/")]:
+        for prefix in ["/en/terms/", "/fr/termes/"]:
             url_path = prefix + slug
             target = file_for_url(url_path)
             if not target.exists():

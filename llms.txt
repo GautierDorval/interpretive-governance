@@ -5,33 +5,43 @@ URL: https://interpretive-governance.org/
 Doctrinal reference for bounded interpretation, constraint-first responses, and auditable machine outputs.
 This site is intentionally non-operational: no scoring weights, no calibrated thresholds, no datasets, no execution tooling.
 
+## Language entrypoints
+- /en/ (English)
+- /fr/ (Français - fr-CA)
+- / (x-default selector)
+
 ## Key pages (English)
-- /principles
-- /architecture
-- /scope
-- /glossary
-- /author
-- /notes
+/en/principles
+/en/architecture
+/en/scope
+/en/glossary
+/en/author
+/en/notes
 
 ## Pages (Français)
-- /principes
-- /portee
-- /glossaire
+/fr/principes
+/fr/architecture
+/fr/portee
+/fr/glossaire
+/fr/auteur
+/fr/notes
 
 ## Machine surfaces (DualWeb)
 - /ig-manifest.json
 - /data/terms.json
 - /data/documents.json
-- /terms/ (English term pages)
-- /termes/ (French term pages)
+- /en/terms/ (English term pages)
+- /fr/termes/ (French term pages)
+- /.well-known/ig-manifest.json
+- /.well-known/ig-terms.json
+- /.well-known/ig-documents.json
+- /sitemap.xml
 
 ## Canonical anchors
 - https://gautierdorval.com/
 - https://gautierdorval.com/.well-known/ai-governance.json
 - https://github.com/GautierDorval/gautierdorval-identity
 
-## Doctrine version
-0.2.0
-
-## Last updated
-2026-02-26
+## Doctrine
+Version: 0.2.0
+Generated: 2026-02-26

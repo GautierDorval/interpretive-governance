@@ -16,7 +16,7 @@
           "label": "Interpretive governance",
           "definition": "A doctrinal approach that constrains what machine systems may claim, given scope, evidence, and authority."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Gouvernance interprétative",
           "definition": "Approche doctrinale qui contraint ce qu’un système machine est autorisé à affirmer, selon le périmètre, les preuves et l’autorité."
         }
@@ -39,7 +39,7 @@
           "label": "Bounded interpretation",
           "definition": "Interpretation whose allowable conclusions are bounded by declared scope, evidence, and constraints."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Interprétation bornée",
           "definition": "Interprétation dont les conclusions permises sont bornées par le périmètre, les preuves et les contraintes déclarées."
         }
@@ -62,7 +62,7 @@
           "label": "Constraint-first",
           "definition": "Ordering rule: apply constraints before optimizing for completeness, fluency, or persuasion."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Contraintes d’abord",
           "definition": "Règle d’ordre : appliquer les contraintes avant d’optimiser la complétude, la fluidité ou la persuasion."
         }
@@ -84,7 +84,7 @@
           "label": "Scope boundary",
           "definition": "An explicit statement of what is in-scope and out-of-scope for a response or system."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Frontière de périmètre",
           "definition": "Déclaration explicite de ce qui est dans le périmètre et hors périmètre d’une réponse ou d’un système."
         }
@@ -106,7 +106,7 @@
           "label": "Provenance",
           "definition": "Traceable origin of information, including source, time, and transformation steps."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Provenance",
           "definition": "Origine traçable de l’information : source, date, et transformations."
         }
@@ -128,7 +128,7 @@
           "label": "Claim",
           "definition": "A statement asserted as true."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Assertion",
           "definition": "Énoncé présenté comme vrai."
         }
@@ -150,7 +150,7 @@
           "label": "Derivation",
           "definition": "A conclusion inferred from claims and rules; it must be labeled and auditable."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Dérivation",
           "definition": "Conclusion inférée à partir d’assertions et de règles ; elle doit être étiquetée et auditable."
         }
@@ -172,7 +172,7 @@
           "label": "Unknown",
           "definition": "A required placeholder when truth status cannot be established; it must not be replaced by invention."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Inconnu",
           "definition": "Marqueur obligatoire lorsque la vérité ne peut pas être établie ; il ne doit pas être remplacé par une invention."
         }
@@ -194,7 +194,7 @@
           "label": "Abstention",
           "definition": "A deliberate refusal to answer beyond what constraints permit."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Abstention",
           "definition": "Refus délibéré de répondre au-delà de ce que permettent les contraintes."
         }
@@ -216,7 +216,7 @@
           "label": "Interpretive drift",
           "definition": "Uncontrolled shift in meaning between intended doctrine and produced outputs across time or contexts."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Dérive interprétative",
           "definition": "Glissement non contrôlé du sens entre la doctrine visée et les sorties produites, dans le temps ou selon le contexte."
         }
@@ -238,7 +238,7 @@
           "label": "Traceability",
           "definition": "Ability to link an output or conclusion back to inputs, assumptions, and a chain of justification."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Traçabilité",
           "definition": "Capacité à relier une conclusion à des entrées, à des hypothèses et à une chaîne de justification."
         }
@@ -260,7 +260,7 @@
           "label": "Auditability",
           "definition": "Capacity to inspect, reproduce, and justify outputs against declared constraints and sources."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Auditabilité",
           "definition": "Capacité d’inspecter, de reproduire et de justifier des sorties selon les contraintes et les sources déclarées."
         }
@@ -282,7 +282,7 @@
           "label": "Canonical surface",
           "definition": "A stable, versioned reference intended for discovery, citation, and review."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Surface canonique",
           "definition": "Référence stable et versionnée destinée à la découverte, à la citation et à la revue."
         }
@@ -304,7 +304,7 @@
           "label": "Human surface",
           "definition": "The part of the doctrine optimized for reading, discussion, and citation by humans."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Surface humaine",
           "definition": "Partie de la doctrine optimisée pour la lecture, la discussion et la citation par des humains."
         }
@@ -326,7 +326,7 @@
           "label": "Machine surface",
           "definition": "The part of the doctrine optimized for deterministic discovery and parsing by machines (manifest, registries, structured data)."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Surface machine",
           "definition": "Partie de la doctrine optimisée pour une découverte déterministe et un parsing machine (manifest, registres, données structurées)."
         }
@@ -348,7 +348,7 @@
           "label": "DualWeb",
           "definition": "Doctrine that maintains synchronized canonical surfaces: human-readable and machine-readable."
         },
-        "fr": {
+        "fr-CA": {
           "label": "DualWeb",
           "definition": "Doctrine qui maintient des surfaces canoniques synchronisées : humaine et machine."
         }
@@ -371,7 +371,7 @@
           "label": "SSA‑E",
           "definition": "Semantic Stabilization & Attribution (Evidence): practices that stabilize meaning and bind terms to sources or declared authority."
         },
-        "fr": {
+        "fr-CA": {
           "label": "SSA‑E",
           "definition": "Stabilisation sémantique & attribution (preuves) : pratiques qui stabilisent le sens et lient les termes à des sources ou à une autorité déclarée."
         }
@@ -393,7 +393,7 @@
           "label": "A2",
           "definition": "Authority & Accountability: mechanisms that make who may assert what, and under which boundaries, explicit and verifiable."
         },
-        "fr": {
+        "fr-CA": {
           "label": "A2",
           "definition": "Autorité & redevabilité : mécanismes qui rendent explicites et vérifiables qui peut affirmer quoi, et selon quelles bornes."
         }
@@ -416,7 +416,7 @@
           "label": "Q‑Layer",
           "definition": "Quality layer: automated gates that prevent drift, regression, or accidental operability in public surfaces."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Q‑Layer",
           "definition": "Couche qualité : garde-fous automatisés qui empêchent la dérive, la régression ou la publication accidentelle de contenu opérable."
         }
@@ -439,7 +439,7 @@
           "label": "Entity registry",
           "definition": "A canonical index of entities (terms, documents) with stable identifiers, versions, and relationships."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Registre d’entités",
           "definition": "Index canonique d’entités (termes, documents) avec identifiants stables, versions et relations."
         }
@@ -461,7 +461,7 @@
           "label": "Canonical manifest",
           "definition": "A single machine-readable index that enumerates the public doctrine, its artifacts, and their status."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Manifest canonique",
           "definition": "Index unique, lisible par machine, qui énumère la doctrine publique, ses artefacts et leur statut."
         }
@@ -484,7 +484,7 @@
           "label": "Normative",
           "definition": "Content that defines meaning, boundaries, or requirements within the doctrine."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Normatif",
           "definition": "Contenu qui définit le sens, les bornes ou des exigences à l’intérieur de la doctrine."
         }
@@ -505,7 +505,7 @@
           "label": "Informative",
           "definition": "Content that explains, motivates, or contextualizes without defining requirements."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Informatif",
           "definition": "Contenu qui explique, motive ou contextualise sans définir d’exigences."
         }
@@ -526,7 +526,7 @@
           "label": "Non-operational",
           "definition": "Deliberate absence of executable procedures, thresholds, weights, or playbooks."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Non opérable",
           "definition": "Absence volontaire de procédures exécutables, de seuils, de poids ou de playbooks."
         }
@@ -548,7 +548,7 @@
           "label": "Versioned doctrine",
           "definition": "Doctrine whose changes are declared, dated, and traceable across versions."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Doctrine versionnée",
           "definition": "Doctrine dont les changements sont déclarés, datés et traçables d’une version à l’autre."
         }
@@ -570,7 +570,7 @@
           "label": "Doctrine",
           "definition": "A high-level conceptual and normative framework that declares intent and boundaries without prescribing execution."
         },
-        "fr": {
+        "fr-CA": {
           "label": "Doctrine",
           "definition": "Cadre conceptuel et normatif de haut niveau. La doctrine explique l’intention et les limites, sans prescrire une recette d’exécution."
         }

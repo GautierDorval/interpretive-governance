@@ -6,11 +6,11 @@ Source of truth:
 - data/terms.json
 - data/documents.json
 
-Outputs:
+Outputs (generated, deterministic):
 - ig-manifest.json (+ /.well-known mirror)
 - sitemap.xml
-- glossary.html / glossaire.html
-- terms/* and termes/* pages (+ JSON-LD)
+- /en/glossary.html and /fr/glossaire.html
+- /en/terms/* and /fr/termes/* pages (+ JSON-LD)
 - /.well-known mirrors of registries
 """
 
@@ -28,7 +28,11 @@ SITE = "https://interpretive-governance.org"
 TERMS_PATH = ROOT / "data" / "terms.json"
 DOCS_PATH = ROOT / "data" / "documents.json"
 
-ASSET_VERSION = "20260226-2"  # bump when assets change
+LANG_EN = "en"
+LANG_FR = "fr-CA"
+LANG_XDEFAULT = "x-default"
+
+ASSET_VERSION = "20260227-1"  # bump when assets change
 
 def read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -37,17 +41,17 @@ def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
 
-def pv(property_id: str, value: str) -> dict:
-    return {"@type": "PropertyValue", "propertyID": property_id, "value": value}
-
-def truncate(s: str, max_len: int=175) -> str:
-    s = s.strip()
+def truncate(s: str, max_len: int = 175) -> str:
+    s = (s or "").strip()
     if len(s) <= max_len:
         return s
-    cut = s[:max_len-1]
+    cut = s[: max_len - 1]
     if " " in cut:
         cut = cut.rsplit(" ", 1)[0]
     return cut + "…"
+
+def og_locale_for(lang: str) -> str:
+    return "fr_CA" if lang.startswith("fr") else "en_US"
 
 def jsonld_website_person() -> list[dict]:
     return [
@@ -57,7 +61,7 @@ def jsonld_website_person() -> list[dict]:
             "url": f"{SITE}/",
             "name": "Interpretive Governance",
             "description": "Doctrinal reference for bounded interpretation and auditable machine responses (non-operational).",
-            "inLanguage": ["en", "fr"],
+            "inLanguage": [LANG_EN, LANG_FR],
             "publisher": {"@id": f"{SITE}/#person"},
         },
         {
@@ -65,7 +69,10 @@ def jsonld_website_person() -> list[dict]:
             "@id": f"{SITE}/#person",
             "name": "Gautier Dorval",
             "url": "https://gautierdorval.com/",
-            "sameAs": ["https://gautierdorval.com/", "https://github.com/GautierDorval/gautierdorval-identity"],
+            "sameAs": [
+                "https://gautierdorval.com/",
+                "https://github.com/GautierDorval/gautierdorval-identity",
+            ],
         },
     ]
 
@@ -87,7 +94,7 @@ def jsonld_webpage(
     - registries (data/terms.json, data/documents.json)
     - canonical manifest (ig-manifest.json)
 
-    The embedded JSON-LD is intentionally minimal and strictly Schema.org.
+    Embedded JSON-LD is intentionally minimal and strictly Schema.org.
     """
     ids: list[str] = []
     if doc_id:
@@ -114,10 +121,8 @@ def jsonld_webpage(
 
     return page
 
-
-def jsonld_defined_term(term: dict, lang: str, canonical: str, termset_id: str, doctrine_version: str) -> dict:
+def jsonld_defined_term(term: dict, lang: str, canonical: str, termset_id: str) -> dict:
     v = term["variants"][lang]
-    # Keep DefinedTerm payload minimal: some validators are strict on allowed properties.
     return {
         "@type": "DefinedTerm",
         "@id": f"{canonical}#term",
@@ -130,12 +135,26 @@ def jsonld_defined_term(term: dict, lang: str, canonical: str, termset_id: str, 
         "inDefinedTermSet": {"@id": termset_id},
     }
 
+def hreflang_cluster(en_url: str, fr_url: str, x_default_url: str | None = None) -> dict[str, str]:
+    alts = {
+        LANG_EN: en_url,
+        LANG_FR: fr_url,
+    }
+    alts[LANG_XDEFAULT] = x_default_url or f"{SITE}/"
+    return alts
 
-
-
-def make_head_common(title: str, description: str, canonical: str, lang: str, hreflang_alt: dict[str,str], doctrine_version: str, og_type: str="website") -> str:
-    og_locale = "en_US" if lang == "en" else "fr_CA"
-    hreflang_links = "\n".join([f'<link rel="alternate" hreflang="{hl}" href="{url}"/>' for hl, url in hreflang_alt.items()])
+def make_head_common(
+    title: str,
+    description: str,
+    canonical: str,
+    lang: str,
+    hreflang_alt: dict[str, str],
+    doctrine_version: str,
+    og_type: str = "website",
+) -> str:
+    hreflang_links = "\n".join(
+        [f'<link rel="alternate" hreflang="{hl}" href="{url}"/>' for hl, url in hreflang_alt.items()]
+    )
     return f"""<meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{escape(title)}</title>
@@ -156,33 +175,35 @@ def make_head_common(title: str, description: str, canonical: str, lang: str, hr
 <meta property="og:type" content="{og_type}"/>
 <meta property="og:url" content="{canonical}"/>
 <meta property="og:image" content="{SITE}/assets/og.png"/>
-<meta property="og:locale" content="{og_locale}"/>
+<meta property="og:locale" content="{og_locale_for(lang)}"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{escape(title)}"/>
 <meta name="twitter:description" content="{escape(description)}"/>
 <meta name="twitter:image" content="{SITE}/assets/og.png"/>"""
 
 def make_topbar_nav(lang: str, active: str, lang_switch_href: str, lang_switch_label: str) -> str:
-    if lang == "en":
+    is_en = lang == LANG_EN
+    if is_en:
         items = [
-            ("home", "Home", "/"),
-            ("principles", "Principles", "/principles"),
-            ("architecture", "Architecture", "/architecture"),
-            ("scope", "Scope", "/scope"),
-            ("glossary", "Glossary", "/glossary"),
-            ("author", "Author &amp; governance", "/author"),
-            ("notes", "Notes", "/notes"),
+            ("home", "Home", "/en/"),
+            ("principles", "Principles", "/en/principles"),
+            ("architecture", "Architecture", "/en/architecture"),
+            ("scope", "Scope", "/en/scope"),
+            ("glossary", "Glossary", "/en/glossary"),
+            ("author", "Author &amp; governance", "/en/author"),
+            ("notes", "Notes", "/en/notes"),
         ]
     else:
         items = [
-            ("home", "Accueil", "/"),
-            ("principles", "Principes", "/principes"),
-            ("architecture", "Architecture", "/architecture"),
-            ("scope", "Portée", "/portee"),
-            ("glossary", "Glossaire", "/glossaire"),
-            ("author", "Auteur &amp; gouvernance", "/author"),
-            ("notes", "Notes", "/notes"),
+            ("home", "Accueil", "/fr/"),
+            ("principles", "Principes", "/fr/principes"),
+            ("architecture", "Architecture", "/fr/architecture"),
+            ("scope", "Portée", "/fr/portee"),
+            ("glossary", "Glossaire", "/fr/glossaire"),
+            ("author", "Auteur &amp; gouvernance", "/fr/auteur"),
+            ("notes", "Notes", "/fr/notes"),
         ]
+
     links = []
     for key, label, href in items:
         cls = "active" if key == active else ""
@@ -190,17 +211,23 @@ def make_topbar_nav(lang: str, active: str, lang_switch_href: str, lang_switch_l
     links.append(f'<a href="{lang_switch_href}">{lang_switch_label}</a>')
     return "\n".join(links)
 
-def make_term_page(term: dict, lang: str, doctrine_version: str, last_updated: str, term_by_id: dict[str,dict]) -> str:
-    is_en = lang == "en"
+def make_term_page(term: dict, lang: str, doctrine_version: str, last_updated: str, term_by_id: dict[str, dict]) -> str:
+    is_en = lang == LANG_EN
     label = term["variants"][lang]["label"]
     definition = term["variants"][lang]["definition"]
-    prefix = "/terms/" if is_en else "/termes/"
-    other_prefix = "/termes/" if is_en else "/terms/"
+    prefix = "/en/terms/" if is_en else "/fr/termes/"
+    other_prefix = "/fr/termes/" if is_en else "/en/terms/"
     canonical = SITE + prefix + term["slug"]
     title = f"{label} | {'Glossary' if is_en else 'Glossaire'} | Interpretive Governance"
     description = truncate(definition)
-    hreflang_alt = {"en": SITE + "/terms/" + term["slug"], "fr": SITE + "/termes/" + term["slug"]}
+
+    hreflang_alt = hreflang_cluster(
+        SITE + "/en/terms/" + term["slug"],
+        SITE + "/fr/termes/" + term["slug"],
+        SITE + "/",
+    )
     head_common = make_head_common(title, description, canonical, lang, hreflang_alt, doctrine_version)
+
     entity_meta = f"""
 <meta name="ig:classification" content="normative"/>
 <meta name="ig:entity-type" content="DefinedTerm"/>
@@ -208,12 +235,12 @@ def make_term_page(term: dict, lang: str, doctrine_version: str, last_updated: s
 <meta name="ig:termCode" content="{term['termCode']}"/>
 <meta name="ig:entity-status" content="{term['status']}"/>""".strip()
 
-    termset_id = f"{SITE}/glossary#definedtermset" if is_en else f"{SITE}/glossaire#definedtermset"
+    termset_id = f"{SITE}/en/glossary#definedtermset" if is_en else f"{SITE}/fr/glossaire#definedtermset"
     graph = jsonld_website_person() + [
         jsonld_webpage(canonical, label, description, lang, "normative", doctrine_version, entity_id=term["id"]),
-        jsonld_defined_term(term, lang, canonical, termset_id, doctrine_version),
+        jsonld_defined_term(term, lang, canonical, termset_id),
     ]
-    jsonld = json.dumps({"@context":"https://schema.org","@graph":graph}, ensure_ascii=False)
+    jsonld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
 
     related_ids = term.get("related", [])
     related_links = []
@@ -290,15 +317,21 @@ def make_term_page(term: dict, lang: str, doctrine_version: str, last_updated: s
 """
 
 def make_glossary_index(lang: str, terms: list[dict], doctrine_version: str, last_updated: str) -> str:
-    is_en = lang == "en"
+    is_en = lang == LANG_EN
     docs = read_json(DOCS_PATH)["documents"]
     doc = next(d for d in docs if d["id"] == "IG-DOC-GLOSSARY")
     v = doc["variants"][lang]
     canonical = SITE + v["url"]
     title = f"{v['title']} | Interpretive Governance"
     description = v["description"]
-    hreflang_alt = {"en": SITE + "/glossary", "fr": SITE + "/glossaire"}
+
+    hreflang_alt = hreflang_cluster(
+        SITE + "/en/glossary",
+        SITE + "/fr/glossaire",
+        SITE + "/",
+    )
     head_common = make_head_common(title, description, canonical, lang, hreflang_alt, doctrine_version)
+
     doc_meta = f"""
 <meta name="ig:doc-id" content="{doc['id']}"/>
 <meta name="ig:classification" content="{doc['classification']}"/>""".strip()
@@ -306,6 +339,7 @@ def make_glossary_index(lang: str, terms: list[dict], doctrine_version: str, las
     graph = jsonld_website_person() + [
         jsonld_webpage(canonical, v["title"], description, lang, doc["classification"], doctrine_version, doc_id=doc["id"]),
     ]
+
     termset = {
         "@type": "DefinedTermSet",
         "@id": f"{canonical}#definedtermset",
@@ -321,7 +355,7 @@ def make_glossary_index(lang: str, terms: list[dict], doctrine_version: str, las
         label = t["variants"][lang]["label"]
         definition = t["variants"][lang]["definition"]
         slug = t["slug"]
-        href = ("/terms/" if is_en else "/termes/") + slug
+        href = ("/en/terms/" if is_en else "/fr/termes/") + slug
         status = t["status"]
         status_badge = ""
         if status != "canonical":
@@ -337,14 +371,16 @@ def make_glossary_index(lang: str, terms: list[dict], doctrine_version: str, las
             "termCode": t["termCode"],
             "identifier": t["id"],
         })
-    graph.append(termset)
-    jsonld = json.dumps({"@context":"https://schema.org","@graph":graph}, ensure_ascii=False)
 
-    nav = make_topbar_nav(lang, "glossary", "/glossaire" if is_en else "/glossary", "Français" if is_en else "English")
+    graph.append(termset)
+    jsonld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
+
+    nav = make_topbar_nav(lang, "glossary", "/fr/glossaire" if is_en else "/en/glossary", "Français" if is_en else "English")
     badge_label = "normative" if is_en else "normatif"
     intro = (
         "Canonical doctrinal definitions with stable identifiers. This glossary is intentionally non-operational."
-        if is_en else
+        if is_en
+        else
         "Définitions doctrinales canoniques avec identifiants stables. Ce glossaire est volontairement non opérable."
     )
 
@@ -399,7 +435,7 @@ def make_glossary_index(lang: str, terms: list[dict], doctrine_version: str, las
 </html>
 """
 
-def sitemap_url_entry(loc: str, alternates: dict[str,str], last_updated: str) -> str:
+def sitemap_url_entry(loc: str, alternates: dict[str, str], last_updated: str) -> str:
     lines = ["  <url>"]
     lines.append(f"    <loc>{xml_escape(loc)}</loc>")
     lines.append(f"    <lastmod>{last_updated}</lastmod>")
@@ -411,20 +447,40 @@ def sitemap_url_entry(loc: str, alternates: dict[str,str], last_updated: str) ->
 
 def build_sitemap(documents: list[dict], terms: list[dict], last_updated: str) -> str:
     entries: list[str] = []
-    # docs
-    for doc in documents:
-        alts: dict[str,str] = {}
-        for hl, v in doc["variants"].items():
-            url = v["url"]
-            alts[hl] = SITE + ("/" if url == "/" else url)
-        for _, full in alts.items():
-            entries.append(sitemap_url_entry(full, alts, last_updated))
-    # terms
-    for t in terms:
-        alts = {"en": SITE + "/terms/" + t["slug"], "fr": SITE + "/termes/" + t["slug"]}
-        for _, full in alts.items():
-            entries.append(sitemap_url_entry(full, alts, last_updated))
 
+    # Document pages
+    for doc in documents:
+        doc_id = doc.get("id")
+        variants = doc.get("variants", {}) if isinstance(doc.get("variants"), dict) else {}
+
+        # Build hreflang cluster
+        if doc_id == "IG-DOC-ROOT":
+            alts = {
+                LANG_XDEFAULT: f"{SITE}/",
+                LANG_EN: f"{SITE}/en/",
+                LANG_FR: f"{SITE}/fr/",
+            }
+        else:
+            en_url = SITE + variants[LANG_EN]["url"]
+            fr_url = SITE + variants[LANG_FR]["url"]
+            alts = hreflang_cluster(en_url, fr_url, f"{SITE}/")
+
+        # Emit <url> entries for each loc we want indexed
+        for loc in sorted(set(alts.values())):
+            # Avoid adding the x-default selector twice if it maps to the same URL
+            entries.append(sitemap_url_entry(loc, alts, last_updated))
+
+    # Term pages
+    for t in terms:
+        alts = {
+            LANG_EN: SITE + "/en/terms/" + t["slug"],
+            LANG_FR: SITE + "/fr/termes/" + t["slug"],
+            LANG_XDEFAULT: f"{SITE}/",
+        }
+        for loc in sorted(set(alts.values())):
+            entries.append(sitemap_url_entry(loc, alts, last_updated))
+
+    # Sort by loc for deterministic output
     entries_sorted = sorted(entries, key=lambda s: re.search(r"<loc>(.*?)</loc>", s).group(1))
     return """<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -434,22 +490,27 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
     dist: list[dict] = []
 
     for doc in documents:
-        for lang, v in doc["variants"].items():
+        for lang, v in doc.get("variants", {}).items():
             url = v["url"]
             full = SITE + ("/" if url == "/" else url)
+
+            in_language = lang
+            if lang == LANG_XDEFAULT:
+                in_language = [LANG_EN, LANG_FR]
+
             dist.append({
                 "@type": "DataDownload",
                 "name": v["title"],
                 "description": v["description"],
                 "contentUrl": full,
                 "encodingFormat": "text/html",
-                "inLanguage": lang,
+                "inLanguage": in_language,
                 "identifier": doc["id"],
                 "keywords": [doc["role"], doc["classification"], "doctrinal", doc["operability"], f"doctrine:{doctrine_version}"],
             })
 
     for t in terms:
-        for lang, prefix in [("en","/terms/"), ("fr","/termes/")]:
+        for lang, prefix in [(LANG_EN, "/en/terms/"), (LANG_FR, "/fr/termes/")]:
             dist.append({
                 "@type": "DataDownload",
                 "name": t["variants"][lang]["label"],
@@ -482,8 +543,8 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
             "name": name,
             "contentUrl": SITE + path,
             "encodingFormat": fmt,
-                "identifier": path,
-                "keywords": ["informative", "doctrinal", "non-operational", f"doctrine:{doctrine_version}"],
+            "identifier": path,
+            "keywords": ["informative", "doctrinal", "non-operational", f"doctrine:{doctrine_version}"],
         })
 
     return {
@@ -496,11 +557,11 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
         "identifier": "ig-manifest",
         "version": doctrine_version,
         "dateModified": last_updated,
-        "inLanguage": ["en", "fr"],
+        "inLanguage": [LANG_EN, LANG_FR],
         "creator": {"@id": SITE + "/#person"},
         "isBasedOn": ["https://gautierdorval.com/"],
         "license": SITE + "/COPYRIGHT.md",
-        "distribution": sorted(dist, key=lambda d: d.get("contentUrl","")),
+        "distribution": sorted(dist, key=lambda d: d.get("contentUrl", "")),
     }
 
 def main() -> None:
@@ -519,25 +580,25 @@ def main() -> None:
     write(well_known / "ig-terms.json", json.dumps(terms_json, ensure_ascii=False, indent=2) + "\n")
     write(well_known / "ig-documents.json", json.dumps(docs_json, ensure_ascii=False, indent=2) + "\n")
 
-    # Glossary index pages
-    write(ROOT / "glossary.html", make_glossary_index("en", terms, doctrine_version, last_updated))
-    write(ROOT / "glossaire.html", make_glossary_index("fr", terms, doctrine_version, last_updated))
+    # Glossary index pages (generated)
+    write(ROOT / "en" / "glossary.html", make_glossary_index(LANG_EN, terms, doctrine_version, last_updated))
+    write(ROOT / "fr" / "glossaire.html", make_glossary_index(LANG_FR, terms, doctrine_version, last_updated))
 
-    # Term pages
+    # Term pages (generated)
     term_by_id = {t["id"]: t for t in terms}
-    terms_dir = ROOT / "terms"
-    termes_dir = ROOT / "termes"
-    terms_dir.mkdir(exist_ok=True)
-    termes_dir.mkdir(exist_ok=True)
+    terms_dir = ROOT / "en" / "terms"
+    termes_dir = ROOT / "fr" / "termes"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    termes_dir.mkdir(parents=True, exist_ok=True)
 
     for t in terms:
-        write(terms_dir / f"{t['slug']}.html", make_term_page(t, "en", doctrine_version, last_updated, term_by_id))
-        write(termes_dir / f"{t['slug']}.html", make_term_page(t, "fr", doctrine_version, last_updated, term_by_id))
+        write(terms_dir / f"{t['slug']}.html", make_term_page(t, LANG_EN, doctrine_version, last_updated, term_by_id))
+        write(termes_dir / f"{t['slug']}.html", make_term_page(t, LANG_FR, doctrine_version, last_updated, term_by_id))
 
-    # Sitemap
+    # Sitemap (generated)
     write(ROOT / "sitemap.xml", build_sitemap(documents, terms, last_updated))
 
-    # Manifest (+ mirror)
+    # Manifest (+ mirror) (generated)
     manifest = build_manifest(documents, terms, doctrine_version, last_updated)
     manifest_text = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     write(ROOT / "ig-manifest.json", manifest_text)

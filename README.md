@@ -35,11 +35,13 @@ Build settings:
 
 ## Cache bust
 
-Assets are versioned with `?v=20260226-2`.
+Assets are versioned with `?v=20260227-1`.
 
 ## URL policy
 
-Cloudflare Pages serves clean URLs (no `.html`) and redirects `.html` to the clean form.
+Cloudflare Pages serves clean URLs (no `.html`). This repo enforces:
 
-- Use clean internal links: `/principles` (not `/principles.html`)
-- Keep `sitemap.xml` on clean URLs only
+- Language roots: `/en/` and `/fr/` (root `/` is `x-default` selector)
+- Clean internal links (no `.html`): `/en/principles` (not `/en/principles.html`)
+- 301 canonicalization via `_redirects` (legacy paths and `.html` forms)
+- `sitemap.xml` uses canonical clean URLs only
