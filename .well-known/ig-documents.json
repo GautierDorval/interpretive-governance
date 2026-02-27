@@ -5,6 +5,20 @@
   "site": "https://interpretive-governance.org",
   "documents": [
     {
+      "id": "IG-DOC-ROOT",
+      "role": "selector",
+      "classification": "informative",
+      "status": "doctrinal",
+      "operability": "non-operational",
+      "variants": {
+        "x-default": {
+          "url": "/",
+          "title": "Select language",
+          "description": "Choose your language for Interpretive Governance (doctrinal, non-operational)."
+        }
+      }
+    },
+    {
       "id": "IG-DOC-HOME",
       "role": "overview",
       "classification": "informative",
@@ -12,42 +26,52 @@
       "operability": "non-operational",
       "variants": {
         "en": {
-          "url": "/",
+          "url": "/en/",
           "title": "Home",
           "description": "Interpretive Governance: a doctrinal framework for bounded interpretation, constraint-first responses, and auditable machine outputs."
+        },
+        "fr-CA": {
+          "url": "/fr/",
+          "title": "Accueil",
+          "description": "Interpretive Governance : un cadre doctrinal pour l’interprétation bornée, les réponses constraint-first et des sorties machine auditables."
         }
       }
     },
     {
       "id": "IG-DOC-PRINCIPLES",
-      "role": "principles",
+      "role": "doctrine",
       "classification": "normative",
       "status": "doctrinal",
       "operability": "non-operational",
       "variants": {
         "en": {
-          "url": "/principles",
+          "url": "/en/principles",
           "title": "Principles",
           "description": "Core principles of Interpretive Governance: separate claims from inferences, apply constraints before optimization, and require auditability."
         },
-        "fr": {
-          "url": "/principes",
+        "fr-CA": {
+          "url": "/fr/principes",
           "title": "Principes",
-          "description": "Principes doctrinaux de l’Interpretive Governance : définitions, séparation doctrine/exécution, traçabilité, abstention et anti-drift sémantique."
+          "description": "Principes doctrinaux de l’Interpretive Governance : définitions, séparation doctrine/exécution, traçabilité, abstention et anti-drift sémantique."
         }
       }
     },
     {
       "id": "IG-DOC-ARCHITECTURE",
-      "role": "architecture",
+      "role": "model",
       "classification": "informative",
       "status": "doctrinal",
       "operability": "non-operational",
       "variants": {
         "en": {
-          "url": "/architecture",
+          "url": "/en/architecture",
           "title": "Architecture",
           "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation."
+        },
+        "fr-CA": {
+          "url": "/fr/architecture",
+          "title": "Architecture conceptuelle",
+          "description": "Une architecture conceptuelle pour l’Interpretive Governance : couches, rôles et frontières pour une interprétation auditable."
         }
       }
     },
@@ -59,33 +83,33 @@
       "operability": "non-operational",
       "variants": {
         "en": {
-          "url": "/scope",
+          "url": "/en/scope",
           "title": "Scope",
           "description": "Scope boundaries of Interpretive Governance: what is included, excluded, and deliberately left non-operational."
         },
-        "fr": {
-          "url": "/portee",
+        "fr-CA": {
+          "url": "/fr/portee",
           "title": "Portée",
-          "description": "Portée et limites de l’Interpretive Governance : ce qui est inclus, exclu, et volontairement non opérable."
+          "description": "Portée et limites de l’Interpretive Governance : ce qui est inclus, exclu et volontairement non opérable."
         }
       }
     },
     {
       "id": "IG-DOC-GLOSSARY",
-      "role": "glossary",
+      "role": "vocabulary",
       "classification": "normative",
       "status": "doctrinal",
       "operability": "non-operational",
       "variants": {
         "en": {
-          "url": "/glossary",
+          "url": "/en/glossary",
           "title": "Glossary",
-          "description": "Canonical doctrinal glossary: terms, definitions, and stable identifiers for machine-first governance."
+          "description": "Canonical doctrinal definitions with stable identifiers (non-operational)."
         },
-        "fr": {
-          "url": "/glossaire",
+        "fr-CA": {
+          "url": "/fr/glossaire",
           "title": "Glossaire",
-          "description": "Glossaire doctrinal canonique : termes, définitions et identifiants stables pour une gouvernance AI-first."
+          "description": "Définitions doctrinales canoniques avec identifiants stables (non opérable)."
         }
       }
     },
@@ -97,9 +121,14 @@
       "operability": "non-operational",
       "variants": {
         "en": {
-          "url": "/author",
+          "url": "/en/author",
           "title": "Author and governance",
           "description": "About the author and governance posture: canonical references, discovery surfaces, and separation of public doctrine from operational execution."
+        },
+        "fr-CA": {
+          "url": "/fr/auteur",
+          "title": "Auteur et gouvernance",
+          "description": "À propos de l’auteur et de la posture de gouvernance : références canoniques, surfaces de découverte et séparation doctrine/exécution."
         }
       }
     },
@@ -111,9 +140,14 @@
       "operability": "non-operational",
       "variants": {
         "en": {
-          "url": "/notes",
+          "url": "/en/notes",
           "title": "Notes",
           "description": "Short notes, updates, and non-operational clarifications for the Interpretive Governance doctrine."
+        },
+        "fr-CA": {
+          "url": "/fr/notes",
+          "title": "Notes et mises à jour",
+          "description": "Notes, mises à jour et clarifications non opérables pour la doctrine Interpretive Governance."
         }
       }
     }

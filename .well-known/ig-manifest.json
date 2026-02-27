@@ -15,7 +15,7 @@
   "dateModified": "2026-02-26",
   "inLanguage": [
     "en",
-    "fr"
+    "fr-CA"
   ],
   "creator": {
     "@id": "https://interpretive-governance.org/#person"
@@ -27,14 +27,17 @@
   "distribution": [
     {
       "@type": "DataDownload",
-      "name": "Home",
-      "description": "Interpretive Governance: a doctrinal framework for bounded interpretation, constraint-first responses, and auditable machine outputs.",
+      "name": "Select language",
+      "description": "Choose your language for Interpretive Governance (doctrinal, non-operational).",
       "contentUrl": "https://interpretive-governance.org/",
       "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-DOC-HOME",
+      "inLanguage": [
+        "en",
+        "fr-CA"
+      ],
+      "identifier": "IG-DOC-ROOT",
       "keywords": [
-        "overview",
+        "selector",
         "informative",
         "doctrinal",
         "non-operational",
@@ -121,38 +124,6 @@
     },
     {
       "@type": "DataDownload",
-      "name": "Architecture",
-      "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation.",
-      "contentUrl": "https://interpretive-governance.org/architecture",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-DOC-ARCHITECTURE",
-      "keywords": [
-        "architecture",
-        "informative",
-        "doctrinal",
-        "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Author and governance",
-      "description": "About the author and governance posture: canonical references, discovery surfaces, and separation of public doctrine from operational execution.",
-      "contentUrl": "https://interpretive-governance.org/author",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-DOC-AUTHOR",
-      "keywords": [
-        "governance",
-        "informative",
-        "doctrinal",
-        "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
       "name": "Documents registry",
       "contentUrl": "https://interpretive-governance.org/data/documents.json",
       "encodingFormat": "application/json",
@@ -179,15 +150,47 @@
     },
     {
       "@type": "DataDownload",
-      "name": "Glossaire",
-      "description": "Glossaire doctrinal canonique : termes, définitions et identifiants stables pour une gouvernance AI-first.",
-      "contentUrl": "https://interpretive-governance.org/glossaire",
+      "name": "Home",
+      "description": "Interpretive Governance: a doctrinal framework for bounded interpretation, constraint-first responses, and auditable machine outputs.",
+      "contentUrl": "https://interpretive-governance.org/en/",
       "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-DOC-GLOSSARY",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-HOME",
       "keywords": [
-        "glossary",
-        "normative",
+        "overview",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Architecture",
+      "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation.",
+      "contentUrl": "https://interpretive-governance.org/en/architecture",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-ARCHITECTURE",
+      "keywords": [
+        "model",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Author and governance",
+      "description": "About the author and governance posture: canonical references, discovery surfaces, and separation of public doctrine from operational execution.",
+      "contentUrl": "https://interpretive-governance.org/en/author",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-AUTHOR",
+      "keywords": [
+        "governance",
+        "informative",
         "doctrinal",
         "non-operational",
         "doctrine:0.2.0"
@@ -196,16 +199,1060 @@
     {
       "@type": "DataDownload",
       "name": "Glossary",
-      "description": "Canonical doctrinal glossary: terms, definitions, and stable identifiers for machine-first governance.",
-      "contentUrl": "https://interpretive-governance.org/glossary",
+      "description": "Canonical doctrinal definitions with stable identifiers (non-operational).",
+      "contentUrl": "https://interpretive-governance.org/en/glossary",
       "encodingFormat": "text/html",
       "inLanguage": "en",
       "identifier": "IG-DOC-GLOSSARY",
       "keywords": [
-        "glossary",
+        "vocabulary",
         "normative",
         "doctrinal",
         "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Notes",
+      "description": "Short notes, updates, and non-operational clarifications for the Interpretive Governance doctrine.",
+      "contentUrl": "https://interpretive-governance.org/en/notes",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-NOTES",
+      "keywords": [
+        "notes",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Principles",
+      "description": "Core principles of Interpretive Governance: separate claims from inferences, apply constraints before optimization, and require auditability.",
+      "contentUrl": "https://interpretive-governance.org/en/principles",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-PRINCIPLES",
+      "keywords": [
+        "doctrine",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Scope",
+      "description": "Scope boundaries of Interpretive Governance: what is included, excluded, and deliberately left non-operational.",
+      "contentUrl": "https://interpretive-governance.org/en/scope",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-SCOPE",
+      "keywords": [
+        "scope",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "A2",
+      "description": "Authority & Accountability: mechanisms that make who may assert what, and under which boundaries, explicit and verifiable.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/a2",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-A2",
+      "keywords": [
+        "IG-T-0018",
+        "normative",
+        "draft",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Abstention",
+      "description": "A deliberate refusal to answer beyond what constraints permit.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/abstention",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-ABSTENTION",
+      "keywords": [
+        "IG-T-0009",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Auditability",
+      "description": "Capacity to inspect, reproduce, and justify outputs against declared constraints and sources.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/auditability",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-AUDITABILITY",
+      "keywords": [
+        "IG-T-0012",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Bounded interpretation",
+      "description": "Interpretation whose allowable conclusions are bounded by declared scope, evidence, and constraints.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/bounded-interpretation",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-BOUNDED-INTERPRETATION",
+      "keywords": [
+        "IG-T-0002",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Canonical manifest",
+      "description": "A single machine-readable index that enumerates the public doctrine, its artifacts, and their status.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/canonical-manifest",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-CANONICAL-MANIFEST",
+      "keywords": [
+        "IG-T-0021",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Canonical surface",
+      "description": "A stable, versioned reference intended for discovery, citation, and review.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/canonical-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-CANONICAL-SURFACE",
+      "keywords": [
+        "IG-T-0013",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Claim",
+      "description": "A statement asserted as true.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/claim",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-CLAIM",
+      "keywords": [
+        "IG-T-0006",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Constraint-first",
+      "description": "Ordering rule: apply constraints before optimizing for completeness, fluency, or persuasion.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/constraint-first",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-CONSTRAINT-FIRST",
+      "keywords": [
+        "IG-T-0003",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Derivation",
+      "description": "A conclusion inferred from claims and rules; it must be labeled and auditable.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/derivation",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-DERIVATION",
+      "keywords": [
+        "IG-T-0007",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Doctrine",
+      "description": "A high-level conceptual and normative framework that declares intent and boundaries without prescribing execution.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-DOCTRINE",
+      "keywords": [
+        "IG-T-0026",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "DualWeb",
+      "description": "Doctrine that maintains synchronized canonical surfaces: human-readable and machine-readable.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/dualweb",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-DUALWEB",
+      "keywords": [
+        "IG-T-0016",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Entity registry",
+      "description": "A canonical index of entities (terms, documents) with stable identifiers, versions, and relationships.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/entity-registry",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-ENTITY-REGISTRY",
+      "keywords": [
+        "IG-T-0020",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Human surface",
+      "description": "The part of the doctrine optimized for reading, discussion, and citation by humans.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/human-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-HUMAN-SURFACE",
+      "keywords": [
+        "IG-T-0014",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Informative",
+      "description": "Content that explains, motivates, or contextualizes without defining requirements.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/informative",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-INFORMATIVE",
+      "keywords": [
+        "IG-T-0023",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interpretive drift",
+      "description": "Uncontrolled shift in meaning between intended doctrine and produced outputs across time or contexts.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/interpretive-drift",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-INTERPRETIVE-DRIFT",
+      "keywords": [
+        "IG-T-0010",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interpretive governance",
+      "description": "A doctrinal approach that constrains what machine systems may claim, given scope, evidence, and authority.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/interpretive-governance",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-INTERPRETIVE-GOVERNANCE",
+      "keywords": [
+        "IG-T-0001",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Machine surface",
+      "description": "The part of the doctrine optimized for deterministic discovery and parsing by machines (manifest, registries, structured data).",
+      "contentUrl": "https://interpretive-governance.org/en/terms/machine-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-MACHINE-SURFACE",
+      "keywords": [
+        "IG-T-0015",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Non-operational",
+      "description": "Deliberate absence of executable procedures, thresholds, weights, or playbooks.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/non-operational",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-NON-OPERATIONAL",
+      "keywords": [
+        "IG-T-0024",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Normative",
+      "description": "Content that defines meaning, boundaries, or requirements within the doctrine.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/normative",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-NORMATIVE",
+      "keywords": [
+        "IG-T-0022",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Provenance",
+      "description": "Traceable origin of information, including source, time, and transformation steps.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/provenance",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-PROVENANCE",
+      "keywords": [
+        "IG-T-0005",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Q‑Layer",
+      "description": "Quality layer: automated gates that prevent drift, regression, or accidental operability in public surfaces.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/q-layer",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-Q-LAYER",
+      "keywords": [
+        "IG-T-0019",
+        "normative",
+        "draft",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Scope boundary",
+      "description": "An explicit statement of what is in-scope and out-of-scope for a response or system.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/scope-boundary",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-SCOPE-BOUNDARY",
+      "keywords": [
+        "IG-T-0004",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "SSA‑E",
+      "description": "Semantic Stabilization & Attribution (Evidence): practices that stabilize meaning and bind terms to sources or declared authority.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/ssa-e",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-SSA-E",
+      "keywords": [
+        "IG-T-0017",
+        "normative",
+        "draft",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Traceability",
+      "description": "Ability to link an output or conclusion back to inputs, assumptions, and a chain of justification.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/traceability",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-TRACEABILITY",
+      "keywords": [
+        "IG-T-0011",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Unknown",
+      "description": "A required placeholder when truth status cannot be established; it must not be replaced by invention.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/unknown",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-UNKNOWN",
+      "keywords": [
+        "IG-T-0008",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Versioned doctrine",
+      "description": "Doctrine whose changes are declared, dated, and traceable across versions.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/versioned-doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-VERSIONED-DOCTRINE",
+      "keywords": [
+        "IG-T-0025",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Accueil",
+      "description": "Interpretive Governance : un cadre doctrinal pour l’interprétation bornée, les réponses constraint-first et des sorties machine auditables.",
+      "contentUrl": "https://interpretive-governance.org/fr/",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-HOME",
+      "keywords": [
+        "overview",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Architecture conceptuelle",
+      "description": "Une architecture conceptuelle pour l’Interpretive Governance : couches, rôles et frontières pour une interprétation auditable.",
+      "contentUrl": "https://interpretive-governance.org/fr/architecture",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-ARCHITECTURE",
+      "keywords": [
+        "model",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Auteur et gouvernance",
+      "description": "À propos de l’auteur et de la posture de gouvernance : références canoniques, surfaces de découverte et séparation doctrine/exécution.",
+      "contentUrl": "https://interpretive-governance.org/fr/auteur",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-AUTHOR",
+      "keywords": [
+        "governance",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Glossaire",
+      "description": "Définitions doctrinales canoniques avec identifiants stables (non opérable).",
+      "contentUrl": "https://interpretive-governance.org/fr/glossaire",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-GLOSSARY",
+      "keywords": [
+        "vocabulary",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Notes et mises à jour",
+      "description": "Notes, mises à jour et clarifications non opérables pour la doctrine Interpretive Governance.",
+      "contentUrl": "https://interpretive-governance.org/fr/notes",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-NOTES",
+      "keywords": [
+        "notes",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Portée",
+      "description": "Portée et limites de l’Interpretive Governance : ce qui est inclus, exclu et volontairement non opérable.",
+      "contentUrl": "https://interpretive-governance.org/fr/portee",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-SCOPE",
+      "keywords": [
+        "scope",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Principes",
+      "description": "Principes doctrinaux de l’Interpretive Governance : définitions, séparation doctrine/exécution, traçabilité, abstention et anti-drift sémantique.",
+      "contentUrl": "https://interpretive-governance.org/fr/principes",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-PRINCIPLES",
+      "keywords": [
+        "doctrine",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "A2",
+      "description": "Autorité & redevabilité : mécanismes qui rendent explicites et vérifiables qui peut affirmer quoi, et selon quelles bornes.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/a2",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-A2",
+      "keywords": [
+        "IG-T-0018",
+        "normative",
+        "draft",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Abstention",
+      "description": "Refus délibéré de répondre au-delà de ce que permettent les contraintes.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/abstention",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-ABSTENTION",
+      "keywords": [
+        "IG-T-0009",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Auditabilité",
+      "description": "Capacité d’inspecter, de reproduire et de justifier des sorties selon les contraintes et les sources déclarées.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/auditability",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-AUDITABILITY",
+      "keywords": [
+        "IG-T-0012",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interprétation bornée",
+      "description": "Interprétation dont les conclusions permises sont bornées par le périmètre, les preuves et les contraintes déclarées.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/bounded-interpretation",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-BOUNDED-INTERPRETATION",
+      "keywords": [
+        "IG-T-0002",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Manifest canonique",
+      "description": "Index unique, lisible par machine, qui énumère la doctrine publique, ses artefacts et leur statut.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/canonical-manifest",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-CANONICAL-MANIFEST",
+      "keywords": [
+        "IG-T-0021",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Surface canonique",
+      "description": "Référence stable et versionnée destinée à la découverte, à la citation et à la revue.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/canonical-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-CANONICAL-SURFACE",
+      "keywords": [
+        "IG-T-0013",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Assertion",
+      "description": "Énoncé présenté comme vrai.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/claim",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-CLAIM",
+      "keywords": [
+        "IG-T-0006",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Contraintes d’abord",
+      "description": "Règle d’ordre : appliquer les contraintes avant d’optimiser la complétude, la fluidité ou la persuasion.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/constraint-first",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-CONSTRAINT-FIRST",
+      "keywords": [
+        "IG-T-0003",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Dérivation",
+      "description": "Conclusion inférée à partir d’assertions et de règles ; elle doit être étiquetée et auditable.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/derivation",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-DERIVATION",
+      "keywords": [
+        "IG-T-0007",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Doctrine",
+      "description": "Cadre conceptuel et normatif de haut niveau. La doctrine explique l’intention et les limites, sans prescrire une recette d’exécution.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-DOCTRINE",
+      "keywords": [
+        "IG-T-0026",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "DualWeb",
+      "description": "Doctrine qui maintient des surfaces canoniques synchronisées : humaine et machine.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/dualweb",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-DUALWEB",
+      "keywords": [
+        "IG-T-0016",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Registre d’entités",
+      "description": "Index canonique d’entités (termes, documents) avec identifiants stables, versions et relations.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/entity-registry",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-ENTITY-REGISTRY",
+      "keywords": [
+        "IG-T-0020",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Surface humaine",
+      "description": "Partie de la doctrine optimisée pour la lecture, la discussion et la citation par des humains.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/human-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-HUMAN-SURFACE",
+      "keywords": [
+        "IG-T-0014",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Informatif",
+      "description": "Contenu qui explique, motive ou contextualise sans définir d’exigences.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/informative",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-INFORMATIVE",
+      "keywords": [
+        "IG-T-0023",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Dérive interprétative",
+      "description": "Glissement non contrôlé du sens entre la doctrine visée et les sorties produites, dans le temps ou selon le contexte.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/interpretive-drift",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-INTERPRETIVE-DRIFT",
+      "keywords": [
+        "IG-T-0010",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Gouvernance interprétative",
+      "description": "Approche doctrinale qui contraint ce qu’un système machine est autorisé à affirmer, selon le périmètre, les preuves et l’autorité.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/interpretive-governance",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-INTERPRETIVE-GOVERNANCE",
+      "keywords": [
+        "IG-T-0001",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Surface machine",
+      "description": "Partie de la doctrine optimisée pour une découverte déterministe et un parsing machine (manifest, registres, données structurées).",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/machine-surface",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-MACHINE-SURFACE",
+      "keywords": [
+        "IG-T-0015",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Non opérable",
+      "description": "Absence volontaire de procédures exécutables, de seuils, de poids ou de playbooks.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/non-operational",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-NON-OPERATIONAL",
+      "keywords": [
+        "IG-T-0024",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Normatif",
+      "description": "Contenu qui définit le sens, les bornes ou des exigences à l’intérieur de la doctrine.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/normative",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-NORMATIVE",
+      "keywords": [
+        "IG-T-0022",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Provenance",
+      "description": "Origine traçable de l’information : source, date, et transformations.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/provenance",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-PROVENANCE",
+      "keywords": [
+        "IG-T-0005",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Q‑Layer",
+      "description": "Couche qualité : garde-fous automatisés qui empêchent la dérive, la régression ou la publication accidentelle de contenu opérable.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/q-layer",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-Q-LAYER",
+      "keywords": [
+        "IG-T-0019",
+        "normative",
+        "draft",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Frontière de périmètre",
+      "description": "Déclaration explicite de ce qui est dans le périmètre et hors périmètre d’une réponse ou d’un système.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/scope-boundary",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-SCOPE-BOUNDARY",
+      "keywords": [
+        "IG-T-0004",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "SSA‑E",
+      "description": "Stabilisation sémantique & attribution (preuves) : pratiques qui stabilisent le sens et lient les termes à des sources ou à une autorité déclarée.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/ssa-e",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-SSA-E",
+      "keywords": [
+        "IG-T-0017",
+        "normative",
+        "draft",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Traçabilité",
+      "description": "Capacité à relier une conclusion à des entrées, à des hypothèses et à une chaîne de justification.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/traceability",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-TRACEABILITY",
+      "keywords": [
+        "IG-T-0011",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Inconnu",
+      "description": "Marqueur obligatoire lorsque la vérité ne peut pas être établie ; il ne doit pas être remplacé par une invention.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/unknown",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-UNKNOWN",
+      "keywords": [
+        "IG-T-0008",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Doctrine versionnée",
+      "description": "Doctrine dont les changements sont déclarés, datés et traçables d’une version à l’autre.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/versioned-doctrine",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-VERSIONED-DOCTRINE",
+      "keywords": [
+        "IG-T-0025",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
         "doctrine:0.2.0"
       ]
     },
@@ -250,92 +1297,12 @@
     },
     {
       "@type": "DataDownload",
-      "name": "Notes",
-      "description": "Short notes, updates, and non-operational clarifications for the Interpretive Governance doctrine.",
-      "contentUrl": "https://interpretive-governance.org/notes",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-DOC-NOTES",
-      "keywords": [
-        "notes",
-        "informative",
-        "doctrinal",
-        "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Portée",
-      "description": "Portée et limites de l’Interpretive Governance : ce qui est inclus, exclu, et volontairement non opérable.",
-      "contentUrl": "https://interpretive-governance.org/portee",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-DOC-SCOPE",
-      "keywords": [
-        "scope",
-        "normative",
-        "doctrinal",
-        "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Principes",
-      "description": "Principes doctrinaux de l’Interpretive Governance : définitions, séparation doctrine/exécution, traçabilité, abstention et anti-drift sémantique.",
-      "contentUrl": "https://interpretive-governance.org/principes",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-DOC-PRINCIPLES",
-      "keywords": [
-        "principles",
-        "normative",
-        "doctrinal",
-        "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Principles",
-      "description": "Core principles of Interpretive Governance: separate claims from inferences, apply constraints before optimization, and require auditability.",
-      "contentUrl": "https://interpretive-governance.org/principles",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-DOC-PRINCIPLES",
-      "keywords": [
-        "principles",
-        "normative",
-        "doctrinal",
-        "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
       "name": "Robots",
       "contentUrl": "https://interpretive-governance.org/robots.txt",
       "encodingFormat": "text/plain",
       "identifier": "/robots.txt",
       "keywords": [
         "informative",
-        "doctrinal",
-        "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Scope",
-      "description": "Scope boundaries of Interpretive Governance: what is included, excluded, and deliberately left non-operational.",
-      "contentUrl": "https://interpretive-governance.org/scope",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-DOC-SCOPE",
-      "keywords": [
-        "scope",
-        "normative",
         "doctrinal",
         "non-operational",
         "doctrine:0.2.0"
@@ -351,890 +1318,6 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "A2",
-      "description": "Autorité & redevabilité : mécanismes qui rendent explicites et vérifiables qui peut affirmer quoi, et selon quelles bornes.",
-      "contentUrl": "https://interpretive-governance.org/termes/a2",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-A2",
-      "keywords": [
-        "IG-T-0018",
-        "normative",
-        "draft",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Abstention",
-      "description": "Refus délibéré de répondre au-delà de ce que permettent les contraintes.",
-      "contentUrl": "https://interpretive-governance.org/termes/abstention",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-ABSTENTION",
-      "keywords": [
-        "IG-T-0009",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Auditabilité",
-      "description": "Capacité d’inspecter, de reproduire et de justifier des sorties selon les contraintes et les sources déclarées.",
-      "contentUrl": "https://interpretive-governance.org/termes/auditability",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-AUDITABILITY",
-      "keywords": [
-        "IG-T-0012",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Interprétation bornée",
-      "description": "Interprétation dont les conclusions permises sont bornées par le périmètre, les preuves et les contraintes déclarées.",
-      "contentUrl": "https://interpretive-governance.org/termes/bounded-interpretation",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-BOUNDED-INTERPRETATION",
-      "keywords": [
-        "IG-T-0002",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Manifest canonique",
-      "description": "Index unique, lisible par machine, qui énumère la doctrine publique, ses artefacts et leur statut.",
-      "contentUrl": "https://interpretive-governance.org/termes/canonical-manifest",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-CANONICAL-MANIFEST",
-      "keywords": [
-        "IG-T-0021",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Surface canonique",
-      "description": "Référence stable et versionnée destinée à la découverte, à la citation et à la revue.",
-      "contentUrl": "https://interpretive-governance.org/termes/canonical-surface",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-CANONICAL-SURFACE",
-      "keywords": [
-        "IG-T-0013",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Assertion",
-      "description": "Énoncé présenté comme vrai.",
-      "contentUrl": "https://interpretive-governance.org/termes/claim",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-CLAIM",
-      "keywords": [
-        "IG-T-0006",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Contraintes d’abord",
-      "description": "Règle d’ordre : appliquer les contraintes avant d’optimiser la complétude, la fluidité ou la persuasion.",
-      "contentUrl": "https://interpretive-governance.org/termes/constraint-first",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-CONSTRAINT-FIRST",
-      "keywords": [
-        "IG-T-0003",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Dérivation",
-      "description": "Conclusion inférée à partir d’assertions et de règles ; elle doit être étiquetée et auditable.",
-      "contentUrl": "https://interpretive-governance.org/termes/derivation",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-DERIVATION",
-      "keywords": [
-        "IG-T-0007",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Doctrine",
-      "description": "Cadre conceptuel et normatif de haut niveau. La doctrine explique l’intention et les limites, sans prescrire une recette d’exécution.",
-      "contentUrl": "https://interpretive-governance.org/termes/doctrine",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-DOCTRINE",
-      "keywords": [
-        "IG-T-0026",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "DualWeb",
-      "description": "Doctrine qui maintient des surfaces canoniques synchronisées : humaine et machine.",
-      "contentUrl": "https://interpretive-governance.org/termes/dualweb",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-DUALWEB",
-      "keywords": [
-        "IG-T-0016",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Registre d’entités",
-      "description": "Index canonique d’entités (termes, documents) avec identifiants stables, versions et relations.",
-      "contentUrl": "https://interpretive-governance.org/termes/entity-registry",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-ENTITY-REGISTRY",
-      "keywords": [
-        "IG-T-0020",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Surface humaine",
-      "description": "Partie de la doctrine optimisée pour la lecture, la discussion et la citation par des humains.",
-      "contentUrl": "https://interpretive-governance.org/termes/human-surface",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-HUMAN-SURFACE",
-      "keywords": [
-        "IG-T-0014",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Informatif",
-      "description": "Contenu qui explique, motive ou contextualise sans définir d’exigences.",
-      "contentUrl": "https://interpretive-governance.org/termes/informative",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-INFORMATIVE",
-      "keywords": [
-        "IG-T-0023",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Dérive interprétative",
-      "description": "Glissement non contrôlé du sens entre la doctrine visée et les sorties produites, dans le temps ou selon le contexte.",
-      "contentUrl": "https://interpretive-governance.org/termes/interpretive-drift",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-INTERPRETIVE-DRIFT",
-      "keywords": [
-        "IG-T-0010",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Gouvernance interprétative",
-      "description": "Approche doctrinale qui contraint ce qu’un système machine est autorisé à affirmer, selon le périmètre, les preuves et l’autorité.",
-      "contentUrl": "https://interpretive-governance.org/termes/interpretive-governance",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-INTERPRETIVE-GOVERNANCE",
-      "keywords": [
-        "IG-T-0001",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Surface machine",
-      "description": "Partie de la doctrine optimisée pour une découverte déterministe et un parsing machine (manifest, registres, données structurées).",
-      "contentUrl": "https://interpretive-governance.org/termes/machine-surface",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-MACHINE-SURFACE",
-      "keywords": [
-        "IG-T-0015",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Non opérable",
-      "description": "Absence volontaire de procédures exécutables, de seuils, de poids ou de playbooks.",
-      "contentUrl": "https://interpretive-governance.org/termes/non-operational",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-NON-OPERATIONAL",
-      "keywords": [
-        "IG-T-0024",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Normatif",
-      "description": "Contenu qui définit le sens, les bornes ou des exigences à l’intérieur de la doctrine.",
-      "contentUrl": "https://interpretive-governance.org/termes/normative",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-NORMATIVE",
-      "keywords": [
-        "IG-T-0022",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Provenance",
-      "description": "Origine traçable de l’information : source, date, et transformations.",
-      "contentUrl": "https://interpretive-governance.org/termes/provenance",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-PROVENANCE",
-      "keywords": [
-        "IG-T-0005",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Q‑Layer",
-      "description": "Couche qualité : garde-fous automatisés qui empêchent la dérive, la régression ou la publication accidentelle de contenu opérable.",
-      "contentUrl": "https://interpretive-governance.org/termes/q-layer",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-Q-LAYER",
-      "keywords": [
-        "IG-T-0019",
-        "normative",
-        "draft",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Frontière de périmètre",
-      "description": "Déclaration explicite de ce qui est dans le périmètre et hors périmètre d’une réponse ou d’un système.",
-      "contentUrl": "https://interpretive-governance.org/termes/scope-boundary",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-SCOPE-BOUNDARY",
-      "keywords": [
-        "IG-T-0004",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "SSA‑E",
-      "description": "Stabilisation sémantique & attribution (preuves) : pratiques qui stabilisent le sens et lient les termes à des sources ou à une autorité déclarée.",
-      "contentUrl": "https://interpretive-governance.org/termes/ssa-e",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-SSA-E",
-      "keywords": [
-        "IG-T-0017",
-        "normative",
-        "draft",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Traçabilité",
-      "description": "Capacité à relier une conclusion à des entrées, à des hypothèses et à une chaîne de justification.",
-      "contentUrl": "https://interpretive-governance.org/termes/traceability",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-TRACEABILITY",
-      "keywords": [
-        "IG-T-0011",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Inconnu",
-      "description": "Marqueur obligatoire lorsque la vérité ne peut pas être établie ; il ne doit pas être remplacé par une invention.",
-      "contentUrl": "https://interpretive-governance.org/termes/unknown",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-UNKNOWN",
-      "keywords": [
-        "IG-T-0008",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Doctrine versionnée",
-      "description": "Doctrine dont les changements sont déclarés, datés et traçables d’une version à l’autre.",
-      "contentUrl": "https://interpretive-governance.org/termes/versioned-doctrine",
-      "encodingFormat": "text/html",
-      "inLanguage": "fr",
-      "identifier": "IG-TERM-VERSIONED-DOCTRINE",
-      "keywords": [
-        "IG-T-0025",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "A2",
-      "description": "Authority & Accountability: mechanisms that make who may assert what, and under which boundaries, explicit and verifiable.",
-      "contentUrl": "https://interpretive-governance.org/terms/a2",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-A2",
-      "keywords": [
-        "IG-T-0018",
-        "normative",
-        "draft",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Abstention",
-      "description": "A deliberate refusal to answer beyond what constraints permit.",
-      "contentUrl": "https://interpretive-governance.org/terms/abstention",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-ABSTENTION",
-      "keywords": [
-        "IG-T-0009",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Auditability",
-      "description": "Capacity to inspect, reproduce, and justify outputs against declared constraints and sources.",
-      "contentUrl": "https://interpretive-governance.org/terms/auditability",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-AUDITABILITY",
-      "keywords": [
-        "IG-T-0012",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Bounded interpretation",
-      "description": "Interpretation whose allowable conclusions are bounded by declared scope, evidence, and constraints.",
-      "contentUrl": "https://interpretive-governance.org/terms/bounded-interpretation",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-BOUNDED-INTERPRETATION",
-      "keywords": [
-        "IG-T-0002",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Canonical manifest",
-      "description": "A single machine-readable index that enumerates the public doctrine, its artifacts, and their status.",
-      "contentUrl": "https://interpretive-governance.org/terms/canonical-manifest",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-CANONICAL-MANIFEST",
-      "keywords": [
-        "IG-T-0021",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Canonical surface",
-      "description": "A stable, versioned reference intended for discovery, citation, and review.",
-      "contentUrl": "https://interpretive-governance.org/terms/canonical-surface",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-CANONICAL-SURFACE",
-      "keywords": [
-        "IG-T-0013",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Claim",
-      "description": "A statement asserted as true.",
-      "contentUrl": "https://interpretive-governance.org/terms/claim",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-CLAIM",
-      "keywords": [
-        "IG-T-0006",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Constraint-first",
-      "description": "Ordering rule: apply constraints before optimizing for completeness, fluency, or persuasion.",
-      "contentUrl": "https://interpretive-governance.org/terms/constraint-first",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-CONSTRAINT-FIRST",
-      "keywords": [
-        "IG-T-0003",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Derivation",
-      "description": "A conclusion inferred from claims and rules; it must be labeled and auditable.",
-      "contentUrl": "https://interpretive-governance.org/terms/derivation",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-DERIVATION",
-      "keywords": [
-        "IG-T-0007",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Doctrine",
-      "description": "A high-level conceptual and normative framework that declares intent and boundaries without prescribing execution.",
-      "contentUrl": "https://interpretive-governance.org/terms/doctrine",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-DOCTRINE",
-      "keywords": [
-        "IG-T-0026",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "DualWeb",
-      "description": "Doctrine that maintains synchronized canonical surfaces: human-readable and machine-readable.",
-      "contentUrl": "https://interpretive-governance.org/terms/dualweb",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-DUALWEB",
-      "keywords": [
-        "IG-T-0016",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Entity registry",
-      "description": "A canonical index of entities (terms, documents) with stable identifiers, versions, and relationships.",
-      "contentUrl": "https://interpretive-governance.org/terms/entity-registry",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-ENTITY-REGISTRY",
-      "keywords": [
-        "IG-T-0020",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Human surface",
-      "description": "The part of the doctrine optimized for reading, discussion, and citation by humans.",
-      "contentUrl": "https://interpretive-governance.org/terms/human-surface",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-HUMAN-SURFACE",
-      "keywords": [
-        "IG-T-0014",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Informative",
-      "description": "Content that explains, motivates, or contextualizes without defining requirements.",
-      "contentUrl": "https://interpretive-governance.org/terms/informative",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-INFORMATIVE",
-      "keywords": [
-        "IG-T-0023",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Interpretive drift",
-      "description": "Uncontrolled shift in meaning between intended doctrine and produced outputs across time or contexts.",
-      "contentUrl": "https://interpretive-governance.org/terms/interpretive-drift",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-INTERPRETIVE-DRIFT",
-      "keywords": [
-        "IG-T-0010",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Interpretive governance",
-      "description": "A doctrinal approach that constrains what machine systems may claim, given scope, evidence, and authority.",
-      "contentUrl": "https://interpretive-governance.org/terms/interpretive-governance",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-INTERPRETIVE-GOVERNANCE",
-      "keywords": [
-        "IG-T-0001",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Machine surface",
-      "description": "The part of the doctrine optimized for deterministic discovery and parsing by machines (manifest, registries, structured data).",
-      "contentUrl": "https://interpretive-governance.org/terms/machine-surface",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-MACHINE-SURFACE",
-      "keywords": [
-        "IG-T-0015",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Non-operational",
-      "description": "Deliberate absence of executable procedures, thresholds, weights, or playbooks.",
-      "contentUrl": "https://interpretive-governance.org/terms/non-operational",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-NON-OPERATIONAL",
-      "keywords": [
-        "IG-T-0024",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Normative",
-      "description": "Content that defines meaning, boundaries, or requirements within the doctrine.",
-      "contentUrl": "https://interpretive-governance.org/terms/normative",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-NORMATIVE",
-      "keywords": [
-        "IG-T-0022",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Provenance",
-      "description": "Traceable origin of information, including source, time, and transformation steps.",
-      "contentUrl": "https://interpretive-governance.org/terms/provenance",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-PROVENANCE",
-      "keywords": [
-        "IG-T-0005",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Q‑Layer",
-      "description": "Quality layer: automated gates that prevent drift, regression, or accidental operability in public surfaces.",
-      "contentUrl": "https://interpretive-governance.org/terms/q-layer",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-Q-LAYER",
-      "keywords": [
-        "IG-T-0019",
-        "normative",
-        "draft",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Scope boundary",
-      "description": "An explicit statement of what is in-scope and out-of-scope for a response or system.",
-      "contentUrl": "https://interpretive-governance.org/terms/scope-boundary",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-SCOPE-BOUNDARY",
-      "keywords": [
-        "IG-T-0004",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "SSA‑E",
-      "description": "Semantic Stabilization & Attribution (Evidence): practices that stabilize meaning and bind terms to sources or declared authority.",
-      "contentUrl": "https://interpretive-governance.org/terms/ssa-e",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-SSA-E",
-      "keywords": [
-        "IG-T-0017",
-        "normative",
-        "draft",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Traceability",
-      "description": "Ability to link an output or conclusion back to inputs, assumptions, and a chain of justification.",
-      "contentUrl": "https://interpretive-governance.org/terms/traceability",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-TRACEABILITY",
-      "keywords": [
-        "IG-T-0011",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Unknown",
-      "description": "A required placeholder when truth status cannot be established; it must not be replaced by invention.",
-      "contentUrl": "https://interpretive-governance.org/terms/unknown",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-UNKNOWN",
-      "keywords": [
-        "IG-T-0008",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
-        "doctrine:0.2.0"
-      ]
-    },
-    {
-      "@type": "DataDownload",
-      "name": "Versioned doctrine",
-      "description": "Doctrine whose changes are declared, dated, and traceable across versions.",
-      "contentUrl": "https://interpretive-governance.org/terms/versioned-doctrine",
-      "encodingFormat": "text/html",
-      "inLanguage": "en",
-      "identifier": "IG-TERM-VERSIONED-DOCTRINE",
-      "keywords": [
-        "IG-T-0025",
-        "normative",
-        "canonical",
-        "DefinedTerm",
-        "doctrinal",
         "doctrine:0.2.0"
       ]
     }
