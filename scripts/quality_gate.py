@@ -164,6 +164,27 @@ def main() -> None:
         if not soup.find("script", attrs={"type": "application/ld+json"}):
             fail(f"{rel}: missing JSON-LD structured data")
 
+        # JSON-LD content sanity: this site publishes pages (doctrine), not articles.
+        try:
+            ld_raw = soup.find("script", attrs={"type": "application/ld+json"}).string or ""
+            ld = json.loads(ld_raw.strip() or "{}")
+        except Exception as e:
+            fail(f"{rel}: invalid JSON-LD (cannot parse): {e}")
+
+        graph = []
+        if isinstance(ld, dict):
+            graph = ld.get("@graph", []) if isinstance(ld.get("@graph", []), list) else []
+
+        for node in graph:
+            if not isinstance(node, dict):
+                continue
+            if "additionalProperty" in node:
+                fail(f"{rel}: JSON-LD must not use additionalProperty (validator incompatibility)")
+            t = node.get("@type")
+            types = t if isinstance(t, list) else ([t] if t else [])
+            if "Article" in types:
+                fail(f"{rel}: JSON-LD must not declare Article; use WebPage/ProfilePage/etc.")
+
         # IG meta
         classification = parse_meta(soup, "ig:classification", "name")
         if not classification or classification not in CLASSIFICATIONS:

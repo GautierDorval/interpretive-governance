@@ -69,19 +69,34 @@ def jsonld_website_person() -> list[dict]:
         },
     ]
 
-def jsonld_webpage(canonical: str, name: str, description: str, lang: str, classification: str, doctrine_version: str, doc_id: str | None = None, entity_id: str | None = None, page_type: str="WebPage") -> dict:
-    props = [
-        {"@type":"PropertyValue","propertyID":"ig:classification","value":classification},
-        {"@type":"PropertyValue","propertyID":"ig:status","value":"doctrinal"},
-        {"@type":"PropertyValue","propertyID":"ig:operability","value":"non-operational"},
-        {"@type":"PropertyValue","propertyID":"ig:doctrine-version","value":doctrine_version},
-    ]
+def jsonld_webpage(
+    canonical: str,
+    name: str,
+    description: str,
+    lang: str,
+    classification: str,
+    doctrine_version: str,
+    doc_id: str | None = None,
+    entity_id: str | None = None,
+    page_type: str = "WebPage",
+) -> dict:
+    """Schema.org for doctrinal pages (not articles).
+
+    Governance metadata lives in:
+    - IG meta tags (ig:* in HTML head)
+    - registries (data/terms.json, data/documents.json)
+    - canonical manifest (ig-manifest.json)
+
+    The embedded JSON-LD is intentionally minimal and strictly Schema.org.
+    """
+    ids: list[str] = []
     if doc_id:
-        props.insert(0, {"@type":"PropertyValue","propertyID":"ig:doc-id","value":doc_id})
-    if entity_id:
-        props.insert(0, {"@type":"PropertyValue","propertyID":"ig:entity-id","value":entity_id})
-    return {
-        "@type": [page_type, "Article"] if page_type != "ProfilePage" else page_type,
+        ids.append(doc_id)
+    if entity_id and entity_id not in ids:
+        ids.append(entity_id)
+
+    page: dict = {
+        "@type": page_type,
         "@id": f"{canonical}#webpage",
         "url": canonical,
         "name": name,
@@ -90,19 +105,19 @@ def jsonld_webpage(canonical: str, name: str, description: str, lang: str, class
         "inLanguage": lang,
         "dateModified": read_json(TERMS_PATH).get("generatedAt"),
         "author": {"@id": f"{SITE}/#person"},
-        "about": {"@type":"Thing","name":"Interpretive Governance"},
-        "additionalProperty": props,
+        "about": {"@type": "Thing", "name": "Interpretive Governance"},
+        "keywords": [classification, "doctrinal", "non-operational", f"doctrine:{doctrine_version}"],
     }
+
+    if ids:
+        page["identifier"] = ids[0] if len(ids) == 1 else ids
+
+    return page
+
 
 def jsonld_defined_term(term: dict, lang: str, canonical: str, termset_id: str, doctrine_version: str) -> dict:
     v = term["variants"][lang]
-    props = [
-        {"@type":"PropertyValue","propertyID":"ig:entity-id","value":term["id"]},
-        {"@type":"PropertyValue","propertyID":"ig:termCode","value":term["termCode"]},
-        {"@type":"PropertyValue","propertyID":"ig:entity-status","value":term["status"]},
-        {"@type":"PropertyValue","propertyID":"ig:classification","value":term["classification"]},
-        {"@type":"PropertyValue","propertyID":"ig:doctrine-version","value":doctrine_version},
-    ]
+    # Keep DefinedTerm payload minimal: some validators are strict on allowed properties.
     return {
         "@type": "DefinedTerm",
         "@id": f"{canonical}#term",
@@ -113,10 +128,12 @@ def jsonld_defined_term(term: dict, lang: str, canonical: str, termset_id: str, 
         "termCode": term["termCode"],
         "identifier": term["id"],
         "inDefinedTermSet": {"@id": termset_id},
-        "additionalProperty": props,
     }
 
-def make_head_common(title: str, description: str, canonical: str, lang: str, hreflang_alt: dict[str,str], doctrine_version: str, og_type: str="article") -> str:
+
+
+
+def make_head_common(title: str, description: str, canonical: str, lang: str, hreflang_alt: dict[str,str], doctrine_version: str, og_type: str="website") -> str:
     og_locale = "en_US" if lang == "en" else "fr_CA"
     hreflang_links = "\n".join([f'<link rel="alternate" hreflang="{hl}" href="{url}"/>' for hl, url in hreflang_alt.items()])
     return f"""<meta charset="utf-8"/>
@@ -427,14 +444,8 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
                 "contentUrl": full,
                 "encodingFormat": "text/html",
                 "inLanguage": lang,
-                "additionalProperty": [
-                    pv("ig:doc-id", doc["id"]),
-                    pv("ig:role", doc["role"]),
-                    pv("ig:classification", doc["classification"]),
-                    pv("ig:status", "doctrinal"),
-                    pv("ig:operability", doc["operability"]),
-                    pv("ig:doctrine-version", doctrine_version),
-                ],
+                "identifier": doc["id"],
+                "keywords": [doc["role"], doc["classification"], "doctrinal", doc["operability"], f"doctrine:{doctrine_version}"],
             })
 
     for t in terms:
@@ -446,15 +457,8 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
                 "contentUrl": SITE + prefix + t["slug"],
                 "encodingFormat": "text/html",
                 "inLanguage": lang,
-                "additionalProperty": [
-                    pv("ig:entity-id", t["id"]),
-                    pv("ig:termCode", t["termCode"]),
-                    pv("ig:entity-type", "DefinedTerm"),
-                    pv("ig:classification", t["classification"]),
-                    pv("ig:entity-status", t["status"]),
-                    pv("ig:status", "doctrinal"),
-                    pv("ig:doctrine-version", doctrine_version),
-                ],
+                "identifier": t["id"],
+                "keywords": [t["termCode"], t["classification"], t["status"], "DefinedTerm", "doctrinal", f"doctrine:{doctrine_version}"],
             })
 
     machine_files = [
@@ -478,12 +482,8 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
             "name": name,
             "contentUrl": SITE + path,
             "encodingFormat": fmt,
-            "additionalProperty": [
-                pv("ig:classification", "informative"),
-                pv("ig:status", "doctrinal"),
-                pv("ig:operability", "non-operational"),
-                pv("ig:doctrine-version", doctrine_version),
-            ],
+                "identifier": path,
+                "keywords": ["informative", "doctrinal", "non-operational", f"doctrine:{doctrine_version}"],
         })
 
     return {

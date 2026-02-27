@@ -1,46 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Architecture | Interpretive Governance</title>
-<meta name="description" content="A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation."/>
-<meta name="robots" content="index,follow"/>
-<meta name="ig:status" content="doctrinal"/>
-<meta name="ig:operability" content="non-operational"/>
-<meta name="ig:doctrine-version" content="0.2.0"/>
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=20260226-2"/>
-<link rel="stylesheet" href="/assets/style.css?v=20260226-2"/>
-<link rel="canonical" href="https://interpretive-governance.org/architecture"/>
-<link rel="alternate" hreflang="en" href="https://interpretive-governance.org/architecture"/>
-<link rel="alternate" type="application/ld+json" href="https://interpretive-governance.org/ig-manifest.json" title="Interpretive Governance canonical manifest"/>
-<link rel="alternate" type="application/json" href="https://interpretive-governance.org/data/terms.json" title="Interpretive Governance terms registry"/>
-<meta property="og:site_name" content="Interpretive Governance"/>
-<meta property="og:title" content="Architecture | Interpretive Governance"/>
-<meta property="og:description" content="A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation."/>
-<meta property="og:type" content="article"/>
-<meta property="og:url" content="https://interpretive-governance.org/architecture"/>
-<meta property="og:image" content="https://interpretive-governance.org/assets/og.png"/>
-<meta property="og:locale" content="en_US"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Architecture | Interpretive Governance"/>
-<meta name="twitter:description" content="A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation."/>
-<meta name="twitter:image" content="https://interpretive-governance.org/assets/og.png"/>
-<meta name="ig:doc-id" content="IG-DOC-ARCHITECTURE"/>
-<meta name="ig:classification" content="informative"/>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://interpretive-governance.org/#website", "url": "https://interpretive-governance.org/", "name": "Interpretive Governance", "description": "Doctrinal reference for bounded interpretation and auditable machine responses (non-operational).", "inLanguage": ["en", "fr"], "publisher": {"@id": "https://interpretive-governance.org/#person"}}, {"@type": "Person", "@id": "https://interpretive-governance.org/#person", "name": "Gautier Dorval", "url": "https://gautierdorval.com/", "sameAs": ["https://gautierdorval.com/", "https://github.com/GautierDorval/gautierdorval-identity"]}, {"@type": ["WebPage", "Article"], "@id": "https://interpretive-governance.org/architecture#webpage", "url": "https://interpretive-governance.org/architecture", "name": "Architecture", "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation.", "isPartOf": {"@id": "https://interpretive-governance.org/#website"}, "inLanguage": "en", "dateModified": "2026-02-26", "author": {"@id": "https://interpretive-governance.org/#person"}, "about": {"@type": "Thing", "name": "Interpretive Governance"}, "additionalProperty": [{"@type": "PropertyValue", "propertyID": "ig:doc-id", "value": "IG-DOC-ARCHITECTURE"}, {"@type": "PropertyValue", "propertyID": "ig:classification", "value": "informative"}, {"@type": "PropertyValue", "propertyID": "ig:status", "value": "doctrinal"}, {"@type": "PropertyValue", "propertyID": "ig:operability", "value": "non-operational"}, {"@type": "PropertyValue", "propertyID": "ig:doctrine-version", "value": "0.2.0"}]}]}</script>
+<meta content="A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation." name="description"/>
+<meta content="index,follow" name="robots"/>
+<meta content="doctrinal" name="ig:status"/>
+<meta content="non-operational" name="ig:operability"/>
+<meta content="0.2.0" name="ig:doctrine-version"/>
+<link href="/assets/favicon.svg?v=20260226-2" rel="icon" type="image/svg+xml"/>
+<link href="/assets/style.css?v=20260226-2" rel="stylesheet"/>
+<link href="https://interpretive-governance.org/architecture" rel="canonical"/>
+<link href="https://interpretive-governance.org/architecture" hreflang="en" rel="alternate"/>
+<link href="https://interpretive-governance.org/ig-manifest.json" rel="alternate" title="Interpretive Governance canonical manifest" type="application/ld+json"/>
+<link href="https://interpretive-governance.org/data/terms.json" rel="alternate" title="Interpretive Governance terms registry" type="application/json"/>
+<meta content="Interpretive Governance" property="og:site_name"/>
+<meta content="Architecture | Interpretive Governance" property="og:title"/>
+<meta content="A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://interpretive-governance.org/architecture" property="og:url"/>
+<meta content="https://interpretive-governance.org/assets/og.png" property="og:image"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Architecture | Interpretive Governance" name="twitter:title"/>
+<meta content="A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation." name="twitter:description"/>
+<meta content="https://interpretive-governance.org/assets/og.png" name="twitter:image"/>
+<meta content="IG-DOC-ARCHITECTURE" name="ig:doc-id"/>
+<meta content="informative" name="ig:classification"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://interpretive-governance.org/#website", "url": "https://interpretive-governance.org/", "name": "Interpretive Governance", "description": "Doctrinal reference for bounded interpretation and auditable machine responses (non-operational).", "inLanguage": ["en", "fr"], "publisher": {"@id": "https://interpretive-governance.org/#person"}}, {"@type": "Person", "@id": "https://interpretive-governance.org/#person", "name": "Gautier Dorval", "url": "https://gautierdorval.com/", "sameAs": ["https://gautierdorval.com/", "https://github.com/GautierDorval/gautierdorval-identity"]}, {"@type": "WebPage", "@id": "https://interpretive-governance.org/architecture#webpage", "url": "https://interpretive-governance.org/architecture", "name": "Architecture", "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation.", "isPartOf": {"@id": "https://interpretive-governance.org/#website"}, "inLanguage": "en", "dateModified": "2026-02-26", "author": {"@id": "https://interpretive-governance.org/#person"}, "about": {"@type": "Thing", "name": "Interpretive Governance"}, "identifier": "IG-DOC-ARCHITECTURE", "keywords": ["informative", "doctrinal", "non-operational", "doctrine:0.2.0"]}]}</script>
 </head>
 <body>
 <header class="topbar">
-  <div class="container">
-    <div class="brand">
-      <img src="/assets/logo.svg?v=20260226-2" width="34" height="34" alt="Interpretive Governance"/>
-      <div>
-        <div><strong>Interpretive Governance</strong> <span class="badge">doctrinal</span></div>
-        <div class="muted" style="font-size:13px">Personal conceptual reference. Not an implementation.</div>
-      </div>
-    </div>
-    <nav>
+<div class="container">
+<div class="brand">
+<img alt="Interpretive Governance" height="34" src="/assets/logo.svg?v=20260226-2" width="34"/>
+<div>
+<div><strong>Interpretive Governance</strong> <span class="badge">doctrinal</span></div>
+<div class="muted" style="font-size:13px">Personal conceptual reference. Not an implementation.</div>
+</div>
+</div>
+<nav>
 <a class="" href="/">Home</a>
 <a class="" href="/principles">Principles</a>
 <a class="active" href="/architecture">Architecture</a>
@@ -49,15 +50,14 @@
 <a class="" href="/author">Author &amp; governance</a>
 <a class="" href="/notes">Notes</a>
 <a href="/principes">Français</a>
-    </nav>
-  </div>
+</nav>
+</div>
 </header>
 <main class="container">
-
 <h1>Architecture</h1>
 <div class="docmeta">
-  <span class="badge badge--informative">informative</span>
-  <span class="muted">Doc ID: <code>IG-DOC-ARCHITECTURE</code> · Doctrine 0.2.0 · Non-operational</span>
+<span class="badge badge--informative">informative</span>
+<span class="muted">Doc ID: <code>IG-DOC-ARCHITECTURE</code> · Doctrine 0.2.0 · Non-operational</span>
 </div>
 <div class="card">
 <p>This architecture is described at a high level only. It intentionally avoids operational details.</p>
@@ -75,9 +75,7 @@
 <li><strong>Operator</strong> (executes audits and governance under mandate)</li>
 <li><strong>Verifier</strong> (checks conformance claims)</li>
 </ul>
-
-
-  <div class="footer">
+<div class="footer">
     Last updated: 2026-02-26<br/>
     This site is intentionally non-operational: it does not contain scoring weights, thresholds, calibrated protocols, datasets, or execution tooling.<br/>
     Primary doctrinal surface: gautierdorval.com
