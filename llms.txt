@@ -17,6 +17,7 @@ This site is intentionally non-operational: no scoring weights, no calibrated th
 /en/glossary
 /en/author
 /en/notes
+/en/terms/external-authority-control
 
 ## Pages (Français)
 /fr/principes
@@ -25,6 +26,7 @@ This site is intentionally non-operational: no scoring weights, no calibrated th
 /fr/glossaire
 /fr/auteur
 /fr/notes
+/fr/termes/external-authority-control
 
 ## Machine surfaces (DualWeb)
 - /ig-manifest.json
@@ -44,4 +46,8 @@ This site is intentionally non-operational: no scoring weights, no calibrated th
 
 ## Doctrine
 Version: 0.2.0
-Generated: 2026-02-26
+Generated: 2026-03-02
+
+## New doctrinal term
+- External Authority Control (EN): /en/terms/external-authority-control
+- External Authority Control (FR): /fr/termes/external-authority-control

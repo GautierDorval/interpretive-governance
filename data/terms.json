@@ -579,6 +579,31 @@
         "IG-TERM-NON-OPERATIONAL",
         "IG-TERM-VERSIONED-DOCTRINE"
       ]
+    },
+    {
+      "id": "IG-TERM-EXTERNAL-AUTHORITY-CONTROL",
+      "slug": "external-authority-control",
+      "termCode": "IG-T-0027",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-03-02",
+      "variants": {
+        "en": {
+          "label": "External Authority Control",
+          "definition": "Governance layer that declares which external authorities are canonically admissible in open-world reconstruction and under what conditions they may constrain interpretation."
+        },
+        "fr-CA": {
+          "label": "External Authority Control",
+          "definition": "Couche de gouvernance qui déclare quelles autorités externes sont canoniquement admissibles dans une reconstruction en monde ouvert, et sous quelles conditions elles peuvent contraindre l’interprétation."
+        }
+      },
+      "related": [
+        "IG-TERM-PROVENANCE",
+        "IG-TERM-Q-LAYER",
+        "IG-TERM-SCOPE-BOUNDARY",
+        "IG-TERM-CANONICAL-SURFACE",
+        "IG-TERM-INTERPRETIVE-GOVERNANCE"
+      ]
     }
   ]
 }
