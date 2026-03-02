@@ -466,6 +466,23 @@
     },
     {
       "@type": "DataDownload",
+      "name": "External Authority Control",
+      "description": "Governance layer that declares which external authorities are canonically admissible in open-world reconstruction and under what conditions they may constrain interpretation.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/external-authority-control",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-EXTERNAL-AUTHORITY-CONTROL",
+      "keywords": [
+        "IG-T-0027",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
       "name": "Human surface",
       "description": "The part of the doctrine optimized for reading, discussion, and citation by humans.",
       "contentUrl": "https://interpretive-governance.org/en/terms/human-surface",
@@ -1011,6 +1028,23 @@
       "identifier": "IG-TERM-ENTITY-REGISTRY",
       "keywords": [
         "IG-T-0020",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.2.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "External Authority Control",
+      "description": "Couche de gouvernance qui déclare quelles autorités externes sont canoniquement admissibles dans une reconstruction en monde ouvert, et sous quelles conditions elles peuvent contraindre l’interprétation.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/external-authority-control",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-EXTERNAL-AUTHORITY-CONTROL",
+      "keywords": [
+        "IG-T-0027",
         "normative",
         "canonical",
         "DefinedTerm",
