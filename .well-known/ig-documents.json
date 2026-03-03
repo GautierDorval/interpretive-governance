@@ -66,12 +66,12 @@
         "en": {
           "url": "/en/architecture",
           "title": "Architecture",
-          "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation."
+          "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation. Includes the adjacent regime for executable authority (Layer 3)."
         },
         "fr-CA": {
           "url": "/fr/architecture",
           "title": "Architecture conceptuelle",
-          "description": "Une architecture conceptuelle pour l’Interpretive Governance : couches, rôles et frontières pour une interprétation auditable."
+          "description": "Une architecture conceptuelle pour l’Interpretive Governance : couches, rôles et frontières pour une interprétation auditable. Inclut le régime adjacent d’autorité exécutable (Layer 3)."
         }
       }
     },
@@ -142,12 +142,12 @@
         "en": {
           "url": "/en/notes",
           "title": "Notes",
-          "description": "Short notes, updates, and non-operational clarifications for the Interpretive Governance doctrine."
+          "description": "Short notes, updates, and non-operational clarifications for the Interpretive Governance doctrine. Includes the public Layer 3 boundary note."
         },
         "fr-CA": {
           "url": "/fr/notes",
           "title": "Notes et mises à jour",
-          "description": "Notes, mises à jour et clarifications non opérables pour la doctrine Interpretive Governance."
+          "description": "Notes, mises à jour et clarifications non opérables pour la doctrine Interpretive Governance. Inclut la note publique sur la frontière Layer 3."
         }
       }
     }
