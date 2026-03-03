@@ -1354,6 +1354,20 @@
         "non-operational",
         "doctrine:0.2.0"
       ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Authority Governance (Layer 3) term",
+      "contentUrl": "https://interpretive-governance.org/en/terms/authority-governance-layer-3",
+      "encodingFormat": "text/html",
+      "identifier": "IG-TERM-AUTHORITY-GOVERNANCE-LAYER-3",
+      "keywords": [
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "layer-3",
+        "doctrine:0.2.0"
+      ]
     }
   ]
 }

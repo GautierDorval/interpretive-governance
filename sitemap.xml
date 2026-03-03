@@ -840,4 +840,18 @@
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://interpretive-governance.org/fr/termes/versioned-doctrine"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://interpretive-governance.org/"/>
   </url>
+
+  <url>
+    <loc>https://interpretive-governance.org/en/terms/authority-governance-layer-3</loc>
+    <lastmod>2026-03-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/en/terms/authority-governance-layer-3"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://interpretive-governance.org/fr/termes/authority-governance-layer-3"/>
+  </url>
+  <url>
+    <loc>https://interpretive-governance.org/fr/termes/authority-governance-layer-3</loc>
+    <lastmod>2026-03-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://interpretive-governance.org/en/terms/authority-governance-layer-3"/>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://interpretive-governance.org/fr/termes/authority-governance-layer-3"/>
+  </url>
+
 </urlset>

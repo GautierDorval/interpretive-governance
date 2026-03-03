@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "doctrineVersion": "0.2.0",
-  "generatedAt": "2026-02-26",
+  "generatedAt": "2026-03-03",
   "site": "https://interpretive-governance.org",
   "terms": [
     {
@@ -603,6 +603,29 @@
         "IG-TERM-SCOPE-BOUNDARY",
         "IG-TERM-CANONICAL-SURFACE",
         "IG-TERM-INTERPRETIVE-GOVERNANCE"
+      ]
+    },
+    {
+      "id": "IG-TERM-AUTHORITY-GOVERNANCE-LAYER-3",
+      "slug": "authority-governance-layer-3",
+      "termCode": "IG-T-0028",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-03-03",
+      "variants": {
+        "en": {
+          "label": "Authority Governance (Layer 3)",
+          "definition": "Adjacent governance regime that constrains executable authority when interpretive outputs become action-bearing inputs."
+        },
+        "fr-CA": {
+          "label": "Authority Governance (Layer 3)",
+          "definition": "Régime adjacent de gouvernance qui borne l’autorité exécutable lorsque des sorties interprétatives deviennent des entrées porteuses d’action."
+        }
+      },
+      "related": [
+        "IG-TERM-EXTERNAL-AUTHORITY-CONTROL",
+        "IG-TERM-Q-LAYER",
+        "IG-TERM-A2"
       ]
     }
   ]
