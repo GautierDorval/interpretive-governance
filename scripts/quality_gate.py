@@ -94,7 +94,7 @@ def file_for_url(url_path: str) -> Path:
 
 def is_term_page(rel: Path) -> bool:
     s = rel.as_posix()
-    return "/terms/" in s or "/termes/" in s
+    return "terms/" in s or "termes/" in s
 
 def main() -> None:
     # ---- Machine surface checks (registries + manifest) ----
