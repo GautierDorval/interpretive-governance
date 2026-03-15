@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://interpretive-governance.org/#website",
+      "url": "https://interpretive-governance.org/",
+      "name": "Interpretive Governance",
+      "inLanguage": [
+        "en",
+        "fr-CA"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://interpretive-governance.org/#person",
+      "name": "Gautier Dorval",
+      "url": "https://gautierdorval.com/"
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://interpretive-governance.org/data/terms.json#termset",
+      "name": "Interpretive Governance terms registry",
+      "url": "https://interpretive-governance.org/data/terms.json"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://interpretive-governance.org/ig-manifest.json#dataset",
+      "name": "Interpretive Governance canonical manifest",
+      "url": "https://interpretive-governance.org/ig-manifest.json"
+    }
+  ]
+}

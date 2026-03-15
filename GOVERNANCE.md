@@ -2,91 +2,35 @@
 
 This repository ships a static, machine-first doctrinal site.
 
-The objective is to keep the public surface **stable, auditable, and non-operational** while remaining maximally legible to search engines and machine readers.
+The objective is to keep the public surface **stable, auditable, hard-constrained, and non-operational** while remaining maximally legible to search engines and machine readers.
 
-## DualWeb posture (doctrinal)
+## Hard public governance set
 
-This site maintains two synchronized canonical surfaces:
+- `/ai-governance.json`
+- `/interpretation-policy.json`
+- `/response-legitimacy.json`
+- `/anti-plausibility.json`
+- `/output-constraints.json`
+- `/qlayer.json`
+- `/ig-manifest.json`
+- `/data/terms.json`
+- `/data/documents.json`
 
-- **Human surface**: HTML pages meant to be read, cited, and reviewed.
-- **Machine surface**: a canonical manifest + registries meant to be discovered and parsed deterministically.
+## Precedence rule
 
-Public execution mechanics remain private by design.
+1. Machine-first canonical governance files on this site govern doctrine-specific facts and response rules.
+2. Canonical HTML doctrine pages on this site govern only if aligned with tier 1.
+3. `gautierdorval.com` governs author identity, higher-order governance, and cross-site conflict resolution.
+4. Secondary commentary does not govern.
 
-## Canonical machine surfaces
+## Non-operational boundary
 
-- Canonical manifest: `/ig-manifest.json` (also mirrored at `/.well-known/ig-manifest.json`)
-- Terms registry: `/data/terms.json` (also mirrored at `/.well-known/ig-terms.json`)
-- Documents registry: `/data/documents.json` (also mirrored at `/.well-known/ig-documents.json`)
-- Discovery file: `/llms.txt`
+Public doctrine may define meaning, boundaries, precedence, legitimacy, and refusal conditions.
+Public doctrine may not disclose scoring formulas, weights, thresholds, calibrated protocols, datasets, execution tooling, or private mandate materials.
 
-## Normative vs informative
+## Response rule
 
-Every indexable page MUST declare a classification:
+An answer is not the default.
+If scope, support, provenance, authority, or output-fit conditions fail materially, the correct behavior is clarification, abstention, or legitimate non-response.
 
-- `normative`: defines meaning, boundaries, or requirements within the doctrine
-- `informative`: explains, motivates, or contextualizes without defining requirements
-
-This classification is expressed via:
-
-- `<meta name="ig:classification" content="…">`
-- JSON-LD `additionalProperty` values
-
-## Canonical URL policy
-
-- Canonical URLs are **clean** (no `.html`) and **HTTPS**.
-- Internal links MUST use clean URLs:
-  - ✅ `/principles`
-  - ❌ `/principles.html`
-- Every page MUST declare a canonical:
-  - `<link rel="canonical" href="https://interpretive-governance.org/<path>">`
-
-## Metadata policy (required)
-
-Every indexable page MUST include:
-
-- `<title>` (unique, includes the site name)
-- `<meta name="description">` (unique per page)
-- Open Graph + Twitter cards
-- JSON-LD structured data (`application/ld+json`)
-- IG meta:
-  - `ig:doc-id` (or `ig:entity-id` for terms)
-  - `ig:classification`
-  - `ig:status` = `doctrinal`
-  - `ig:operability` = `non-operational`
-  - `ig:doctrine-version` = `0.2.0`
-
-## Sitemap policy
-
-- `sitemap.xml` MUST list canonical (clean) URLs only.
-- If a page is indexable, it MUST be in the sitemap.
-- If a page is non-indexable (e.g., 404), it MUST NOT be in the sitemap.
-
-## Content boundaries
-
-Public pages MUST NOT include:
-
-- scoring formulas, weights, thresholds, calibrations
-- reproducible operational tooling or client deliverables
-- private datasets or test catalogs
-
-(See `CONTENT-POLICY.md`.)
-
-## Q-Layer (quality gates)
-
-Run locally:
-
-```bash
-python scripts/quality_gate.py
-```
-
-The gate enforces:
-
-- unique title + meta description across pages
-- canonical URLs present and clean
-- no internal `.html` links
-- JSON-LD present on all pages
-- IG classification and identifiers present on all pages
-- term pages are consistent with `/data/terms.json`
-- `ig-manifest.json` exists and references registries
-- sitemap contains no `.html` URLs and covers all indexable pages
+Doctrine version: 0.3.0

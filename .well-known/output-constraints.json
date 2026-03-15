@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "site": "https://interpretive-governance.org",
+  "doctrineVersion": "0.3.0",
+  "generatedAt": "2026-03-15",
+  "publicRole": [
+    "definitions",
+    "boundaries",
+    "precedence",
+    "legitimacy",
+    "refusal conditions"
+  ],
+  "forbidden": [
+    "calibrated scoring",
+    "implementation steps",
+    "deployment instructions",
+    "private execution protocols",
+    "private datasets"
+  ],
+  "confidenceRule": "confidence must track declared support, not fluency"
+}

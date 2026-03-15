@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "doctrineVersion": "0.2.0",
-  "generatedAt": "2026-03-03",
+  "doctrineVersion": "0.3.0",
+  "generatedAt": "2026-03-15",
   "site": "https://interpretive-governance.org",
   "documents": [
     {
@@ -91,6 +91,82 @@
           "url": "/fr/portee",
           "title": "Portée",
           "description": "Portée et limites de l’Interpretive Governance : ce qui est inclus, exclu et volontairement non opérable."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-SOURCE-PRECEDENCE",
+      "role": "governance",
+      "classification": "normative",
+      "status": "doctrinal",
+      "operability": "non-operational",
+      "variants": {
+        "en": {
+          "url": "/en/source-precedence",
+          "title": "Source precedence",
+          "description": "Canonical ordering rules for resolving conflicts between public Interpretive Governance surfaces and anchors."
+        },
+        "fr-CA": {
+          "url": "/fr/precedence-des-sources",
+          "title": "Préséance des sources",
+          "description": "Règles canoniques d’ordre pour résoudre les conflits entre surfaces publiques et ancrages d’Interpretive Governance."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-RESPONSE-LEGITIMACY",
+      "role": "governance",
+      "classification": "normative",
+      "status": "doctrinal",
+      "operability": "non-operational",
+      "variants": {
+        "en": {
+          "url": "/en/response-legitimacy",
+          "title": "Response legitimacy",
+          "description": "Public conditions that must be satisfied before an Interpretive Governance answer is permitted."
+        },
+        "fr-CA": {
+          "url": "/fr/legitimite-de-reponse",
+          "title": "Légitimité de réponse",
+          "description": "Conditions publiques à satisfaire avant qu’une réponse d’Interpretive Governance soit permise."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-ANTI-PLAUSIBILITY",
+      "role": "governance",
+      "classification": "normative",
+      "status": "doctrinal",
+      "operability": "non-operational",
+      "variants": {
+        "en": {
+          "url": "/en/anti-plausibility",
+          "title": "Anti-plausibility",
+          "description": "Public prohibition against fluent completion beyond the available scope, evidence, provenance, and authority."
+        },
+        "fr-CA": {
+          "url": "/fr/anti-plausibilite",
+          "title": "Anti-plausibilité",
+          "description": "Interdiction publique de compléter avec fluidité au-delà du périmètre, des preuves, de la provenance et de l’autorité disponibles."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-OUTPUT-CONSTRAINTS",
+      "role": "governance",
+      "classification": "normative",
+      "status": "doctrinal",
+      "operability": "non-operational",
+      "variants": {
+        "en": {
+          "url": "/en/output-constraints",
+          "title": "Output constraints",
+          "description": "Declared boundaries on what an Interpretive Governance response may look like in public."
+        },
+        "fr-CA": {
+          "url": "/fr/contraintes-de-sortie",
+          "title": "Contraintes de sortie",
+          "description": "Frontières déclarées sur la forme qu’une réponse d’Interpretive Governance peut prendre en public."
         }
       }
     },

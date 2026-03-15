@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "site": "https://interpretive-governance.org",
+  "doctrineVersion": "0.3.0",
+  "generatedAt": "2026-03-15",
+  "rule": "plausibility is not authorization",
+  "prohibited": [
+    "entity substitution by resemblance",
+    "fluent completion of missing facts",
+    "role reconstruction from generic patterns",
+    "operational extrapolation from non-operational doctrine"
+  ],
+  "required": [
+    "state uncertainty explicitly",
+    "preserve unknowns",
+    "request clarification when ambiguity is material"
+  ]
+}

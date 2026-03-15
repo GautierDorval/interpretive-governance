@@ -1,0 +1,51 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://interpretive-governance.org/ai-manifest.json#dataset",
+  "name": "Interpretive Governance AI governance manifest",
+  "url": "https://interpretive-governance.org/ai-manifest.json",
+  "version": "0.3.0",
+  "dateModified": "2026-03-15",
+  "isBasedOn": [
+    "https://interpretive-governance.org/ig-manifest.json",
+    "https://gautierdorval.com/.well-known/ai-governance.json"
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "AI governance",
+      "contentUrl": "https://interpretive-governance.org/ai-governance.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interpretation policy",
+      "contentUrl": "https://interpretive-governance.org/interpretation-policy.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Response legitimacy",
+      "contentUrl": "https://interpretive-governance.org/response-legitimacy.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Anti-plausibility",
+      "contentUrl": "https://interpretive-governance.org/anti-plausibility.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Output constraints",
+      "contentUrl": "https://interpretive-governance.org/output-constraints.json",
+      "encodingFormat": "application/json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Q-Layer",
+      "contentUrl": "https://interpretive-governance.org/qlayer.json",
+      "encodingFormat": "application/json"
+    }
+  ]
+}

@@ -16,3 +16,30 @@
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/ai-governance.json
+  X-Robots-Tag: noindex
+/interpretation-policy.json
+  X-Robots-Tag: noindex
+/response-legitimacy.json
+  X-Robots-Tag: noindex
+/anti-plausibility.json
+  X-Robots-Tag: noindex
+/output-constraints.json
+  X-Robots-Tag: noindex
+/qlayer.json
+  X-Robots-Tag: noindex
+/ai-manifest.json
+  X-Robots-Tag: noindex
+/doctrine-index.json
+  X-Robots-Tag: noindex
+/governance-fingerprint.json
+  X-Robots-Tag: noindex
+/entity-graph.jsonld
+  X-Robots-Tag: noindex
+/datasets.jsonld
+  X-Robots-Tag: noindex
+/well-known/*
+  X-Robots-Tag: noindex
+/.well-known/*
+  X-Robots-Tag: noindex

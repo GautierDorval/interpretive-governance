@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "doctrineVersion": "0.2.0",
-  "generatedAt": "2026-03-03",
+  "doctrineVersion": "0.3.0",
+  "generatedAt": "2026-03-15",
   "site": "https://interpretive-governance.org",
   "terms": [
     {
@@ -179,7 +179,9 @@
       },
       "related": [
         "IG-TERM-ABSTENTION",
-        "IG-TERM-BOUNDED-INTERPRETATION"
+        "IG-TERM-BOUNDED-INTERPRETATION",
+        "IG-TERM-LEGITIMATE-NON-RESPONSE",
+        "IG-TERM-ANTI-PLAUSIBILITY"
       ]
     },
     {
@@ -201,7 +203,9 @@
       },
       "related": [
         "IG-TERM-SCOPE-BOUNDARY",
-        "IG-TERM-UNKNOWN"
+        "IG-TERM-UNKNOWN",
+        "IG-TERM-LEGITIMATE-NON-RESPONSE",
+        "IG-TERM-RESPONSE-LEGITIMACY"
       ]
     },
     {
@@ -289,7 +293,8 @@
       },
       "related": [
         "IG-TERM-DUALWEB",
-        "IG-TERM-CANONICAL-MANIFEST"
+        "IG-TERM-CANONICAL-MANIFEST",
+        "IG-TERM-SOURCE-PRECEDENCE"
       ]
     },
     {
@@ -424,7 +429,10 @@
       "related": [
         "IG-TERM-INTERPRETIVE-DRIFT",
         "IG-TERM-NON-OPERATIONAL",
-        "IG-TERM-CANONICAL-MANIFEST"
+        "IG-TERM-CANONICAL-MANIFEST",
+        "IG-TERM-RESPONSE-LEGITIMACY",
+        "IG-TERM-LEGITIMATE-NON-RESPONSE",
+        "IG-TERM-OUTPUT-CONSTRAINT"
       ]
     },
     {
@@ -626,6 +634,121 @@
         "IG-TERM-EXTERNAL-AUTHORITY-CONTROL",
         "IG-TERM-Q-LAYER",
         "IG-TERM-A2"
+      ]
+    },
+    {
+      "id": "IG-TERM-SOURCE-PRECEDENCE",
+      "slug": "source-precedence",
+      "termCode": "IG-T-0030",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-03-15",
+      "variants": {
+        "en": {
+          "label": "Source precedence",
+          "definition": "An explicit ordering rule that determines which declared surface governs when multiple public surfaces appear to conflict."
+        },
+        "fr-CA": {
+          "label": "Préséance des sources",
+          "definition": "Règle d’ordre explicite qui détermine quelle surface déclarée gouverne lorsque plusieurs surfaces publiques semblent en conflit."
+        }
+      },
+      "related": [
+        "IG-TERM-CANONICAL-SURFACE",
+        "IG-TERM-PROVENANCE",
+        "IG-TERM-RESPONSE-LEGITIMACY"
+      ]
+    },
+    {
+      "id": "IG-TERM-RESPONSE-LEGITIMACY",
+      "slug": "response-legitimacy",
+      "termCode": "IG-T-0031",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-03-15",
+      "variants": {
+        "en": {
+          "label": "Response legitimacy",
+          "definition": "The condition under which a system is permitted to produce an answer, given scope, evidence, provenance, and authority."
+        },
+        "fr-CA": {
+          "label": "Légitimité de réponse",
+          "definition": "Condition dans laquelle un système est autorisé à produire une réponse, selon le périmètre, les preuves, la provenance et l’autorité."
+        }
+      },
+      "related": [
+        "IG-TERM-Q-LAYER",
+        "IG-TERM-ABSTENTION",
+        "IG-TERM-UNKNOWN"
+      ]
+    },
+    {
+      "id": "IG-TERM-LEGITIMATE-NON-RESPONSE",
+      "slug": "legitimate-non-response",
+      "termCode": "IG-T-0032",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-03-15",
+      "variants": {
+        "en": {
+          "label": "Legitimate non-response",
+          "definition": "A deliberate refusal, abstention, or request for clarification that is required when response legitimacy conditions are not met."
+        },
+        "fr-CA": {
+          "label": "Non-réponse légitime",
+          "definition": "Refus, abstention ou demande de clarification délibéré, requis lorsque les conditions de légitimité de réponse ne sont pas remplies."
+        }
+      },
+      "related": [
+        "IG-TERM-RESPONSE-LEGITIMACY",
+        "IG-TERM-ABSTENTION",
+        "IG-TERM-SCOPE-BOUNDARY"
+      ]
+    },
+    {
+      "id": "IG-TERM-ANTI-PLAUSIBILITY",
+      "slug": "anti-plausibility",
+      "termCode": "IG-T-0033",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-03-15",
+      "variants": {
+        "en": {
+          "label": "Anti-plausibility",
+          "definition": "A prohibition against completing gaps with fluent but unsupported inference when the declared evidence or authority is insufficient."
+        },
+        "fr-CA": {
+          "label": "Anti-plausibilité",
+          "definition": "Interdiction de combler des lacunes par une inférence fluide mais non étayée lorsque les preuves ou l’autorité déclarées sont insuffisantes."
+        }
+      },
+      "related": [
+        "IG-TERM-UNKNOWN",
+        "IG-TERM-CLAIM",
+        "IG-TERM-DERIVATION"
+      ]
+    },
+    {
+      "id": "IG-TERM-OUTPUT-CONSTRAINT",
+      "slug": "output-constraint",
+      "termCode": "IG-T-0034",
+      "classification": "normative",
+      "status": "canonical",
+      "introduced": "2026-03-15",
+      "variants": {
+        "en": {
+          "label": "Output constraint",
+          "definition": "A declared boundary on the form, confidence, modality, or prescriptiveness of a permissible response."
+        },
+        "fr-CA": {
+          "label": "Contrainte de sortie",
+          "definition": "Frontière déclarée portant sur la forme, le niveau de confiance, la modalité ou le caractère prescriptif d’une réponse permise."
+        }
+      },
+      "related": [
+        "IG-TERM-RESPONSE-LEGITIMACY",
+        "IG-TERM-CONSTRAINT-FIRST",
+        "IG-TERM-SCOPE-BOUNDARY"
       ]
     }
   ]

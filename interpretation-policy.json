@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "site": "https://interpretive-governance.org",
+  "doctrineVersion": "0.3.0",
+  "generatedAt": "2026-03-15",
+  "policy": "constraint-first interpretation",
+  "rules": [
+    "separate asserted facts, derivations, and unknowns",
+    "apply declared source precedence before synthesis",
+    "treat declared public boundaries as hard constraints",
+    "keep interpretation claim-scoped, time-scoped, and authority-scoped"
+  ]
+}

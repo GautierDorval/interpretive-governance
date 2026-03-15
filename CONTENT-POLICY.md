@@ -1,7 +1,25 @@
 # Content policy (public doctrine)
 
-- High-level concepts only.
-- No operational procedures.
-- No calibration data.
-- No proprietary client deliverables.
-- Link to canonical doctrinal materials hosted on gautierdorval.com.
+## Allowed
+
+- high-level doctrinal concepts
+- definitions
+- boundaries and exclusions
+- source precedence
+- response legitimacy
+- anti-plausibility rules
+- output constraints
+- canonical public anchors
+
+## Forbidden
+
+- operational procedures
+- scoring formulas
+- calibration data
+- datasets
+- private client deliverables
+- execution tooling
+- deployment instructions
+- operational prompts or playbooks
+
+Doctrine version: 0.3.0

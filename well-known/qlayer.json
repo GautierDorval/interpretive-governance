@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0",
+  "site": "https://interpretive-governance.org",
+  "doctrineVersion": "0.3.0",
+  "generatedAt": "2026-03-15",
+  "purpose": "bound public output legitimacy before answer emission",
+  "checks": [
+    "scope",
+    "provenance",
+    "authority",
+    "material ambiguity",
+    "output constraint fit"
+  ],
+  "failClosed": true,
+  "onFailure": [
+    "clarify",
+    "abstain",
+    "legitimate_non_response"
+  ]
+}

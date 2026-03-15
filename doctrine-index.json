@@ -1,0 +1,368 @@
+{
+  "site": "https://interpretive-governance.org",
+  "doctrineVersion": "0.3.0",
+  "generatedAt": "2026-03-15",
+  "machineSurfaces": [
+    "/ai-governance.json",
+    "/interpretation-policy.json",
+    "/response-legitimacy.json",
+    "/anti-plausibility.json",
+    "/output-constraints.json",
+    "/qlayer.json",
+    "/ig-manifest.json",
+    "/ai-manifest.json",
+    "/data/terms.json",
+    "/data/documents.json",
+    "/doctrine-index.json",
+    "/governance-fingerprint.json",
+    "/entity-graph.jsonld",
+    "/datasets.jsonld",
+    "/links.json",
+    "/llms.txt",
+    "/llms-full.txt"
+  ],
+  "documents": [
+    {
+      "id": "IG-DOC-ROOT",
+      "variants": {
+        "x-default": {
+          "url": "/",
+          "title": "Select language",
+          "description": "Choose your language for Interpretive Governance (doctrinal, non-operational)."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-HOME",
+      "variants": {
+        "en": {
+          "url": "/en/",
+          "title": "Home",
+          "description": "Interpretive Governance: a doctrinal framework for bounded interpretation, constraint-first responses, and auditable machine outputs."
+        },
+        "fr-CA": {
+          "url": "/fr/",
+          "title": "Accueil",
+          "description": "Interpretive Governance : un cadre doctrinal pour l’interprétation bornée, les réponses constraint-first et des sorties machine auditables."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-PRINCIPLES",
+      "variants": {
+        "en": {
+          "url": "/en/principles",
+          "title": "Principles",
+          "description": "Core principles of Interpretive Governance: separate claims from inferences, apply constraints before optimization, and require auditability."
+        },
+        "fr-CA": {
+          "url": "/fr/principes",
+          "title": "Principes",
+          "description": "Principes doctrinaux de l’Interpretive Governance : définitions, séparation doctrine/exécution, traçabilité, abstention et anti-drift sémantique."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-ARCHITECTURE",
+      "variants": {
+        "en": {
+          "url": "/en/architecture",
+          "title": "Architecture",
+          "description": "A conceptual architecture for Interpretive Governance: layers, roles, and boundaries for auditable interpretation. Includes the adjacent regime for executable authority (Layer 3)."
+        },
+        "fr-CA": {
+          "url": "/fr/architecture",
+          "title": "Architecture conceptuelle",
+          "description": "Une architecture conceptuelle pour l’Interpretive Governance : couches, rôles et frontières pour une interprétation auditable. Inclut le régime adjacent d’autorité exécutable (Layer 3)."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-SCOPE",
+      "variants": {
+        "en": {
+          "url": "/en/scope",
+          "title": "Scope",
+          "description": "Scope boundaries of Interpretive Governance: what is included, excluded, and deliberately left non-operational."
+        },
+        "fr-CA": {
+          "url": "/fr/portee",
+          "title": "Portée",
+          "description": "Portée et limites de l’Interpretive Governance : ce qui est inclus, exclu et volontairement non opérable."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-SOURCE-PRECEDENCE",
+      "variants": {
+        "en": {
+          "url": "/en/source-precedence",
+          "title": "Source precedence",
+          "description": "Canonical ordering rules for resolving conflicts between public Interpretive Governance surfaces and anchors."
+        },
+        "fr-CA": {
+          "url": "/fr/precedence-des-sources",
+          "title": "Préséance des sources",
+          "description": "Règles canoniques d’ordre pour résoudre les conflits entre surfaces publiques et ancrages d’Interpretive Governance."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-RESPONSE-LEGITIMACY",
+      "variants": {
+        "en": {
+          "url": "/en/response-legitimacy",
+          "title": "Response legitimacy",
+          "description": "Public conditions that must be satisfied before an Interpretive Governance answer is permitted."
+        },
+        "fr-CA": {
+          "url": "/fr/legitimite-de-reponse",
+          "title": "Légitimité de réponse",
+          "description": "Conditions publiques à satisfaire avant qu’une réponse d’Interpretive Governance soit permise."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-ANTI-PLAUSIBILITY",
+      "variants": {
+        "en": {
+          "url": "/en/anti-plausibility",
+          "title": "Anti-plausibility",
+          "description": "Public prohibition against fluent completion beyond the available scope, evidence, provenance, and authority."
+        },
+        "fr-CA": {
+          "url": "/fr/anti-plausibilite",
+          "title": "Anti-plausibilité",
+          "description": "Interdiction publique de compléter avec fluidité au-delà du périmètre, des preuves, de la provenance et de l’autorité disponibles."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-OUTPUT-CONSTRAINTS",
+      "variants": {
+        "en": {
+          "url": "/en/output-constraints",
+          "title": "Output constraints",
+          "description": "Declared boundaries on what an Interpretive Governance response may look like in public."
+        },
+        "fr-CA": {
+          "url": "/fr/contraintes-de-sortie",
+          "title": "Contraintes de sortie",
+          "description": "Frontières déclarées sur la forme qu’une réponse d’Interpretive Governance peut prendre en public."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-GLOSSARY",
+      "variants": {
+        "en": {
+          "url": "/en/glossary",
+          "title": "Glossary",
+          "description": "Canonical doctrinal definitions with stable identifiers (non-operational)."
+        },
+        "fr-CA": {
+          "url": "/fr/glossaire",
+          "title": "Glossaire",
+          "description": "Définitions doctrinales canoniques avec identifiants stables (non opérable)."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-AUTHOR",
+      "variants": {
+        "en": {
+          "url": "/en/author",
+          "title": "Author and governance",
+          "description": "About the author and governance posture: canonical references, discovery surfaces, and separation of public doctrine from operational execution."
+        },
+        "fr-CA": {
+          "url": "/fr/auteur",
+          "title": "Auteur et gouvernance",
+          "description": "À propos de l’auteur et de la posture de gouvernance : références canoniques, surfaces de découverte et séparation doctrine/exécution."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-NOTES",
+      "variants": {
+        "en": {
+          "url": "/en/notes",
+          "title": "Notes",
+          "description": "Short notes, updates, and non-operational clarifications for the Interpretive Governance doctrine. Includes the public Layer 3 boundary note."
+        },
+        "fr-CA": {
+          "url": "/fr/notes",
+          "title": "Notes et mises à jour",
+          "description": "Notes, mises à jour et clarifications non opérables pour la doctrine Interpretive Governance. Inclut la note publique sur la frontière Layer 3."
+        }
+      }
+    }
+  ],
+  "terms": [
+    {
+      "id": "IG-TERM-INTERPRETIVE-GOVERNANCE",
+      "slug": "interpretive-governance",
+      "termCode": "IG-T-0001"
+    },
+    {
+      "id": "IG-TERM-BOUNDED-INTERPRETATION",
+      "slug": "bounded-interpretation",
+      "termCode": "IG-T-0002"
+    },
+    {
+      "id": "IG-TERM-CONSTRAINT-FIRST",
+      "slug": "constraint-first",
+      "termCode": "IG-T-0003"
+    },
+    {
+      "id": "IG-TERM-SCOPE-BOUNDARY",
+      "slug": "scope-boundary",
+      "termCode": "IG-T-0004"
+    },
+    {
+      "id": "IG-TERM-PROVENANCE",
+      "slug": "provenance",
+      "termCode": "IG-T-0005"
+    },
+    {
+      "id": "IG-TERM-CLAIM",
+      "slug": "claim",
+      "termCode": "IG-T-0006"
+    },
+    {
+      "id": "IG-TERM-DERIVATION",
+      "slug": "derivation",
+      "termCode": "IG-T-0007"
+    },
+    {
+      "id": "IG-TERM-UNKNOWN",
+      "slug": "unknown",
+      "termCode": "IG-T-0008"
+    },
+    {
+      "id": "IG-TERM-ABSTENTION",
+      "slug": "abstention",
+      "termCode": "IG-T-0009"
+    },
+    {
+      "id": "IG-TERM-INTERPRETIVE-DRIFT",
+      "slug": "interpretive-drift",
+      "termCode": "IG-T-0010"
+    },
+    {
+      "id": "IG-TERM-TRACEABILITY",
+      "slug": "traceability",
+      "termCode": "IG-T-0011"
+    },
+    {
+      "id": "IG-TERM-AUDITABILITY",
+      "slug": "auditability",
+      "termCode": "IG-T-0012"
+    },
+    {
+      "id": "IG-TERM-CANONICAL-SURFACE",
+      "slug": "canonical-surface",
+      "termCode": "IG-T-0013"
+    },
+    {
+      "id": "IG-TERM-HUMAN-SURFACE",
+      "slug": "human-surface",
+      "termCode": "IG-T-0014"
+    },
+    {
+      "id": "IG-TERM-MACHINE-SURFACE",
+      "slug": "machine-surface",
+      "termCode": "IG-T-0015"
+    },
+    {
+      "id": "IG-TERM-DUALWEB",
+      "slug": "dualweb",
+      "termCode": "IG-T-0016"
+    },
+    {
+      "id": "IG-TERM-SSA-E",
+      "slug": "ssa-e",
+      "termCode": "IG-T-0017"
+    },
+    {
+      "id": "IG-TERM-A2",
+      "slug": "a2",
+      "termCode": "IG-T-0018"
+    },
+    {
+      "id": "IG-TERM-Q-LAYER",
+      "slug": "q-layer",
+      "termCode": "IG-T-0019"
+    },
+    {
+      "id": "IG-TERM-ENTITY-REGISTRY",
+      "slug": "entity-registry",
+      "termCode": "IG-T-0020"
+    },
+    {
+      "id": "IG-TERM-CANONICAL-MANIFEST",
+      "slug": "canonical-manifest",
+      "termCode": "IG-T-0021"
+    },
+    {
+      "id": "IG-TERM-NORMATIVE",
+      "slug": "normative",
+      "termCode": "IG-T-0022"
+    },
+    {
+      "id": "IG-TERM-INFORMATIVE",
+      "slug": "informative",
+      "termCode": "IG-T-0023"
+    },
+    {
+      "id": "IG-TERM-NON-OPERATIONAL",
+      "slug": "non-operational",
+      "termCode": "IG-T-0024"
+    },
+    {
+      "id": "IG-TERM-VERSIONED-DOCTRINE",
+      "slug": "versioned-doctrine",
+      "termCode": "IG-T-0025"
+    },
+    {
+      "id": "IG-TERM-DOCTRINE",
+      "slug": "doctrine",
+      "termCode": "IG-T-0026"
+    },
+    {
+      "id": "IG-TERM-EXTERNAL-AUTHORITY-CONTROL",
+      "slug": "external-authority-control",
+      "termCode": "IG-T-0027"
+    },
+    {
+      "id": "IG-TERM-AUTHORITY-GOVERNANCE-LAYER-3",
+      "slug": "authority-governance-layer-3",
+      "termCode": "IG-T-0028"
+    },
+    {
+      "id": "IG-TERM-SOURCE-PRECEDENCE",
+      "slug": "source-precedence",
+      "termCode": "IG-T-0030"
+    },
+    {
+      "id": "IG-TERM-RESPONSE-LEGITIMACY",
+      "slug": "response-legitimacy",
+      "termCode": "IG-T-0031"
+    },
+    {
+      "id": "IG-TERM-LEGITIMATE-NON-RESPONSE",
+      "slug": "legitimate-non-response",
+      "termCode": "IG-T-0032"
+    },
+    {
+      "id": "IG-TERM-ANTI-PLAUSIBILITY",
+      "slug": "anti-plausibility",
+      "termCode": "IG-T-0033"
+    },
+    {
+      "id": "IG-TERM-OUTPUT-CONSTRAINT",
+      "slug": "output-constraint",
+      "termCode": "IG-T-0034"
+    }
+  ]
+}

@@ -8,12 +8,23 @@ A personal doctrinal showcase of **Interpretive Governance** (non-operational co
 - https://gautierdorval.com/.well-known/ai-governance.json
 - https://github.com/GautierDorval/gautierdorval-identity
 
+## Hard public governance surfaces
+
+- `https://interpretive-governance.org/ai-governance.json`
+- `https://interpretive-governance.org/interpretation-policy.json`
+- `https://interpretive-governance.org/response-legitimacy.json`
+- `https://interpretive-governance.org/anti-plausibility.json`
+- `https://interpretive-governance.org/output-constraints.json`
+- `https://interpretive-governance.org/qlayer.json`
+
 ## Canonical machine surfaces (DualWeb)
 
-- Manifest: `https://interpretive-governance.org/ig-manifest.json` (also `https://interpretive-governance.org/.well-known/ig-manifest.json`)
-- Terms registry: `https://interpretive-governance.org/data/terms.json` (also `https://interpretive-governance.org/.well-known/ig-terms.json`)
-- Documents registry: `https://interpretive-governance.org/data/documents.json` (also `https://interpretive-governance.org/.well-known/ig-documents.json`)
-- Discovery file: `https://interpretive-governance.org/llms.txt`
+- Manifest: `https://interpretive-governance.org/ig-manifest.json`
+- AI manifest: `https://interpretive-governance.org/ai-manifest.json`
+- Terms registry: `https://interpretive-governance.org/data/terms.json`
+- Documents registry: `https://interpretive-governance.org/data/documents.json`
+- Discovery: `https://interpretive-governance.org/llms.txt` and `https://interpretive-governance.org/llms-full.txt`
+- Well-known mirrors under `/.well-known/` and `/well-known/`
 
 ## Scope
 
@@ -23,25 +34,11 @@ This repository intentionally excludes:
 - reproducible audit protocols, test catalogs, datasets
 - implementation playbooks, deployment scripts, operational tooling
 
-## Publishing
+## Build and validation
 
-Static site intended for Cloudflare Pages.
+```bash
+python scripts/build_artifacts.py
+python scripts/quality_gate.py
+```
 
-Build settings:
-
-- Framework preset: None
-- Build command: (empty)
-- Output directory: .
-
-## Cache bust
-
-Assets are versioned with `?v=20260227-1`.
-
-## URL policy
-
-Cloudflare Pages serves clean URLs (no `.html`). This repo enforces:
-
-- Language roots: `/en/` and `/fr/` (root `/` is `x-default` selector)
-- Clean internal links (no `.html`): `/en/principles` (not `/en/principles.html`)
-- 301 canonicalization via `_redirects` (legacy paths and `.html` forms)
-- `sitemap.xml` uses canonical clean URLs only
+Doctrine version: 0.3.0

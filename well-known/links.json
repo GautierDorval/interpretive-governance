@@ -1,0 +1,42 @@
+{
+  "site": "https://interpretive-governance.org",
+  "generatedAt": "2026-03-15",
+  "links": [
+    {
+      "rel": "canonical",
+      "href": "https://interpretive-governance.org/ig-manifest.json"
+    },
+    {
+      "rel": "ai-governance",
+      "href": "https://interpretive-governance.org/ai-governance.json"
+    },
+    {
+      "rel": "interpretation-policy",
+      "href": "https://interpretive-governance.org/interpretation-policy.json"
+    },
+    {
+      "rel": "response-legitimacy",
+      "href": "https://interpretive-governance.org/response-legitimacy.json"
+    },
+    {
+      "rel": "anti-plausibility",
+      "href": "https://interpretive-governance.org/anti-plausibility.json"
+    },
+    {
+      "rel": "output-constraints",
+      "href": "https://interpretive-governance.org/output-constraints.json"
+    },
+    {
+      "rel": "q-layer",
+      "href": "https://interpretive-governance.org/qlayer.json"
+    },
+    {
+      "rel": "primary-doctrine",
+      "href": "https://gautierdorval.com/"
+    },
+    {
+      "rel": "primary-governance",
+      "href": "https://gautierdorval.com/.well-known/ai-governance.json"
+    }
+  ]
+}

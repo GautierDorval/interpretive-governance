@@ -17,6 +17,7 @@ Outputs (generated, deterministic):
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 from pathlib import Path
 from html import escape
@@ -32,7 +33,7 @@ LANG_EN = "en"
 LANG_FR = "fr-CA"
 LANG_XDEFAULT = "x-default"
 
-ASSET_VERSION = "20260227-1"  # bump when assets change
+ASSET_VERSION = "20260315-1"  # bump when assets change
 
 def read_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -486,6 +487,63 @@ def build_sitemap(documents: list[dict], terms: list[dict], last_updated: str) -
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 """ + "\n".join(entries_sorted) + "\n</urlset>\n"
 
+def build_doctrine_index(documents: list[dict], terms: list[dict], doctrine_version: str, last_updated: str) -> dict:
+    return {
+        "site": SITE,
+        "doctrineVersion": doctrine_version,
+        "generatedAt": last_updated,
+        "machineSurfaces": [
+            "/ai-governance.json",
+            "/interpretation-policy.json",
+            "/response-legitimacy.json",
+            "/anti-plausibility.json",
+            "/output-constraints.json",
+            "/qlayer.json",
+            "/ig-manifest.json",
+            "/ai-manifest.json",
+            "/data/terms.json",
+            "/data/documents.json",
+            "/doctrine-index.json",
+            "/governance-fingerprint.json",
+            "/entity-graph.jsonld",
+            "/datasets.jsonld",
+            "/links.json",
+            "/llms.txt",
+            "/llms-full.txt",
+        ],
+        "documents": [{"id": d["id"], "variants": d.get("variants", {})} for d in documents],
+        "terms": [{"id": t["id"], "slug": t["slug"], "termCode": t["termCode"]} for t in terms],
+    }
+
+def build_governance_fingerprint() -> dict:
+    tracked = [
+        "ai-governance.json",
+        "interpretation-policy.json",
+        "response-legitimacy.json",
+        "anti-plausibility.json",
+        "output-constraints.json",
+        "qlayer.json",
+        "ig-manifest.json",
+        "ai-manifest.json",
+        "data/terms.json",
+        "data/documents.json",
+        "llms.txt",
+        "llms-full.txt",
+    ]
+    file_hashes = {}
+    for rel in tracked:
+        p = ROOT / rel
+        if p.exists():
+            file_hashes[rel] = hashlib.sha256(p.read_bytes()).hexdigest()
+    combined = hashlib.sha256(json.dumps(file_hashes, sort_keys=True).encode("utf-8")).hexdigest()
+    return {
+        "site": SITE,
+        "generatedAt": read_json(TERMS_PATH).get("generatedAt"),
+        "doctrineVersion": read_json(TERMS_PATH).get("doctrineVersion"),
+        "fingerprint": combined,
+        "files": file_hashes,
+    }
+
 def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: str, last_updated: str) -> dict:
     dist: list[dict] = []
 
@@ -523,6 +581,18 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
             })
 
     machine_files = [
+        ("AI governance", "/ai-governance.json", "application/json"),
+        ("Interpretation policy", "/interpretation-policy.json", "application/json"),
+        ("Response legitimacy", "/response-legitimacy.json", "application/json"),
+        ("Anti-plausibility", "/anti-plausibility.json", "application/json"),
+        ("Output constraints", "/output-constraints.json", "application/json"),
+        ("Q-Layer", "/qlayer.json", "application/json"),
+        ("AI manifest", "/ai-manifest.json", "application/ld+json"),
+        ("Doctrine index", "/doctrine-index.json", "application/json"),
+        ("Governance fingerprint", "/governance-fingerprint.json", "application/json"),
+        ("Entity graph", "/entity-graph.jsonld", "application/ld+json"),
+        ("Datasets declaration", "/datasets.jsonld", "application/ld+json"),
+        ("Links", "/links.json", "application/json"),
         ("Canonical manifest", "/ig-manifest.json", "application/ld+json"),
         ("Terms registry", "/data/terms.json", "application/json"),
         ("Documents registry", "/data/documents.json", "application/json"),
@@ -530,6 +600,9 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
         ("Well-known terms registry", "/.well-known/ig-terms.json", "application/json"),
         ("Well-known documents registry", "/.well-known/ig-documents.json", "application/json"),
         ("LLMs discovery", "/llms.txt", "text/plain"),
+        ("LLMs full discovery", "/llms-full.txt", "text/plain"),
+        ("LLM readme", "/readme.llm.txt", "text/plain"),
+        ("LLM guidelines", "/llm-guidelines.md", "text/markdown"),
         ("Sitemap", "/sitemap.xml", "application/xml"),
         ("Robots", "/robots.txt", "text/plain"),
         ("Humans", "/humans.txt", "text/plain"),
@@ -577,8 +650,12 @@ def main() -> None:
     # Mirrors (.well-known)
     well_known = ROOT / ".well-known"
     well_known.mkdir(exist_ok=True)
+    well_known_alias = ROOT / "well-known"
+    well_known_alias.mkdir(exist_ok=True)
     write(well_known / "ig-terms.json", json.dumps(terms_json, ensure_ascii=False, indent=2) + "\n")
     write(well_known / "ig-documents.json", json.dumps(docs_json, ensure_ascii=False, indent=2) + "\n")
+    write(well_known_alias / "ig-terms.json", json.dumps(terms_json, ensure_ascii=False, indent=2) + "\n")
+    write(well_known_alias / "ig-documents.json", json.dumps(docs_json, ensure_ascii=False, indent=2) + "\n")
 
     # Glossary index pages (generated)
     write(ROOT / "en" / "glossary.html", make_glossary_index(LANG_EN, terms, doctrine_version, last_updated))
@@ -603,6 +680,26 @@ def main() -> None:
     manifest_text = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     write(ROOT / "ig-manifest.json", manifest_text)
     write(well_known / "ig-manifest.json", manifest_text)
+    write(well_known_alias / "ig-manifest.json", manifest_text)
+
+    for rel in ["ai-governance.json", "interpretation-policy.json", "response-legitimacy.json", "anti-plausibility.json", "output-constraints.json", "qlayer.json", "ai-manifest.json", "entity-graph.jsonld", "datasets.jsonld", "links.json"]:
+        src = ROOT / rel
+        if src.exists():
+            txt = src.read_text(encoding="utf-8")
+            write(well_known / rel, txt)
+            write(well_known_alias / rel, txt)
+
+    doctrine_index = build_doctrine_index(documents, terms, doctrine_version, last_updated)
+    doctrine_text = json.dumps(doctrine_index, ensure_ascii=False, indent=2) + "\n"
+    write(ROOT / "doctrine-index.json", doctrine_text)
+    write(well_known / "doctrine-index.json", doctrine_text)
+    write(well_known_alias / "doctrine-index.json", doctrine_text)
+
+    fingerprint = build_governance_fingerprint()
+    fp_text = json.dumps(fingerprint, ensure_ascii=False, indent=2) + "\n"
+    write(ROOT / "governance-fingerprint.json", fp_text)
+    write(well_known / "governance-fingerprint.json", fp_text)
+    write(well_known_alias / "governance-fingerprint.json", fp_text)
 
 if __name__ == "__main__":
     main()

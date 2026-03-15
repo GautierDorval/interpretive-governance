@@ -44,3 +44,17 @@
 /termes/:slug.html /fr/termes/:slug 301
 /terms/* /en/terms/:splat 301
 /termes/* /fr/termes/:splat 301
+
+
+# Governance pages
+/source-precedence /en/source-precedence 301
+/precedence-des-sources /fr/precedence-des-sources 301
+/response-legitimacy /en/response-legitimacy 301
+/legitimite-de-reponse /fr/legitimite-de-reponse 301
+/anti-plausibility /en/anti-plausibility 301
+/anti-plausibilite /fr/anti-plausibilite 301
+/output-constraints /en/output-constraints 301
+/contraintes-de-sortie /fr/contraintes-de-sortie 301
+
+# Well-known alias mirrors
+/well-known/* /.well-known/:splat 200

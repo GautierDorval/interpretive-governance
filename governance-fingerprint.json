@@ -1,0 +1,20 @@
+{
+  "site": "https://interpretive-governance.org",
+  "generatedAt": "2026-03-15",
+  "doctrineVersion": "0.3.0",
+  "fingerprint": "5eaa88c547e88c5981cf6b461a7493256047ed4e7d184abd85694e52c40f176d",
+  "files": {
+    "ai-governance.json": "d28a1ce30b5a8e535fe74d751127ebaad84f64747d05cd89f6fee07a5393853c",
+    "interpretation-policy.json": "fa896deda12e9260504dd69a990320d5517f32ced8b5474487d0b3b906c28343",
+    "response-legitimacy.json": "0a067df50b6706c0444f9ed5ac54d6f1130814f28718cb0a686fe6eb46e967e3",
+    "anti-plausibility.json": "b1c20f84f766534654168252c05ddc294976ef1e1a1822596a7f3c1eec66142a",
+    "output-constraints.json": "516256bfa13fca2fee7669b71d5bd578590389b6240f30627f9e6188549ff5c6",
+    "qlayer.json": "e563755123070b119146cacfb805a3433e538d4bda6b80a4cb74fe675582c197",
+    "ig-manifest.json": "7585cf6c4f55bac1f5b7c49f3e746bb006fb9c0a72debf4c1b5c69a7390f370e",
+    "ai-manifest.json": "33495c10e9bfeafc5a3787dbd398bb4525296016997c97f8b0e8b6e18db0d494",
+    "data/terms.json": "6eb94ee468bd4af58d19b85d766f9d997c02d74093e5af18ab64d6656fd22bee",
+    "data/documents.json": "1ec5c05cd925c084a341f738db915b1421f43188d84a351cd6cf3892be735ac0",
+    "llms.txt": "e19e35881962f7a93d46613712aa30d5563ecb81a91ce1cde053141f0b07aa84",
+    "llms-full.txt": "d9bc344fe872d2e5bcd4ea353cbb4bd534b52422614ea6733ac796cc5940d4cd"
+  }
+}

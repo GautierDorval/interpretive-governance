@@ -29,6 +29,21 @@ CLASSIFICATIONS = {"normative", "informative"}
 LANG_EN = "en"
 LANG_FR = "fr-CA"
 
+REQUIRED_JSON = [
+    "ai-governance.json",
+    "interpretation-policy.json",
+    "response-legitimacy.json",
+    "anti-plausibility.json",
+    "output-constraints.json",
+    "qlayer.json",
+    "ai-manifest.json",
+    "doctrine-index.json",
+    "governance-fingerprint.json",
+    "entity-graph.jsonld",
+    "datasets.jsonld",
+    "links.json",
+]
+
 def fail(msg: str) -> None:
     print(f"[FAIL] {msg}")
     sys.exit(1)
@@ -125,6 +140,32 @@ def main() -> None:
         fail("manifest missing /data/documents.json distribution entry")
 
     ok("Machine surface JSON checks passed")
+
+    for rel in REQUIRED_JSON:
+        p = ROOT / rel
+        if not p.exists():
+            fail(f"missing required governance file: {rel}")
+        try:
+            json.loads(p.read_text(encoding="utf-8"))
+        except Exception as e:
+            fail(f"invalid JSON in required governance file {rel}: {e}")
+
+    for rel in ["ig-manifest.json", "ig-terms.json", "ig-documents.json", "ai-governance.json", "interpretation-policy.json", "response-legitimacy.json", "anti-plausibility.json", "output-constraints.json", "qlayer.json", "ai-manifest.json", "doctrine-index.json", "governance-fingerprint.json", "entity-graph.jsonld", "datasets.jsonld", "links.json"]:
+        dot = ROOT / ".well-known" / rel
+        alias = ROOT / "well-known" / rel
+        src = ROOT / rel if rel not in ["ig-terms.json", "ig-documents.json", "ig-manifest.json"] else None
+        if not dot.exists():
+            fail(f"missing .well-known mirror: {rel}")
+        if not alias.exists():
+            fail(f"missing well-known mirror: {rel}")
+        if dot.read_text(encoding="utf-8") != alias.read_text(encoding="utf-8"):
+            fail(f"well-known mirrors differ for: {rel}")
+        if src and src.exists() and src.read_text(encoding="utf-8") != dot.read_text(encoding="utf-8"):
+            fail(f"root and .well-known copy differ for: {rel}")
+
+    for rel in ["llms-full.txt", "readme.llm.txt", "llm-guidelines.md"]:
+        if not (ROOT / rel).exists():
+            fail(f"missing required machine guidance file: {rel}")
 
     # ---- HTML checks (all indexable pages) ----
     html_files = sorted(

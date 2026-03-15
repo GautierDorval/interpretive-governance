@@ -11,8 +11,8 @@
   "description": "Machine-readable index of public doctrinal artifacts (non-operational) for Interpretive Governance.",
   "url": "https://interpretive-governance.org/ig-manifest.json",
   "identifier": "ig-manifest",
-  "version": "0.2.0",
-  "dateModified": "2026-03-03",
+  "version": "0.3.0",
+  "dateModified": "2026-03-15",
   "inLanguage": [
     "en",
     "fr-CA"
@@ -41,7 +41,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -54,7 +54,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -67,7 +67,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -80,7 +80,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -93,7 +93,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -106,7 +106,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -119,7 +119,46 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "AI governance",
+      "contentUrl": "https://interpretive-governance.org/ai-governance.json",
+      "encodingFormat": "application/json",
+      "identifier": "/ai-governance.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "AI manifest",
+      "contentUrl": "https://interpretive-governance.org/ai-manifest.json",
+      "encodingFormat": "application/ld+json",
+      "identifier": "/ai-manifest.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Anti-plausibility",
+      "contentUrl": "https://interpretive-governance.org/anti-plausibility.json",
+      "encodingFormat": "application/json",
+      "identifier": "/anti-plausibility.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -132,7 +171,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -145,7 +184,33 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Datasets declaration",
+      "contentUrl": "https://interpretive-governance.org/datasets.jsonld",
+      "encodingFormat": "application/ld+json",
+      "identifier": "/datasets.jsonld",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Doctrine index",
+      "contentUrl": "https://interpretive-governance.org/doctrine-index.json",
+      "encodingFormat": "application/json",
+      "identifier": "/doctrine-index.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -161,7 +226,23 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Anti-plausibility",
+      "description": "Public prohibition against fluent completion beyond the available scope, evidence, provenance, and authority.",
+      "contentUrl": "https://interpretive-governance.org/en/anti-plausibility",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-ANTI-PLAUSIBILITY",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -177,7 +258,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -193,7 +274,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -209,7 +290,7 @@
         "normative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -225,7 +306,23 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Output constraints",
+      "description": "Declared boundaries on what an Interpretive Governance response may look like in public.",
+      "contentUrl": "https://interpretive-governance.org/en/output-constraints",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-OUTPUT-CONSTRAINTS",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -241,7 +338,23 @@
         "normative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Response legitimacy",
+      "description": "Public conditions that must be satisfied before an Interpretive Governance answer is permitted.",
+      "contentUrl": "https://interpretive-governance.org/en/response-legitimacy",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-RESPONSE-LEGITIMACY",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -257,7 +370,23 @@
         "normative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Source precedence",
+      "description": "Canonical ordering rules for resolving conflicts between public Interpretive Governance surfaces and anchors.",
+      "contentUrl": "https://interpretive-governance.org/en/source-precedence",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-SOURCE-PRECEDENCE",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -274,7 +403,7 @@
         "draft",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -291,7 +420,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Anti-plausibility",
+      "description": "A prohibition against completing gaps with fluent but unsupported inference when the declared evidence or authority is insufficient.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/anti-plausibility",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-ANTI-PLAUSIBILITY",
+      "keywords": [
+        "IG-T-0033",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -308,7 +454,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -325,7 +471,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -342,7 +488,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -359,7 +505,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -376,7 +522,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -393,7 +539,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -410,7 +556,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -427,7 +573,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -444,7 +590,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -461,7 +607,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -478,7 +624,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -495,7 +641,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -512,7 +658,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -529,7 +675,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -546,7 +692,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -563,7 +709,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Legitimate non-response",
+      "description": "A deliberate refusal, abstention, or request for clarification that is required when response legitimacy conditions are not met.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/legitimate-non-response",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-LEGITIMATE-NON-RESPONSE",
+      "keywords": [
+        "IG-T-0032",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -580,7 +743,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -597,7 +760,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -614,7 +777,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Output constraint",
+      "description": "A declared boundary on the form, confidence, modality, or prescriptiveness of a permissible response.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/output-constraint",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-OUTPUT-CONSTRAINT",
+      "keywords": [
+        "IG-T-0034",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -631,7 +811,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -648,7 +828,24 @@
         "draft",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Response legitimacy",
+      "description": "The condition under which a system is permitted to produce an answer, given scope, evidence, provenance, and authority.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/response-legitimacy",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-RESPONSE-LEGITIMACY",
+      "keywords": [
+        "IG-T-0031",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -665,7 +862,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Source precedence",
+      "description": "An explicit ordering rule that determines which declared surface governs when multiple public surfaces appear to conflict.",
+      "contentUrl": "https://interpretive-governance.org/en/terms/source-precedence",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-TERM-SOURCE-PRECEDENCE",
+      "keywords": [
+        "IG-T-0030",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -682,7 +896,7 @@
         "draft",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -699,7 +913,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -716,7 +930,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -733,7 +947,20 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Entity graph",
+      "contentUrl": "https://interpretive-governance.org/entity-graph.jsonld",
+      "encodingFormat": "application/ld+json",
+      "identifier": "/entity-graph.jsonld",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -749,7 +976,23 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Anti-plausibilité",
+      "description": "Interdiction publique de compléter avec fluidité au-delà du périmètre, des preuves, de la provenance et de l’autorité disponibles.",
+      "contentUrl": "https://interpretive-governance.org/fr/anti-plausibilite",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-ANTI-PLAUSIBILITY",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -765,7 +1008,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -781,7 +1024,23 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Contraintes de sortie",
+      "description": "Frontières déclarées sur la forme qu’une réponse d’Interpretive Governance peut prendre en public.",
+      "contentUrl": "https://interpretive-governance.org/fr/contraintes-de-sortie",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-OUTPUT-CONSTRAINTS",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -797,7 +1056,23 @@
         "normative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Légitimité de réponse",
+      "description": "Conditions publiques à satisfaire avant qu’une réponse d’Interpretive Governance soit permise.",
+      "contentUrl": "https://interpretive-governance.org/fr/legitimite-de-reponse",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-RESPONSE-LEGITIMACY",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -813,7 +1088,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -829,7 +1104,23 @@
         "normative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Préséance des sources",
+      "description": "Règles canoniques d’ordre pour résoudre les conflits entre surfaces publiques et ancrages d’Interpretive Governance.",
+      "contentUrl": "https://interpretive-governance.org/fr/precedence-des-sources",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-SOURCE-PRECEDENCE",
+      "keywords": [
+        "governance",
+        "normative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -845,7 +1136,7 @@
         "normative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -862,7 +1153,7 @@
         "draft",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -879,7 +1170,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Anti-plausibilité",
+      "description": "Interdiction de combler des lacunes par une inférence fluide mais non étayée lorsque les preuves ou l’autorité déclarées sont insuffisantes.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/anti-plausibility",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-ANTI-PLAUSIBILITY",
+      "keywords": [
+        "IG-T-0033",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -896,7 +1204,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -913,7 +1221,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -930,7 +1238,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -947,7 +1255,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -964,7 +1272,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -981,7 +1289,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -998,7 +1306,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1015,7 +1323,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1032,7 +1340,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1049,7 +1357,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1066,7 +1374,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1083,7 +1391,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1100,7 +1408,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1117,7 +1425,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1134,7 +1442,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1151,7 +1459,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Non-réponse légitime",
+      "description": "Refus, abstention ou demande de clarification délibéré, requis lorsque les conditions de légitimité de réponse ne sont pas remplies.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/legitimate-non-response",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-LEGITIMATE-NON-RESPONSE",
+      "keywords": [
+        "IG-T-0032",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1168,7 +1493,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1185,7 +1510,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1202,7 +1527,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Contrainte de sortie",
+      "description": "Frontière déclarée portant sur la forme, le niveau de confiance, la modalité ou le caractère prescriptif d’une réponse permise.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/output-constraint",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-OUTPUT-CONSTRAINT",
+      "keywords": [
+        "IG-T-0034",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1219,7 +1561,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1236,7 +1578,24 @@
         "draft",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Légitimité de réponse",
+      "description": "Condition dans laquelle un système est autorisé à produire une réponse, selon le périmètre, les preuves, la provenance et l’autorité.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/response-legitimacy",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-RESPONSE-LEGITIMACY",
+      "keywords": [
+        "IG-T-0031",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1253,7 +1612,24 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Préséance des sources",
+      "description": "Règle d’ordre explicite qui détermine quelle surface déclarée gouverne lorsque plusieurs surfaces publiques semblent en conflit.",
+      "contentUrl": "https://interpretive-governance.org/fr/termes/source-precedence",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-TERM-SOURCE-PRECEDENCE",
+      "keywords": [
+        "IG-T-0030",
+        "normative",
+        "canonical",
+        "DefinedTerm",
+        "doctrinal",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1270,7 +1646,7 @@
         "draft",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1287,7 +1663,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1304,7 +1680,7 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1321,7 +1697,20 @@
         "canonical",
         "DefinedTerm",
         "doctrinal",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Governance fingerprint",
+      "contentUrl": "https://interpretive-governance.org/governance-fingerprint.json",
+      "encodingFormat": "application/json",
+      "identifier": "/governance-fingerprint.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1334,7 +1723,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1347,7 +1736,59 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Interpretation policy",
+      "contentUrl": "https://interpretive-governance.org/interpretation-policy.json",
+      "encodingFormat": "application/json",
+      "identifier": "/interpretation-policy.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Links",
+      "contentUrl": "https://interpretive-governance.org/links.json",
+      "encodingFormat": "application/json",
+      "identifier": "/links.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "LLM guidelines",
+      "contentUrl": "https://interpretive-governance.org/llm-guidelines.md",
+      "encodingFormat": "text/markdown",
+      "identifier": "/llm-guidelines.md",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "LLMs full discovery",
+      "contentUrl": "https://interpretive-governance.org/llms-full.txt",
+      "encodingFormat": "text/plain",
+      "identifier": "/llms-full.txt",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1360,7 +1801,59 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Output constraints",
+      "contentUrl": "https://interpretive-governance.org/output-constraints.json",
+      "encodingFormat": "application/json",
+      "identifier": "/output-constraints.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Q-Layer",
+      "contentUrl": "https://interpretive-governance.org/qlayer.json",
+      "encodingFormat": "application/json",
+      "identifier": "/qlayer.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "LLM readme",
+      "contentUrl": "https://interpretive-governance.org/readme.llm.txt",
+      "encodingFormat": "text/plain",
+      "identifier": "/readme.llm.txt",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Response legitimacy",
+      "contentUrl": "https://interpretive-governance.org/response-legitimacy.json",
+      "encodingFormat": "application/json",
+      "identifier": "/response-legitimacy.json",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1373,7 +1866,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     },
     {
@@ -1386,7 +1879,7 @@
         "informative",
         "doctrinal",
         "non-operational",
-        "doctrine:0.2.0"
+        "doctrine:0.3.0"
       ]
     }
   ]
