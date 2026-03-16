@@ -24,6 +24,7 @@ A personal doctrinal showcase of **Interpretive Governance** (non-operational co
 - Terms registry: `https://interpretive-governance.org/data/terms.json`
 - Documents registry: `https://interpretive-governance.org/data/documents.json`
 - Discovery: `https://interpretive-governance.org/llms.txt` and `https://interpretive-governance.org/llms-full.txt`
+- AI policy: `https://interpretive-governance.org/en/ai-policy` and `https://interpretive-governance.org/fr/politique-ia`
 - Well-known mirrors under `/.well-known/` and `/well-known/`
 
 ## Scope

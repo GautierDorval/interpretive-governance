@@ -170,6 +170,9 @@ def make_head_common(
 {hreflang_links}
 <link rel="alternate" type="application/ld+json" href="{SITE}/ig-manifest.json" title="Interpretive Governance canonical manifest"/>
 <link rel="alternate" type="application/json" href="{SITE}/data/terms.json" title="Interpretive Governance terms registry"/>
+<link rel="describedby" href="{SITE}/{'fr/politique-ia' if lang.startswith('fr') else 'en/ai-policy'}" title="{'Politique IA' if lang.startswith('fr') else 'AI policy'}"/>
+<link rel="describedby" href="{SITE}/{'fr/politique-ia.md' if lang.startswith('fr') else 'ai-policy.md'}" title="{'Miroir Markdown de la politique IA' if lang.startswith('fr') else 'AI policy markdown mirror'}"/>
+<link rel="describedby" href="{SITE}/.well-known/ai-governance.json" title="{'Racine canonique de gouvernance' if lang.startswith('fr') else 'Canonical governance root'}"/>
 <meta property="og:site_name" content="Interpretive Governance"/>
 <meta property="og:title" content="{escape(title)}"/>
 <meta property="og:description" content="{escape(description)}"/>
@@ -308,9 +311,10 @@ def make_term_page(term: dict, lang: str, doctrine_version: str, last_updated: s
   {related_html}
 
   <div class="footer">
-    Last updated: {last_updated}<br/>
-    This site is intentionally non-operational: it does not contain scoring weights, thresholds, calibrated protocols, datasets, or execution tooling.<br/>
-    Primary doctrinal surface: gautierdorval.com
+    {'Last updated' if is_en else 'Dernière mise à jour'}: {last_updated}<br/>
+    {'AI policy' if is_en else 'Politique IA'}: <a href="{'/en/ai-policy' if is_en else '/fr/politique-ia'}">{'/en/ai-policy' if is_en else '/fr/politique-ia'}</a> · {'Markdown mirror' if is_en else 'Miroir Markdown'}: <a href="{'/ai-policy.md' if is_en else '/fr/politique-ia.md'}">{'/ai-policy.md' if is_en else '/fr/politique-ia.md'}</a><br/>
+    {'This site is intentionally non-operational: it does not contain scoring weights, thresholds, calibrated protocols, datasets, or execution tooling.' if is_en else 'Ce site est volontairement non opérable : il ne contient ni poids, ni seuils, ni protocoles calibrés, ni jeux de données, ni outillage d’exécution.'}<br/>
+    {'Primary doctrinal surface' if is_en else 'Surface doctrinale primaire'}: <a href="https://gautierdorval.com/">gautierdorval.com</a>
   </div>
 </main>
 </body>
@@ -427,9 +431,10 @@ def make_glossary_index(lang: str, terms: list[dict], doctrine_version: str, las
   </div>
 
   <div class="footer">
-    Last updated: {last_updated}<br/>
-    This site is intentionally non-operational: it does not contain scoring weights, thresholds, calibrated protocols, datasets, or execution tooling.<br/>
-    Primary doctrinal surface: gautierdorval.com
+    {'Last updated' if is_en else 'Dernière mise à jour'}: {last_updated}<br/>
+    {'AI policy' if is_en else 'Politique IA'}: <a href="{'/en/ai-policy' if is_en else '/fr/politique-ia'}">{'/en/ai-policy' if is_en else '/fr/politique-ia'}</a> · {'Markdown mirror' if is_en else 'Miroir Markdown'}: <a href="{'/ai-policy.md' if is_en else '/fr/politique-ia.md'}">{'/ai-policy.md' if is_en else '/fr/politique-ia.md'}</a><br/>
+    {'This site is intentionally non-operational: it does not contain scoring weights, thresholds, calibrated protocols, datasets, or execution tooling.' if is_en else 'Ce site est volontairement non opérable : il ne contient ni poids, ni seuils, ni protocoles calibrés, ni jeux de données, ni outillage d’exécution.'}<br/>
+    {'Primary doctrinal surface' if is_en else 'Surface doctrinale primaire'}: <a href="https://gautierdorval.com/">gautierdorval.com</a>
   </div>
 </main>
 </body>
@@ -510,6 +515,8 @@ def build_doctrine_index(documents: list[dict], terms: list[dict], doctrine_vers
             "/links.json",
             "/llms.txt",
             "/llms-full.txt",
+            "/ai-policy.md",
+            "/fr/politique-ia.md",
         ],
         "documents": [{"id": d["id"], "variants": d.get("variants", {})} for d in documents],
         "terms": [{"id": t["id"], "slug": t["slug"], "termCode": t["termCode"]} for t in terms],
@@ -529,6 +536,8 @@ def build_governance_fingerprint() -> dict:
         "data/documents.json",
         "llms.txt",
         "llms-full.txt",
+        "ai-policy.md",
+        "fr/politique-ia.md",
     ]
     file_hashes = {}
     for rel in tracked:
@@ -603,6 +612,8 @@ def build_manifest(documents: list[dict], terms: list[dict], doctrine_version: s
         ("LLMs full discovery", "/llms-full.txt", "text/plain"),
         ("LLM readme", "/readme.llm.txt", "text/plain"),
         ("LLM guidelines", "/llm-guidelines.md", "text/markdown"),
+        ("AI policy markdown mirror", "/ai-policy.md", "text/markdown"),
+        ("Politique IA markdown mirror", "/fr/politique-ia.md", "text/markdown"),
         ("Sitemap", "/sitemap.xml", "application/xml"),
         ("Robots", "/robots.txt", "text/plain"),
         ("Humans", "/humans.txt", "text/plain"),

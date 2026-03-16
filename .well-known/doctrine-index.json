@@ -19,7 +19,9 @@
     "/datasets.jsonld",
     "/links.json",
     "/llms.txt",
-    "/llms-full.txt"
+    "/llms-full.txt",
+    "/ai-policy.md",
+    "/fr/politique-ia.md"
   ],
   "documents": [
     {
@@ -194,6 +196,21 @@
           "url": "/fr/notes",
           "title": "Notes et mises à jour",
           "description": "Notes, mises à jour et clarifications non opérables pour la doctrine Interpretive Governance. Inclut la note publique sur la frontière Layer 3."
+        }
+      }
+    },
+    {
+      "id": "IG-DOC-AI-POLICY",
+      "variants": {
+        "en": {
+          "url": "/en/ai-policy",
+          "title": "AI policy",
+          "description": "How AI systems should discover, prioritize, and use the governance files published by Interpretive Governance."
+        },
+        "fr-CA": {
+          "url": "/fr/politique-ia",
+          "title": "Politique IA",
+          "description": "Comment les systèmes d’IA doivent découvrir, hiérarchiser et utiliser les fichiers de gouvernance publiés par Interpretive Governance."
         }
       }
     }

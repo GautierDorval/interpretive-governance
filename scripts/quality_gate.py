@@ -163,7 +163,7 @@ def main() -> None:
         if src and src.exists() and src.read_text(encoding="utf-8") != dot.read_text(encoding="utf-8"):
             fail(f"root and .well-known copy differ for: {rel}")
 
-    for rel in ["llms-full.txt", "readme.llm.txt", "llm-guidelines.md"]:
+    for rel in ["llms-full.txt", "readme.llm.txt", "llm-guidelines.md", "ai-policy.md", "fr/politique-ia.md"]:
         if not (ROOT / rel).exists():
             fail(f"missing required machine guidance file: {rel}")
 
@@ -266,6 +266,20 @@ def main() -> None:
             doc_id = parse_meta(soup, "ig:doc-id", "name")
             if not doc_id:
                 fail(f"{rel}: document page missing ig:doc-id")
+
+        footer = soup.find("div", class_="footer")
+        if not footer:
+            fail(f"{rel}: missing footer block")
+        footer_hrefs = [a.get("href") for a in footer.find_all("a", href=True)]
+        if rel.as_posix() == "index.html":
+            if "/en/ai-policy" not in footer_hrefs or "/fr/politique-ia" not in footer_hrefs:
+                fail(f"{rel}: footer must expose EN and FR AI policy links")
+        elif soup.html.get("lang", "").startswith("fr"):
+            if "/fr/politique-ia" not in footer_hrefs:
+                fail(f"{rel}: footer missing /fr/politique-ia link")
+        else:
+            if "/en/ai-policy" not in footer_hrefs:
+                fail(f"{rel}: footer missing /en/ai-policy link")
 
         # internal links (.html)
         for a in soup.find_all("a", href=True):

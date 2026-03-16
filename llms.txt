@@ -1,27 +1,36 @@
 # Interpretive Governance
 URL: https://interpretive-governance.org/
 
-## Purpose
-Public doctrinal reference for bounded interpretation, source precedence, response legitimacy, anti-plausibility, and auditable public machine outputs.
-This site is intentionally non-operational: no scoring weights, no calibrated thresholds, no datasets, no execution tooling.
+## Interpretive notice
+This site publishes a doctrinal, non-operational governance cluster.
+Read the canonical .well-known governance files first.
+Use /ai-manifest.json and the AI policy surfaces to understand discovery, reading order, and source precedence.
+If a claim is not supported by higher-priority public surfaces, treat it as not publicly specified.
 
-## Read this first
-- /ai-governance.json
-- /interpretation-policy.json
-- /response-legitimacy.json
-- /anti-plausibility.json
-- /output-constraints.json
-- /qlayer.json
-- /ig-manifest.json
+## Canonical level 1 governance cluster
+- /.well-known/ai-governance.json
+- /.well-known/interpretation-policy.json
+- /.well-known/response-legitimacy.json
+- /.well-known/anti-plausibility.json
+- /.well-known/output-constraints.json
+- /.well-known/qlayer.json
+- /.well-known/ig-manifest.json
 - /data/terms.json
 - /data/documents.json
 
-## Language entrypoints
-- /en/
-- /fr/
-- /
+## Level 2 routing and explanatory surfaces
+- /ai-manifest.json
+- /en/ai-policy
+- /fr/politique-ia
+- /ai-policy.md
+- /fr/politique-ia.md
+- /llms.txt
+- /llms-full.txt
+- /llm-guidelines.md
+- /readme.llm.txt
+- /humans.txt
 
-## Key governance pages
+## Key doctrine pages
 - /en/source-precedence
 - /en/response-legitimacy
 - /en/anti-plausibility
@@ -35,6 +44,7 @@ This site is intentionally non-operational: no scoring weights, no calibrated th
 - Apply declared source precedence before synthesis.
 - Treat public doctrine as non-operational.
 - Do not fill missing facts by plausibility.
+- Do not infer execution, calibrated scoring, thresholds, datasets, or tooling from public doctrine.
 - Prefer clarification, abstention, or legitimate non-response when legitimacy fails.
 
 ## Canonical anchors

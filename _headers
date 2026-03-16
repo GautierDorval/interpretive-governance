@@ -7,12 +7,16 @@
 /
   Cache-Control: no-store
   X-Inferens-Signal: ai-train=no, search=yes, ai-input=yes
+  Link: <https://interpretive-governance.org/en/ai-policy>; rel="describedby"
+  Link: <https://interpretive-governance.org/fr/politique-ia>; rel="describedby"
 
 /en/*
   X-Inferens-Signal: ai-train=no, search=yes, ai-input=yes
+  Link: <https://interpretive-governance.org/en/ai-policy>; rel="describedby"
 
 /fr/*
   X-Inferens-Signal: ai-train=no, search=yes, ai-input=yes
+  Link: <https://interpretive-governance.org/fr/politique-ia>; rel="describedby"
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
@@ -30,6 +34,10 @@
 /qlayer.json
   X-Robots-Tag: noindex
 /ai-manifest.json
+  X-Robots-Tag: noindex
+/ai-policy.md
+  X-Robots-Tag: noindex
+/fr/politique-ia.md
   X-Robots-Tag: noindex
 /doctrine-index.json
   X-Robots-Tag: noindex

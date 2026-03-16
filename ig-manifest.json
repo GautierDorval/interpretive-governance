@@ -150,6 +150,19 @@
     },
     {
       "@type": "DataDownload",
+      "name": "AI policy markdown mirror",
+      "contentUrl": "https://interpretive-governance.org/ai-policy.md",
+      "encodingFormat": "text/markdown",
+      "identifier": "/ai-policy.md",
+      "keywords": [
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
       "name": "Anti-plausibility",
       "contentUrl": "https://interpretive-governance.org/anti-plausibility.json",
       "encodingFormat": "application/json",
@@ -223,6 +236,22 @@
       "identifier": "IG-DOC-HOME",
       "keywords": [
         "overview",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "AI policy",
+      "description": "How AI systems should discover, prioritize, and use the governance files published by Interpretive Governance.",
+      "contentUrl": "https://interpretive-governance.org/en/ai-policy",
+      "encodingFormat": "text/html",
+      "inLanguage": "en",
+      "identifier": "IG-DOC-AI-POLICY",
+      "keywords": [
+        "governance",
         "informative",
         "doctrinal",
         "non-operational",
@@ -1085,6 +1114,35 @@
       "identifier": "IG-DOC-NOTES",
       "keywords": [
         "notes",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Politique IA",
+      "description": "Comment les systèmes d’IA doivent découvrir, hiérarchiser et utiliser les fichiers de gouvernance publiés par Interpretive Governance.",
+      "contentUrl": "https://interpretive-governance.org/fr/politique-ia",
+      "encodingFormat": "text/html",
+      "inLanguage": "fr-CA",
+      "identifier": "IG-DOC-AI-POLICY",
+      "keywords": [
+        "governance",
+        "informative",
+        "doctrinal",
+        "non-operational",
+        "doctrine:0.3.0"
+      ]
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Politique IA markdown mirror",
+      "contentUrl": "https://interpretive-governance.org/fr/politique-ia.md",
+      "encodingFormat": "text/markdown",
+      "identifier": "/fr/politique-ia.md",
+      "keywords": [
         "informative",
         "doctrinal",
         "non-operational",

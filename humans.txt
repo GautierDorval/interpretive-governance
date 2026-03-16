@@ -3,3 +3,6 @@ Author: Gautier Dorval
 Canonical identity: https://gautierdorval.com/
 Identity anchor: https://github.com/GautierDorval/gautierdorval-identity
 Project: Interpretive Governance (doctrinal, non-operational)
+AI policy (EN): https://interpretive-governance.org/en/ai-policy
+AI policy (FR): https://interpretive-governance.org/fr/politique-ia
+AI policy markdown mirrors: https://interpretive-governance.org/ai-policy.md | https://interpretive-governance.org/fr/politique-ia.md
