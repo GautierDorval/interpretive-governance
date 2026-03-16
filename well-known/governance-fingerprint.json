@@ -2,7 +2,7 @@
   "site": "https://interpretive-governance.org",
   "generatedAt": "2026-03-15",
   "doctrineVersion": "0.3.0",
-  "fingerprint": "51881da43011008275d4bee813c4b4e3f58e572252b9ab8a70b95bc6920bf40b",
+  "fingerprint": "e6ea434c21dcba88599179320a532a5c81a34f9740ef85fb52aead4d19eaa98f",
   "files": {
     "ai-governance.json": "f5d4c57cd1460d2292a9c43d991842c623ddcb99da844765c71baa3cfbe96e55",
     "interpretation-policy.json": "fa896deda12e9260504dd69a990320d5517f32ced8b5474487d0b3b906c28343",
@@ -14,8 +14,8 @@
     "ai-manifest.json": "dd0a583a5f833392a12d49303e597de76b98b9fd1216b6e00659c5ef98ed740e",
     "data/terms.json": "6eb94ee468bd4af58d19b85d766f9d997c02d74093e5af18ab64d6656fd22bee",
     "data/documents.json": "bd682afa648050a6df5ea375c12c76a2a29c64561f1af794114e199c2886aeb0",
-    "llms.txt": "e7e459ce07cd8a0a64dce7b9cef830b2d50bc2de8d7a27298dada02a31fd49a3",
-    "llms-full.txt": "5cebf3bff1d9cf743bdc5e808e2a452599464637566d890d4810afe10099f4db",
+    "llms.txt": "3a1246300f22d92eec5f28c32705bd2e99f06df760028550daaa2ebe2a9fa434",
+    "llms-full.txt": "7d27d0e2d9d623eb8fa3c47d7cfdcb304031f2f498e1f42e0a36320c8207b8b8",
     "ai-policy.md": "bb6f504f0f222451638351a6057b3b8d28c641788a84912e10ab8278c47cf844",
     "fr/politique-ia.md": "5d45cca0b5101c7c2c67cce1c2da9694a13db7d38f7d8186106baf6179200be2"
   }

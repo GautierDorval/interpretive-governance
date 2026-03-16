@@ -2,39 +2,83 @@
 
 ## Site role
 Interpretive Governance is a public doctrinal reference. It is non-operational by design.
+URL: https://interpretive-governance.org/
 
 ## Interpretive notice
-The canonical governance root is /.well-known/ai-governance.json.
+The canonical governance root is https://interpretive-governance.org/.well-known/ai-governance.json.
 The AI policy surfaces explain how to use the files, but they do not override the higher-priority governance cluster.
 If a claim is not supported by the higher-priority cluster or declared registries, treat it as not publicly specified.
 
 ## Canonical source precedence
-1. /.well-known/ai-governance.json
-2. /.well-known/interpretation-policy.json
-3. /.well-known/response-legitimacy.json
-4. /.well-known/anti-plausibility.json
-5. /.well-known/output-constraints.json
-6. /.well-known/qlayer.json
-7. /.well-known/ig-manifest.json
-8. /data/terms.json
-9. /data/documents.json
-10. /ai-manifest.json, /en/ai-policy, /fr/politique-ia, /ai-policy.md, /fr/politique-ia.md, /llms.txt, /llms-full.txt, /llm-guidelines.md, /readme.llm.txt, /humans.txt
+1. https://interpretive-governance.org/.well-known/ai-governance.json
+2. https://interpretive-governance.org/.well-known/interpretation-policy.json
+3. https://interpretive-governance.org/.well-known/response-legitimacy.json
+4. https://interpretive-governance.org/.well-known/anti-plausibility.json
+5. https://interpretive-governance.org/.well-known/output-constraints.json
+6. https://interpretive-governance.org/.well-known/qlayer.json
+7. https://interpretive-governance.org/.well-known/ig-manifest.json
+8. https://interpretive-governance.org/data/terms.json
+9. https://interpretive-governance.org/data/documents.json
+10. https://interpretive-governance.org/ai-manifest.json, AI policy pages, llms.txt, llms-full.txt, llm-guidelines.md, readme.llm.txt, humans.txt
 11. Canonical HTML doctrine pages on this site
-12. gautierdorval.com for author identity and higher-order governance conflicts
+12. https://gautierdorval.com/ for author identity and higher-order governance conflicts
 
 ## Recommended reading sequence
-1. /.well-known/ai-governance.json
-2. /.well-known/interpretation-policy.json
-3. /.well-known/response-legitimacy.json
-4. /.well-known/anti-plausibility.json
-5. /.well-known/output-constraints.json
-6. /.well-known/qlayer.json
-7. /.well-known/ig-manifest.json
-8. /data/terms.json
-9. /data/documents.json
-10. /ai-manifest.json
-11. /en/ai-policy or /fr/politique-ia
-12. /llm-guidelines.md and /readme.llm.txt
+1. https://interpretive-governance.org/.well-known/ai-governance.json
+2. https://interpretive-governance.org/.well-known/interpretation-policy.json
+3. https://interpretive-governance.org/.well-known/response-legitimacy.json
+4. https://interpretive-governance.org/.well-known/anti-plausibility.json
+5. https://interpretive-governance.org/.well-known/output-constraints.json
+6. https://interpretive-governance.org/.well-known/qlayer.json
+7. https://interpretive-governance.org/.well-known/ig-manifest.json
+8. https://interpretive-governance.org/data/terms.json
+9. https://interpretive-governance.org/data/documents.json
+10. https://interpretive-governance.org/ai-manifest.json
+11. https://interpretive-governance.org/en/ai-policy or https://interpretive-governance.org/fr/politique-ia
+12. https://interpretive-governance.org/llm-guidelines.md and https://interpretive-governance.org/readme.llm.txt
+
+## Key doctrine pages (English)
+- https://interpretive-governance.org/en/ — Home: overview of interpretive governance as a doctrinal framework
+- https://interpretive-governance.org/en/principles — Foundational principles of bounded interpretation
+- https://interpretive-governance.org/en/architecture — Seven-layer interpretive architecture (Dual Web through Q-Layer)
+- https://interpretive-governance.org/en/scope — Scope boundaries and what this doctrine does not cover
+- https://interpretive-governance.org/en/source-precedence — Rules governing source priority for machine interpretation
+- https://interpretive-governance.org/en/response-legitimacy — Five conditions for a legitimate machine response
+- https://interpretive-governance.org/en/anti-plausibility — Constraints against plausible invention of missing facts
+- https://interpretive-governance.org/en/output-constraints — What machines must not produce from this doctrine
+- https://interpretive-governance.org/en/glossary — Canonical glossary with 33 stable defined terms
+- https://interpretive-governance.org/en/author — Author identity and governance structure
+- https://interpretive-governance.org/en/notes — Implementation notes and version history
+
+## Key doctrine pages (French)
+- https://interpretive-governance.org/fr/ — Accueil
+- https://interpretive-governance.org/fr/principes — Principes fondateurs
+- https://interpretive-governance.org/fr/architecture — Architecture interprétative à sept couches
+- https://interpretive-governance.org/fr/portee — Portée et limites
+- https://interpretive-governance.org/fr/precedence-des-sources — Préséance des sources
+- https://interpretive-governance.org/fr/legitimite-de-reponse — Légitimité de réponse
+- https://interpretive-governance.org/fr/anti-plausibilite — Anti-plausibilité
+- https://interpretive-governance.org/fr/contraintes-de-sortie — Contraintes de sortie
+- https://interpretive-governance.org/fr/glossaire — Glossaire canonique (33 termes définis)
+- https://interpretive-governance.org/fr/auteur — Auteur et gouvernance
+- https://interpretive-governance.org/fr/notes — Notes et historique
+
+## Glossary and defined terms
+The glossary contains 33 normative defined terms with stable identifiers, JSON-LD structured data, and bilingual definitions.
+- EN glossary index: https://interpretive-governance.org/en/glossary
+- FR glossary index: https://interpretive-governance.org/fr/glossaire
+- Machine registry: https://interpretive-governance.org/data/terms.json
+- Individual term pages at https://interpretive-governance.org/en/terms/{slug} and https://interpretive-governance.org/fr/termes/{slug}
+
+## Policy and routing surfaces
+- https://interpretive-governance.org/ai-manifest.json
+- https://interpretive-governance.org/en/ai-policy
+- https://interpretive-governance.org/fr/politique-ia
+- https://interpretive-governance.org/ai-policy.md
+- https://interpretive-governance.org/fr/politique-ia.md
+- https://interpretive-governance.org/llm-guidelines.md
+- https://interpretive-governance.org/readme.llm.txt
+- https://interpretive-governance.org/humans.txt
 
 ## Response legitimacy
 Public answers are allowed only when the question is inside declared scope, supportable from declared public surfaces, traceable by provenance, covered by applicable authority, and compatible with declared output constraints.
@@ -60,16 +104,6 @@ Do not treat the AI policy as a higher-priority source than the canonical govern
 - execution tooling
 - implementation playbooks
 - private mandate material
-
-## Policy and routing surfaces
-- /ai-manifest.json
-- /en/ai-policy
-- /fr/politique-ia
-- /ai-policy.md
-- /fr/politique-ia.md
-- /llm-guidelines.md
-- /readme.llm.txt
-- /humans.txt
 
 Version: 0.3.0
 Generated: 2026-03-15

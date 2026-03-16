@@ -445,46 +445,55 @@ def sitemap_url_entry(loc: str, alternates: dict[str, str], last_updated: str) -
     lines = ["  <url>"]
     lines.append(f"    <loc>{xml_escape(loc)}</loc>")
     lines.append(f"    <lastmod>{last_updated}</lastmod>")
-    lines.append("    <changefreq>monthly</changefreq>")
     for hl, href in alternates.items():
         lines.append(f'    <xhtml:link rel="alternate" hreflang="{hl}" href="{xml_escape(href)}"/>')
     lines.append("  </url>")
     return "\n".join(lines)
 
 def build_sitemap(documents: list[dict], terms: list[dict], last_updated: str) -> str:
+    seen_locs: set[str] = set()
     entries: list[str] = []
+
+    def emit(loc: str, alts: dict[str, str]) -> None:
+        """Emit a <url> entry only if this loc has not been emitted yet."""
+        if loc in seen_locs:
+            return
+        seen_locs.add(loc)
+        entries.append(sitemap_url_entry(loc, alts, last_updated))
 
     # Document pages
     for doc in documents:
         doc_id = doc.get("id")
         variants = doc.get("variants", {}) if isinstance(doc.get("variants"), dict) else {}
 
-        # Build hreflang cluster
         if doc_id == "IG-DOC-ROOT":
+            # Root selector: emit /, /en/, /fr/ with mutual hreflang
             alts = {
                 LANG_XDEFAULT: f"{SITE}/",
                 LANG_EN: f"{SITE}/en/",
                 LANG_FR: f"{SITE}/fr/",
             }
+            for loc in sorted(alts.values()):
+                emit(loc, alts)
         else:
             en_url = SITE + variants[LANG_EN]["url"]
             fr_url = SITE + variants[LANG_FR]["url"]
             alts = hreflang_cluster(en_url, fr_url, f"{SITE}/")
-
-        # Emit <url> entries for each loc we want indexed
-        for loc in sorted(set(alts.values())):
-            # Avoid adding the x-default selector twice if it maps to the same URL
-            entries.append(sitemap_url_entry(loc, alts, last_updated))
+            # Emit only the EN and FR locs — x-default stays as annotation
+            emit(en_url, alts)
+            emit(fr_url, alts)
 
     # Term pages
     for t in terms:
+        en_url = SITE + "/en/terms/" + t["slug"]
+        fr_url = SITE + "/fr/termes/" + t["slug"]
         alts = {
-            LANG_EN: SITE + "/en/terms/" + t["slug"],
-            LANG_FR: SITE + "/fr/termes/" + t["slug"],
+            LANG_EN: en_url,
+            LANG_FR: fr_url,
             LANG_XDEFAULT: f"{SITE}/",
         }
-        for loc in sorted(set(alts.values())):
-            entries.append(sitemap_url_entry(loc, alts, last_updated))
+        emit(en_url, alts)
+        emit(fr_url, alts)
 
     # Sort by loc for deterministic output
     entries_sorted = sorted(entries, key=lambda s: re.search(r"<loc>(.*?)</loc>", s).group(1))

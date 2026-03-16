@@ -341,8 +341,14 @@ def main() -> None:
     if ".html" in sitemap_text:
         fail("sitemap.xml contains .html URLs")
 
+    sitemap_locs = re.findall(r"<loc>(.*?)</loc>", sitemap_text)
+    loc_counts = Counter(sitemap_locs)
+    dup_locs = {url: c for url, c in loc_counts.items() if c > 1}
+    if dup_locs:
+        fail(f"sitemap.xml contains {len(dup_locs)} duplicate <loc>(s): {list(dup_locs.keys())[:5]}")
+
     expected = {canonical_from_rel(p.relative_to(ROOT)) for p in html_files}
-    found = set(re.findall(r"<loc>(.*?)</loc>", sitemap_text))
+    found = set(sitemap_locs)
     missing = sorted(expected - found)
     if missing:
         fail(f"sitemap.xml missing {len(missing)} URL(s): {missing[:10]}")
